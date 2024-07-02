@@ -36,7 +36,7 @@ resource "google_compute_instance" "web" {
     sudo yum install git -y
   
     # Clone the repository
-    git clone https://github.com/Mahii527/jenkins.git /tmp/your-repo
+    git clone https://github.com/pavanteja2704/webapp.git /tmp/your-repo
  
     # Run the httpd container
     docker run -d -p 4102:80 --name apache-container httpd
