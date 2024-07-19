@@ -1,0 +1,193 @@
+{
+  "Billing_Budget_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {}
+    ],
+    "value": {}
+  },
+  "Bucket_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {}
+    ],
+    "value": {}
+  },
+  "Project_APIs_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {}
+    ],
+    "value": {}
+  },
+  "Project_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-automation-prd-01": [
+          "object",
+          {
+            "project_details": [
+              "object",
+              {
+                "auto_create_network": "bool",
+                "billing_account": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "folder_id": "string",
+                "id": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "number": "string",
+                "org_id": "string",
+                "project_id": "string",
+                "skip_delete": "bool",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "read": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-automation-prd-01": {
+        "project_details": {
+          "auto_create_network": false,
+          "billing_account": "0169BA-63D6C3-3F9651",
+          "effective_labels": {},
+          "folder_id": "811312481972",
+          "id": "projects/gcp-prj-inf-automation-prd-01",
+          "labels": {},
+          "name": "CloudAutomation",
+          "number": "888523839952",
+          "org_id": null,
+          "project_id": "gcp-prj-inf-automation-prd-01",
+          "skip_delete": false,
+          "terraform_labels": {},
+          "timeouts": null
+        }
+      }
+    }
+  },
+  "Repo_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-inf-cloudautomation-modules-srep-01": [
+          "object",
+          {
+            "repo_details": [
+              "object",
+              {
+                "id": "string",
+                "name": "string",
+                "project": "string",
+                "pubsub_configs": [
+                  "set",
+                  [
+                    "object",
+                    {
+                      "message_format": "string",
+                      "service_account_email": "string",
+                      "topic": "string"
+                    }
+                  ]
+                ],
+                "size": "number",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "url": "string"
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-prd-inf-cloudautomation-templates-srep-01": [
+          "object",
+          {
+            "repo_details": [
+              "object",
+              {
+                "id": "string",
+                "name": "string",
+                "project": "string",
+                "pubsub_configs": [
+                  "set",
+                  [
+                    "object",
+                    {
+                      "message_format": "string",
+                      "service_account_email": "string",
+                      "topic": "string"
+                    }
+                  ]
+                ],
+                "size": "number",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "url": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-inf-cloudautomation-modules-srep-01": {
+        "repo_details": {
+          "id": "projects/gcp-prj-inf-automation-prd-01/repos/gcp-yyz-prd-inf-cloudautomation-modules-srep-01",
+          "name": "gcp-yyz-prd-inf-cloudautomation-modules-srep-01",
+          "project": "gcp-prj-inf-automation-prd-01",
+          "pubsub_configs": [],
+          "size": 56737,
+          "timeouts": null,
+          "url": "https://source.developers.google.com/p/gcp-prj-inf-automation-prd-01/r/gcp-yyz-prd-inf-cloudautomation-modules-srep-01"
+        }
+      },
+      "gcp-yyz-prd-inf-cloudautomation-templates-srep-01": {
+        "repo_details": {
+          "id": "projects/gcp-prj-inf-automation-prd-01/repos/gcp-yyz-prd-inf-cloudautomation-templates-srep-01",
+          "name": "gcp-yyz-prd-inf-cloudautomation-templates-srep-01",
+          "project": "gcp-prj-inf-automation-prd-01",
+          "pubsub_configs": [],
+          "size": 265342,
+          "timeouts": null,
+          "url": "https://source.developers.google.com/p/gcp-prj-inf-automation-prd-01/r/gcp-yyz-prd-inf-cloudautomation-templates-srep-01"
+        }
+      }
+    }
+  }
+}

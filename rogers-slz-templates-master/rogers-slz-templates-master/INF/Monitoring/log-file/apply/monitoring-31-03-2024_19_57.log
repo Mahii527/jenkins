@@ -1,0 +1,114 @@
+2024-03-31T19:57:34.679Z [INFO]  Terraform version: 1.7.5
+2024-03-31T19:57:34.679Z [INFO]  Go runtime version: go1.21.8
+2024-03-31T19:57:34.679Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=monitoring/state-file"}
+2024-03-31T19:57:34.681Z [INFO]  CLI command args: []string{"init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=monitoring/state-file"}
+2024-03-31T19:57:44.877Z [INFO]  Terraform version: 1.7.5
+2024-03-31T19:57:44.878Z [INFO]  Go runtime version: go1.21.8
+2024-03-31T19:57:44.878Z [INFO]  CLI args: []string{"terraform", "plan", "-var=access_token=ya29.c.c0AY_VpZjfFbvP1TxEM1UimpLwIpoaU__TAk7qcsm9q4tdSYlYrHjaAXQ96FeYFFCkfAZOOagGXnh7nsreqX3yFdyz5oinl4v8cWMLtf52Gnzi6ncFjhDwjdYf9zvntl6xnUa1aRCtfEuwbyNQ6KpS0B8tMx95AyrP2qSPWHdwZJekTaI5ySvomvMHYPwc75agwvvpd5rkjxNeBbAI-VrV6LpYlveDukHhP9R8TZGHTpQW8xA6AXZ3e-oFj-nmT1bSOBnltJ7FohMUYAHuBcjzXFcncIsDS1MW4_fJDwO3kAzGs2txefyGMLmlQorpIeF0FmLNsPyS-v_H8URIpS9JgdxTuTdW0v01ugv3NB18zxfjeG2BY9rmru-GPQkdQXAa93ckb3d05ZS7Vxk4TCNyp419aXaDgwWjklFn_pWLvqYhHIULrJCAY93aPGfy2RJb0aAllGUaB6xhFJx8Lukarj_z59LJ_fQzckTTRgxVNyyUTmMCKY0DAoOakIFV5NeZYlE8g7tzEGmvjTXRfy4S02WjpUFhAVMGGN4azyRQED-uimBX5QtQv_-cl4vdhNb49xcrrJgfU2MOtaLLHmD4jETt-N02MyLEYaVcKpNAbK9Bnc3_Nv8es46dIjA3jeh3ePPChYRaT9rEUPZ90UhebUk5Oa5oYhHWWoXp_oaFCQN691Kzp1BOf63SWp2gqmUd6aY2V45UYhwYhirbIccbh53M75W96nyrz8avoR5qwUy4nUj7Zua4blO6dIfm4e9BosbUpQzJwr5F0o9w7S_p0p8Sooe2x4ir8iMlqg76-qOh14y6da0vmy83sIvSSibXeJoU893iI3uOlVh5X0npbefifcfhFisdprn9UFrv9oSoSnWsFocORdz3zMRF71XtvvBd6FaJndOUQJ__U7clnbbsQWB3OUQ7kyf9nQz4qVfBkX5gi5ObyjtbMnYq37zoogf0zjk5oYiOrSlhz6zkeZ4muMOgbydy5XqdVzWo_kmQmsz8oFcbOcm", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/scope.tfvars", "-out=../plan-file/monitoring-tf-plan.json"}
+2024-03-31T19:57:44.879Z [INFO]  CLI command args: []string{"plan", "-var=access_token=ya29.c.c0AY_VpZjfFbvP1TxEM1UimpLwIpoaU__TAk7qcsm9q4tdSYlYrHjaAXQ96FeYFFCkfAZOOagGXnh7nsreqX3yFdyz5oinl4v8cWMLtf52Gnzi6ncFjhDwjdYf9zvntl6xnUa1aRCtfEuwbyNQ6KpS0B8tMx95AyrP2qSPWHdwZJekTaI5ySvomvMHYPwc75agwvvpd5rkjxNeBbAI-VrV6LpYlveDukHhP9R8TZGHTpQW8xA6AXZ3e-oFj-nmT1bSOBnltJ7FohMUYAHuBcjzXFcncIsDS1MW4_fJDwO3kAzGs2txefyGMLmlQorpIeF0FmLNsPyS-v_H8URIpS9JgdxTuTdW0v01ugv3NB18zxfjeG2BY9rmru-GPQkdQXAa93ckb3d05ZS7Vxk4TCNyp419aXaDgwWjklFn_pWLvqYhHIULrJCAY93aPGfy2RJb0aAllGUaB6xhFJx8Lukarj_z59LJ_fQzckTTRgxVNyyUTmMCKY0DAoOakIFV5NeZYlE8g7tzEGmvjTXRfy4S02WjpUFhAVMGGN4azyRQED-uimBX5QtQv_-cl4vdhNb49xcrrJgfU2MOtaLLHmD4jETt-N02MyLEYaVcKpNAbK9Bnc3_Nv8es46dIjA3jeh3ePPChYRaT9rEUPZ90UhebUk5Oa5oYhHWWoXp_oaFCQN691Kzp1BOf63SWp2gqmUd6aY2V45UYhwYhirbIccbh53M75W96nyrz8avoR5qwUy4nUj7Zua4blO6dIfm4e9BosbUpQzJwr5F0o9w7S_p0p8Sooe2x4ir8iMlqg76-qOh14y6da0vmy83sIvSSibXeJoU893iI3uOlVh5X0npbefifcfhFisdprn9UFrv9oSoSnWsFocORdz3zMRF71XtvvBd6FaJndOUQJ__U7clnbbsQWB3OUQ7kyf9nQz4qVfBkX5gi5ObyjtbMnYq37zoogf0zjk5oYiOrSlhz6zkeZ4muMOgbydy5XqdVzWo_kmQmsz8oFcbOcm", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/scope.tfvars", "-out=../plan-file/monitoring-tf-plan.json"}
+2024-03-31T19:57:45.641Z [INFO]  backend/local: starting Plan operation
+2024-03-31T19:57:49.378Z [INFO]  provider: configuring client automatic mTLS
+2024-03-31T19:57:49.455Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-31T19:57:49.455Z
+2024-03-31T19:57:49.769Z [INFO]  provider: configuring client automatic mTLS
+2024-03-31T19:57:49.843Z [INFO]  provider.terraform-provider-google-beta_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-31T19:57:49.843Z
+2024-03-31T19:57:50.196Z [INFO]  provider: configuring client automatic mTLS
+2024-03-31T19:57:50.265Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-31T19:57:50.265Z
+2024-03-31T19:57:50.389Z [INFO]  backend/local: plan calling Plan
+2024-03-31T19:57:50.399Z [INFO]  provider: configuring client automatic mTLS
+2024-03-31T19:57:50.470Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-31T19:57:50.469Z
+2024-03-31T19:57:50.561Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_req_id=3e4775fd-7103-a1bf-3ffb-c1ff844b0678 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1721 @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider timestamp=2024-03-31T19:57:50.560Z
+2024-03-31T19:57:50.561Z [INFO]  provider.terraform-provider-google_v5.22.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1722 tf_req_id=3e4775fd-7103-a1bf-3ffb-c1ff844b0678 @module=google timestamp=2024-03-31T19:57:50.560Z
+2024-03-31T19:57:50.561Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_req_id=3e4775fd-7103-a1bf-3ffb-c1ff844b0678 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1721 tf_provider_addr=registry.terraform.io/hashicorp/google @module=google timestamp=2024-03-31T19:57:50.560Z
+2024-03-31T19:57:50.561Z [INFO]  provider.terraform-provider-google_v5.22.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1722 tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=3e4775fd-7103-a1bf-3ffb-c1ff844b0678 tf_rpc=ConfigureProvider timestamp=2024-03-31T19:57:50.560Z
+2024-03-31T19:57:50.608Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @module=google tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1641 tf_req_id=3e4775fd-7103-a1bf-3ffb-c1ff844b0678 tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-31T19:57:50.607Z
+2024-03-31T19:57:55.860Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-monitoring-prd-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-03-31T19:57:56.148Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-monitoring-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .user_labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+2024-03-31T19:57:57.265Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-monitoring-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-03-31T19:58:00.675Z [INFO]  backend/local: plan operation completed
+2024-03-31T19:58:00.675Z [INFO]  backend/local: writing plan output to: ../plan-file/monitoring-tf-plan.json
+2024-03-31T19:58:18.019Z [INFO]  Terraform version: 1.7.5
+2024-03-31T19:58:18.019Z [INFO]  Go runtime version: go1.21.8
+2024-03-31T19:58:18.019Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/monitoring-tf-plan.json"}
+2024-03-31T19:58:18.020Z [INFO]  CLI command args: []string{"apply", "../plan-file/monitoring-tf-plan.json"}
+2024-03-31T19:58:18.771Z [INFO]  backend/local: starting Apply operation
+2024-03-31T19:58:21.922Z [INFO]  provider: configuring client automatic mTLS
+2024-03-31T19:58:22.006Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-31T19:58:22.005Z
+2024-03-31T19:58:22.325Z [INFO]  provider: configuring client automatic mTLS
+2024-03-31T19:58:22.392Z [INFO]  provider.terraform-provider-google-beta_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-31T19:58:22.392Z
+2024-03-31T19:58:22.730Z [INFO]  backend/local: apply calling Apply
+2024-03-31T19:58:22.751Z [INFO]  provider: configuring client automatic mTLS
+2024-03-31T19:58:22.826Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-31T19:58:22.826Z
+2024-03-31T19:58:22.919Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=95407e1a-eba8-aaae-e0b7-28c7a9c7454f @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1721 tf_mux_provider="*proto5server.Server" timestamp=2024-03-31T19:58:22.919Z
+2024-03-31T19:58:22.919Z [INFO]  provider.terraform-provider-google_v5.22.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=95407e1a-eba8-aaae-e0b7-28c7a9c7454f @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1722 tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider timestamp=2024-03-31T19:58:22.919Z
+2024-03-31T19:58:22.919Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1721 tf_rpc=ConfigureProvider tf_req_id=95407e1a-eba8-aaae-e0b7-28c7a9c7454f @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-31T19:58:22.919Z
+2024-03-31T19:58:22.919Z [INFO]  provider.terraform-provider-google_v5.22.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1722 @module=google tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=95407e1a-eba8-aaae-e0b7-28c7a9c7454f timestamp=2024-03-31T19:58:22.919Z
+2024-03-31T19:58:22.974Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1641 tf_mux_provider="*proto5server.Server" tf_req_id=95407e1a-eba8-aaae-e0b7-28c7a9c7454f tf_rpc=ConfigureProvider @module=google tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-31T19:58:22.974Z
+2024-03-31T19:58:23.014Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-logging-prd-1"]
+2024-03-31T19:58:23.016Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkspk-dev-1"]
+2024-03-31T19:58:23.018Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-monitoring-prd-1"]
+2024-03-31T19:58:23.018Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkhub-prd-1"]
+2024-03-31T19:58:23.019Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-billing-prd-01"]
+2024-03-31T19:58:23.019Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkspk-stg-1"]
+2024-03-31T19:58:23.019Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkspk-qa-1"]
+2024-03-31T19:58:23.020Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-automation-prd-01"]
+2024-03-31T19:58:23.020Z [INFO]  Starting apply for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkspk-prd-1"]
+2024-03-31T19:58:23.033Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-monitoring-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-03-31T19:58:23.037Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-monitoring-prd-1-budget-01"].google_billing_budget.budget
+2024-03-31T19:58:23.194Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic: diagnostic_detail="" diagnostic_severity=ERROR tf_req_id=05c6fdb1-2e59-10bf-d212-f9feef2ae275 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 @module=sdk.proto diagnostic_summary="Error creating MonitoredProject: googleapi: Error 409: Requested entity already exists" tf_proto_version=5.4 tf_resource_type=google_monitoring_monitored_project tf_rpc=ApplyResourceChange tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-31T19:58:23.194Z
+2024-03-31T19:58:23.195Z [ERROR] vertex "module.scope[\"gcp-prj-inf-monitoring-prd-1\"].google_monitoring_monitored_project.project[\"gcp-prj-inf-monitoring-prd-1\"]" error: Error creating MonitoredProject: googleapi: Error 409: Requested entity already exists
+2024-03-31T19:58:26.620Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkspk-dev-1"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .name: was cty.StringVal("gcp-prj-inf-networkspk-dev-1"), but now cty.StringVal("locations/global/metricsScopes/94258621996/projects/249027555877")
+2024-03-31T19:58:26.620Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkspk-stg-1"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .name: was cty.StringVal("gcp-prj-inf-networkspk-stg-1"), but now cty.StringVal("locations/global/metricsScopes/94258621996/projects/1085870762523")
+2024-03-31T19:58:26.658Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-logging-prd-1"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .name: was cty.StringVal("gcp-prj-inf-logging-prd-1"), but now cty.StringVal("locations/global/metricsScopes/94258621996/projects/765449061299")
+2024-03-31T19:58:26.660Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkspk-prd-1"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .name: was cty.StringVal("gcp-prj-inf-networkspk-prd-1"), but now cty.StringVal("locations/global/metricsScopes/94258621996/projects/728166735923")
+2024-03-31T19:58:27.224Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkspk-qa-1"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .name: was cty.StringVal("gcp-prj-inf-networkspk-qa-1"), but now cty.StringVal("locations/global/metricsScopes/94258621996/projects/386743752960")
+2024-03-31T19:58:27.232Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-billing-prd-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .name: was cty.StringVal("gcp-prj-inf-billing-prd-01"), but now cty.StringVal("locations/global/metricsScopes/94258621996/projects/697865862876")
+2024-03-31T19:58:27.269Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.scope["gcp-prj-inf-monitoring-prd-1"].google_monitoring_monitored_project.project["gcp-prj-inf-networkhub-prd-1"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .name: was cty.StringVal("gcp-prj-inf-networkhub-prd-1"), but now cty.StringVal("locations/global/metricsScopes/94258621996/projects/47781753318")
+2024-03-31T20:18:23.025Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic: @module=sdk.proto diagnostic_detail="" diagnostic_severity=ERROR tf_req_id=c96530d5-29e5-5d57-9557-fe6bb1dd2150 tf_resource_type=google_monitoring_monitored_project diagnostic_summary="Error creating MonitoredProject: googleapi: Error 403: The caller does not have permission" tf_proto_version=5.4 tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-31T20:18:23.025Z
+2024-03-31T20:18:24.443Z [ERROR] vertex "module.scope[\"gcp-prj-inf-monitoring-prd-1\"].google_monitoring_monitored_project.project[\"gcp-prj-inf-automation-prd-01\"]" error: Error creating MonitoredProject: googleapi: Error 403: The caller does not have permission
+2024-03-31T20:18:24.908Z [INFO]  Terraform version: 1.7.5
+2024-03-31T20:18:24.908Z [INFO]  Go runtime version: go1.21.8
+2024-03-31T20:18:24.909Z [INFO]  CLI args: []string{"terraform", "output", "-json"}
+2024-03-31T20:18:24.909Z [INFO]  CLI command args: []string{"output", "-json"}

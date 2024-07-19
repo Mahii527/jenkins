@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../../../slz-terraform-modules-master"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {}
+}

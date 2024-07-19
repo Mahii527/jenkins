@@ -1,0 +1,638 @@
+2024-03-30T17:38:01.016Z [INFO]  Terraform version: 1.7.5
+2024-03-30T17:38:01.016Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T17:38:01.016Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=network/state-file"}
+2024-03-30T17:38:01.017Z [INFO]  CLI command args: []string{"init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=network/state-file"}
+2024-03-30T17:38:11.194Z [INFO]  Terraform version: 1.7.5
+2024-03-30T17:38:11.194Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T17:38:11.194Z [INFO]  CLI args: []string{"terraform", "plan", "-var=access_token=ya29.c.c0AY_VpZhPDCTlpH6SAfI2qJY3F7W-YLn8tPDKKkccPqWpNacp5KdP3uBHHFdYAyAG_McCGk3aSI0ofEz-2jWDrND10cjLg2Ld4C7Pfr5PWbiVinQ3BQQJrKd_U7tSvZUGX3iIgAJVdKZTeOvfkEYlI1U4RY3uskq9KIITptz6RDYGMP6y5GMFgKb2UoW33cbFd6kss2YCjman9LsUMcJMc8MFyau8rAsmhclzdZV_16iXQuFplum-5igUfhVJDvzjtn6tcFuncHgnScnkrfgWxkor_DMQXn5iOAhIxueTT5bshH4KNlzKJfWU58uPjXH0PF04nWB6Uv5-IXBFOHYUv5-GkMdrByt_z28oGYOZOhPrGgqhktCU2G1Y4Xje0JQywcwSUwmwDv_bdMVEW9BtN9jxicdgbhUUa5PrU9AsZeIWHKJ2Uy6QqSdE12Gcn6WDfA1tMO1Jeavvyg4DWxdpsc5K7GOVgtyyIhiJicHo8TtZEbHZSAQPiUnF0bSxqfnEKk73hDDgt6py8eKyipeX-C7z1KWdCgrs2y7UXdghvvL7KiW2i98zwhSccgLOPpBnGXQYd9B712CeAzLSnJUoiJP8ajNtNo_5TLJwdJ_WsZgMCn596ju9INYMjBO-vJQo1iQG20JEQ-zwknu50JiwLHVvnSVU7CeSvgX6LkQ7E689AMOidh0-h3kRYsomtJ86XB3nFZVuhUaptJW2v7Bz-eRdXo_6jxz47Bn_UwUfeBqZcunV6leiY4sxf-b3jBoOnmp75f3skVFS304Skz8uiWInhJJc686lz_yudsWx2a4V_zq9kJxSyc7Qp-_p64koX7gMpVZnQ_zrVWd4IhXpbFqQuXwUJvydbJZMWvIMdzcBvmg4Z-I9WcOJ9rIm04cq7rVx_vMxndl3WorRgy37_qqkSklcc34f8VY3YovnqzftF8Jy6JyIcBXqo-hvuQSJ6Ung8BZe8tzqhwdfewaBXo2p1MrybIiWaJX26ugM25in7SidjB0d0Xn", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/vpc.tfvars", "-var-file=../input-file/subnet.tfvars", "-var-file=../input-file/firewall.tfvars", "-var-file=../input-file/peering.tfvars", "-out=../plan-file/network-tf-plan.json"}
+2024-03-30T17:38:11.195Z [INFO]  CLI command args: []string{"plan", "-var=access_token=ya29.c.c0AY_VpZhPDCTlpH6SAfI2qJY3F7W-YLn8tPDKKkccPqWpNacp5KdP3uBHHFdYAyAG_McCGk3aSI0ofEz-2jWDrND10cjLg2Ld4C7Pfr5PWbiVinQ3BQQJrKd_U7tSvZUGX3iIgAJVdKZTeOvfkEYlI1U4RY3uskq9KIITptz6RDYGMP6y5GMFgKb2UoW33cbFd6kss2YCjman9LsUMcJMc8MFyau8rAsmhclzdZV_16iXQuFplum-5igUfhVJDvzjtn6tcFuncHgnScnkrfgWxkor_DMQXn5iOAhIxueTT5bshH4KNlzKJfWU58uPjXH0PF04nWB6Uv5-IXBFOHYUv5-GkMdrByt_z28oGYOZOhPrGgqhktCU2G1Y4Xje0JQywcwSUwmwDv_bdMVEW9BtN9jxicdgbhUUa5PrU9AsZeIWHKJ2Uy6QqSdE12Gcn6WDfA1tMO1Jeavvyg4DWxdpsc5K7GOVgtyyIhiJicHo8TtZEbHZSAQPiUnF0bSxqfnEKk73hDDgt6py8eKyipeX-C7z1KWdCgrs2y7UXdghvvL7KiW2i98zwhSccgLOPpBnGXQYd9B712CeAzLSnJUoiJP8ajNtNo_5TLJwdJ_WsZgMCn596ju9INYMjBO-vJQo1iQG20JEQ-zwknu50JiwLHVvnSVU7CeSvgX6LkQ7E689AMOidh0-h3kRYsomtJ86XB3nFZVuhUaptJW2v7Bz-eRdXo_6jxz47Bn_UwUfeBqZcunV6leiY4sxf-b3jBoOnmp75f3skVFS304Skz8uiWInhJJc686lz_yudsWx2a4V_zq9kJxSyc7Qp-_p64koX7gMpVZnQ_zrVWd4IhXpbFqQuXwUJvydbJZMWvIMdzcBvmg4Z-I9WcOJ9rIm04cq7rVx_vMxndl3WorRgy37_qqkSklcc34f8VY3YovnqzftF8Jy6JyIcBXqo-hvuQSJ6Ung8BZe8tzqhwdfewaBXo2p1MrybIiWaJX26ugM25in7SidjB0d0Xn", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/vpc.tfvars", "-var-file=../input-file/subnet.tfvars", "-var-file=../input-file/firewall.tfvars", "-var-file=../input-file/peering.tfvars", "-out=../plan-file/network-tf-plan.json"}
+2024-03-30T17:38:11.961Z [INFO]  backend/local: starting Plan operation
+2024-03-30T17:38:13.463Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:13.531Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:13.531Z
+2024-03-30T17:38:13.819Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:13.883Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:13.883Z
+2024-03-30T17:38:14.186Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:14.199Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:14.199Z
+2024-03-30T17:38:14.267Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:14.331Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:14.331Z
+2024-03-30T17:38:14.375Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:14.389Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:14.389Z
+2024-03-30T17:38:14.449Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:14.507Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:14.507Z
+2024-03-30T17:38:14.652Z [INFO]  backend/local: plan calling Plan
+2024-03-30T17:38:14.672Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:14.685Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:14.685Z
+2024-03-30T17:38:14.728Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:14.795Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:14.795Z
+2024-03-30T17:38:14.837Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:14.907Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:14.906Z
+2024-03-30T17:38:14.958Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider @module=google_beta tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 tf_req_id=a661596f-2443-640f-4e22-d9672a19186a timestamp=2024-03-30T17:38:14.958Z
+2024-03-30T17:38:14.958Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=a661596f-2443-640f-4e22-d9672a19186a @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta tf_rpc=ConfigureProvider timestamp=2024-03-30T17:38:14.958Z
+2024-03-30T17:38:14.959Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 tf_req_id=a661596f-2443-640f-4e22-d9672a19186a tf_rpc=ConfigureProvider @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta timestamp=2024-03-30T17:38:14.959Z
+2024-03-30T17:38:14.959Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=a661596f-2443-640f-4e22-d9672a19186a tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 tf_mux_provider="*proto5server.Server" @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta timestamp=2024-03-30T17:38:14.959Z
+2024-03-30T17:38:15.022Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=2d5d4994-a2da-d5f0-2fd5-dd2a5bb28374 timestamp=2024-03-30T17:38:15.022Z
+2024-03-30T17:38:15.022Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=2d5d4994-a2da-d5f0-2fd5-dd2a5bb28374 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 @module=google timestamp=2024-03-30T17:38:15.022Z
+2024-03-30T17:38:15.022Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_req_id=2d5d4994-a2da-d5f0-2fd5-dd2a5bb28374 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 @module=google tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-30T17:38:15.022Z
+2024-03-30T17:38:15.022Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 tf_provider_addr=registry.terraform.io/hashicorp/google @module=google tf_mux_provider="*proto5server.Server" tf_req_id=2d5d4994-a2da-d5f0-2fd5-dd2a5bb28374 tf_rpc=ConfigureProvider timestamp=2024-03-30T17:38:15.022Z
+2024-03-30T17:38:15.033Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1760 @module=google_beta tf_req_id=a661596f-2443-640f-4e22-d9672a19186a tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_mux_provider="*proto5server.Server" timestamp=2024-03-30T17:38:15.033Z
+2024-03-30T17:38:15.097Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1621 @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=2d5d4994-a2da-d5f0-2fd5-dd2a5bb28374 tf_rpc=ConfigureProvider timestamp=2024-03-30T17:38:15.097Z
+2024-03-30T17:38:20.156Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-networkspk-stg-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-03-30T17:38:20.189Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-networkspk-prd-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-03-30T17:38:20.229Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-networkspk-qa-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-03-30T17:38:20.248Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-npe-dev-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:38:20.252Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-mgmt-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:38:20.259Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-hub-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:38:20.260Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-out-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:38:20.261Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-ha-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:38:20.323Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-03-30T17:38:20.328Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-03-30T17:38:20.347Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-03-30T17:38:20.356Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-03-30T17:38:20.366Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.367Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.367Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.368Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.368Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.375Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.377Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.378Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.398Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.408Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.409Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.416Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_ranges: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.421Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.422Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.423Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.428Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.429Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.434Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.434Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.435Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.436Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.443Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.443Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.444Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.446Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.451Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.454Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.456Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:38:20.523Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_monitoring_notification_channel.budget_notify during refresh.
+      - .user_labels: was null, but now cty.MapValEmpty(cty.String)
+2024-03-30T17:38:20.523Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify during refresh.
+      - .user_labels: was null, but now cty.MapValEmpty(cty.String)
+2024-03-30T17:38:20.527Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .user_labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+2024-03-30T17:38:20.528Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .user_labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+2024-03-30T17:38:20.556Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-03-30T17:38:20.558Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+2024-03-30T17:38:20.677Z [INFO]  backend/local: plan operation completed
+2024-03-30T17:38:20.677Z [INFO]  backend/local: writing plan output to: ../plan-file/network-tf-plan.json
+2024-03-30T17:38:23.385Z [INFO]  Terraform version: 1.7.5
+2024-03-30T17:38:23.385Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T17:38:23.385Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/network-tf-plan.json"}
+2024-03-30T17:38:23.385Z [INFO]  CLI command args: []string{"apply", "../plan-file/network-tf-plan.json"}
+2024-03-30T17:38:24.144Z [INFO]  backend/local: starting Apply operation
+2024-03-30T17:38:25.646Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:25.721Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:25.720Z
+2024-03-30T17:38:26.030Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:26.099Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:26.099Z
+2024-03-30T17:38:26.416Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:26.430Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:26.430Z
+2024-03-30T17:38:26.477Z [INFO]  backend/local: apply calling Apply
+2024-03-30T17:38:26.562Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:26.574Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:26.574Z
+2024-03-30T17:38:26.617Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:26.678Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:26.678Z
+2024-03-30T17:38:26.720Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:38:26.795Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:38:26.795Z
+2024-03-30T17:38:26.846Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=a0e53cd9-b53d-da95-b457-949a6866b7dc @module=google tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 timestamp=2024-03-30T17:38:26.846Z
+2024-03-30T17:38:26.846Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=a0e53cd9-b53d-da95-b457-949a6866b7dc tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google @module=google timestamp=2024-03-30T17:38:26.846Z
+2024-03-30T17:38:26.846Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=a0e53cd9-b53d-da95-b457-949a6866b7dc timestamp=2024-03-30T17:38:26.846Z
+2024-03-30T17:38:26.846Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_req_id=a0e53cd9-b53d-da95-b457-949a6866b7dc @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 @module=google tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider timestamp=2024-03-30T17:38:26.846Z
+2024-03-30T17:38:26.909Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1621 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @module=google tf_req_id=a0e53cd9-b53d-da95-b457-949a6866b7dc timestamp=2024-03-30T17:38:26.909Z
+2024-03-30T17:38:26.913Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=e592986d-4520-987f-ce7d-75604f09d782 timestamp=2024-03-30T17:38:26.913Z
+2024-03-30T17:38:26.913Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=e592986d-4520-987f-ce7d-75604f09d782 tf_rpc=ConfigureProvider timestamp=2024-03-30T17:38:26.913Z
+2024-03-30T17:38:26.913Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider @module=google_beta tf_mux_provider="*proto5server.Server" tf_req_id=e592986d-4520-987f-ce7d-75604f09d782 @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 timestamp=2024-03-30T17:38:26.913Z
+2024-03-30T17:38:26.913Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google_beta tf_req_id=e592986d-4520-987f-ce7d-75604f09d782 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 timestamp=2024-03-30T17:38:26.913Z
+2024-03-30T17:38:26.946Z [INFO]  Starting apply for module.project["gcp-prj-inf-networkspk-dev-1"].google_project.project
+2024-03-30T17:38:26.946Z [INFO]  Starting apply for module.project["gcp-prj-inf-networkhub-prd-1"].google_project.project
+2024-03-30T17:38:26.970Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1760 @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_req_id=e592986d-4520-987f-ce7d-75604f09d782 timestamp=2024-03-30T17:38:26.969Z
+2024-03-30T17:42:05.038Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.project["gcp-prj-inf-networkhub-prd-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: was null, but now cty.StringVal("")
+2024-03-30T17:42:06.770Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.project["gcp-prj-inf-networkspk-dev-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: was null, but now cty.StringVal("")
+2024-03-30T17:42:06.779Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["servicenetworking.googleapis.com"]
+2024-03-30T17:42:06.786Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["secretmanager.googleapis.com"]
+2024-03-30T17:42:06.786Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["dns.googleapis.com"]
+2024-03-30T17:42:06.788Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["iam.googleapis.com"]
+2024-03-30T17:42:06.788Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["monitoring.googleapis.com"]
+2024-03-30T17:42:06.789Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["container.googleapis.com"]
+2024-03-30T17:42:06.789Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["servicenetworking.googleapis.com"]
+2024-03-30T17:42:06.789Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["container.googleapis.com"]
+2024-03-30T17:42:06.789Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["monitoring.googleapis.com"]
+2024-03-30T17:42:06.790Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["compute.googleapis.com"]
+2024-03-30T17:42:11.245Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["iam.googleapis.com"]
+2024-03-30T17:42:31.393Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["compute.googleapis.com"]
+2024-03-30T17:42:31.394Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["logging.googleapis.com"]
+2024-03-30T17:42:31.401Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["dns.googleapis.com"]
+2024-03-30T17:42:31.404Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-hub-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:42:31.404Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["logging.googleapis.com"]
+2024-03-30T17:42:31.405Z [INFO]  Starting apply for module.vpc["gcp-vpc-prd-hub-shr-1"].google_compute_network.vpc
+2024-03-30T17:42:31.410Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-mgmt-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:42:31.410Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-npe-dev-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:42:31.411Z [INFO]  Starting apply for module.vpc["gcp-vpc-npe-dev-shr-1"].google_compute_network.vpc
+2024-03-30T17:42:31.412Z [INFO]  Starting apply for module.vpc["gcp-vpc-prd-mgmt-fw-1"].google_compute_network.vpc
+2024-03-30T17:42:31.415Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-out-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:42:31.416Z [INFO]  Starting apply for module.vpc["gcp-vpc-prd-out-fw-1"].google_compute_network.vpc
+2024-03-30T17:42:31.419Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-ha-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:42:31.419Z [INFO]  Starting apply for module.vpc["gcp-vpc-prd-ha-fw-1"].google_compute_network.vpc
+2024-03-30T17:42:31.420Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+2024-03-30T17:42:31.420Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget
+2024-03-30T17:42:32.641Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_summary="Error creating Budget: googleapi: Error 400: Request contains an invalid argument." @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_severity=ERROR @module=sdk.proto tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=bed808ae-7e22-fa0d-6dea-6d9dfc67995b tf_resource_type=google_billing_budget tf_rpc=ApplyResourceChange diagnostic_detail="" tf_proto_version=5.4 timestamp=2024-03-30T17:42:32.641Z
+2024-03-30T17:42:32.642Z [ERROR] vertex "module.billing_budget[\"gcp-prj-inf-networkhub-prd-1-budget-01\"].google_billing_budget.budget" error: Error creating Budget: googleapi: Error 400: Request contains an invalid argument.
+2024-03-30T17:42:32.653Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-03-30T17:42:32.654Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget
+2024-03-30T17:42:33.953Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_summary="Error creating Budget: googleapi: Error 400: Request contains an invalid argument." tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=eb3ae342-1f75-2b25-9396-8838a308389f @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_severity=ERROR tf_proto_version=5.4 tf_resource_type=google_billing_budget @module=sdk.proto diagnostic_detail="" tf_rpc=ApplyResourceChange timestamp=2024-03-30T17:42:33.953Z
+2024-03-30T17:42:33.954Z [ERROR] vertex "module.billing_budget[\"gcp-prj-inf-networkspk-dev-1-budget-01\"].google_billing_budget.budget" error: Error creating Budget: googleapi: Error 400: Request contains an invalid argument.
+2024-03-30T17:42:43.336Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc["gcp-vpc-prd-mgmt-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: was null, but now cty.False
+2024-03-30T17:42:43.400Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc["gcp-vpc-prd-hub-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: was null, but now cty.False
+2024-03-30T17:42:43.421Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc["gcp-vpc-prd-ha-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: was null, but now cty.False
+2024-03-30T17:42:53.731Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc["gcp-vpc-prd-out-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: was null, but now cty.False
+2024-03-30T17:42:53.841Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc["gcp-vpc-npe-dev-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: was null, but now cty.False
+2024-03-30T17:42:54.296Z [INFO]  Starting apply for module.vpc_peering_1_2["gcp-peering-02"].null_resource.module_depends_on
+2024-03-30T17:42:54.310Z [INFO]  Starting apply for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-mon-prv-tier-01"]
+2024-03-30T17:42:54.313Z [INFO]  Starting apply for module.vpc_subnets["gcp-vpc-npe-dev-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-dev-shr-1-yyz-digital-prv-tier-01"]
+2024-03-30T17:42:54.314Z [INFO]  Starting apply for module.vpc_subnets["gcp-vpc-prd-out-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01"]
+2024-03-30T17:42:54.317Z [INFO]  Starting apply for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-log-prv-tier-01"]
+2024-03-30T17:42:54.320Z [INFO]  Starting apply for module.vpc_subnets["gcp-vpc-prd-mgmt-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-mgmt-fw-1-yyz-inf-prv-tier-01"]
+2024-03-30T17:42:54.321Z [INFO]  Starting apply for module.vpc_subnets["gcp-vpc-prd-ha-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-ha-fw-1-yyz-inf-prv-tier-01"]
+2024-03-30T17:42:54.322Z [INFO]  Starting apply for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01"]
+2024-03-30T17:42:54.332Z [INFO]  Starting apply for module.vpc_subnets["gcp-vpc-npe-dev-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-dev-shr-1-yyz-digital-prv-tier-02"]
+2024-03-30T17:42:54.345Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-03-30T17:42:54.345Z [INFO]  Starting apply for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.local_network_peering
+2024-03-30T17:43:06.613Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google-beta\"]" produced an unexpected new value for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: was null, but now cty.False
+      - .peer_network: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/beta/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1")
+2024-03-30T17:43:06.619Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-03-30T17:43:06.619Z [INFO]  Starting apply for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.peer_network_peering
+2024-03-30T17:43:11.110Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["gcp-vpc-npe-dev-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-dev-shr-1-yyz-digital-prv-tier-02"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+      - .network: was cty.StringVal("gcp-vpc-npe-dev-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1")
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+2024-03-30T17:43:12.006Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["gcp-vpc-npe-dev-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-dev-shr-1-yyz-digital-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+      - .network: was cty.StringVal("gcp-vpc-npe-dev-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1")
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+2024-03-30T17:43:12.744Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-log-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+      - .network: was cty.StringVal("gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+2024-03-30T17:43:12.956Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["gcp-vpc-prd-out-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: was null, but now cty.StringVal("")
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+      - .network: was cty.StringVal("gcp-vpc-prd-out-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-out-fw-1")
+      - .role: was null, but now cty.StringVal("")
+2024-03-30T17:43:13.437Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+      - .network: was cty.StringVal("gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+2024-03-30T17:43:13.452Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["gcp-vpc-prd-ha-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-ha-fw-1-yyz-inf-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+      - .network: was cty.StringVal("gcp-vpc-prd-ha-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-ha-fw-1")
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+2024-03-30T17:43:13.860Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["gcp-vpc-prd-mgmt-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-mgmt-fw-1-yyz-inf-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+      - .network: was cty.StringVal("gcp-vpc-prd-mgmt-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-mgmt-fw-1")
+2024-03-30T17:43:14.515Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-mon-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+      - .network: was cty.StringVal("gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+2024-03-30T17:43:15.832Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.832Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-icmp-01"]
+2024-03-30T17:43:15.834Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.834Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-22-3389-tcp-01"]
+2024-03-30T17:43:15.837Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.837Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-fgt-01"]
+2024-03-30T17:43:15.839Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.839Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-22-3389-tcp-01"]
+2024-03-30T17:43:15.841Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.841Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.842Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-icmp-01"]
+2024-03-30T17:43:15.842Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-80-443-8080-tcp-01"]
+2024-03-30T17:43:15.844Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.844Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-80-443-8080-tcp-01"]
+2024-03-30T17:43:15.847Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.848Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-icmp-01"]
+2024-03-30T17:43:15.851Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:15.852Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-22-3389-tcp-01"]
+2024-03-30T17:43:16.092Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail="" tf_rpc=ApplyResourceChange @module=sdk.proto tf_proto_version=5.4 tf_resource_type=google_compute_firewall diagnostic_severity=ERROR tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=230da443-39b5-5fe4-20f7-a4eed332519b diagnostic_summary="Error creating Firewall: googleapi: Error 400: Invalid value for field 'resource.sourceRanges[0]': 'x.x.x.x/x'. Must be a CIDR address range., invalid" timestamp=2024-03-30T17:43:16.091Z
+2024-03-30T17:43:16.093Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-prd-shr-1\"].google_compute_firewall.rules[\"fw-prd-ingress-allow-icmp-01\"]" error: Error creating Firewall: googleapi: Error 400: Invalid value for field 'resource.sourceRanges[0]': 'x.x.x.x/x'. Must be a CIDR address range., invalid
+2024-03-30T17:43:16.100Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:16.101Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-80-443-8080-tcp-01"]
+2024-03-30T17:43:16.395Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_detail="" tf_provider_addr=registry.terraform.io/hashicorp/google tf_resource_type=google_compute_firewall tf_rpc=ApplyResourceChange tf_req_id=ca2608c5-35dd-84a7-22c3-b9ae1ca570cd @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 @module=sdk.proto tf_proto_version=5.4 diagnostic_summary="Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-stg-1/global/networks/gcp-vpc-npe-stg-shr-1' was not found, notFound" diagnostic_severity=ERROR timestamp=2024-03-30T17:43:16.395Z
+2024-03-30T17:43:16.396Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-npe-stg-shr-1\"].google_compute_firewall.rules[\"fw-stg-ingress-allow-80-443-8080-tcp-01\"]" error: Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-stg-1/global/networks/gcp-vpc-npe-stg-shr-1' was not found, notFound
+2024-03-30T17:43:16.401Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:16.402Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"]
+2024-03-30T17:43:16.444Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_proto_version=5.4 tf_req_id=3d243b90-aa3e-5bfb-4e30-88ddd7066962 diagnostic_detail="" diagnostic_severity=ERROR diagnostic_summary="Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-prd-1/global/networks/gcp-vpc-prd-shr-1' was not found, notFound" tf_provider_addr=registry.terraform.io/hashicorp/google tf_resource_type=google_compute_firewall @module=sdk.proto timestamp=2024-03-30T17:43:16.444Z
+2024-03-30T17:43:16.445Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-prd-shr-1\"].google_compute_firewall.rules[\"fw-prd-ingress-allow-22-3389-tcp-01\"]" error: Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-prd-1/global/networks/gcp-vpc-prd-shr-1' was not found, notFound
+2024-03-30T17:43:16.452Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:16.452Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-22-3389-tcp-01"]
+2024-03-30T17:43:27.762Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("gcp-vpc-prd-out-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-out-fw-1")
+      - .disabled: was null, but now cty.False
+2024-03-30T17:43:27.771Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-ha-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-ha-fw-1")
+2024-03-30T17:43:27.771Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:27.772Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-80-443-8080-tcp-01"]
+2024-03-30T17:43:27.779Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:27.779Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-icmp-01"]
+2024-03-30T17:43:27.804Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-mgmt-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-mgmt-fw-1")
+2024-03-30T17:43:27.812Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:27.812Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-22-3389-tcp-01"]
+2024-03-30T17:43:27.949Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+2024-03-30T17:43:27.960Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:27.960Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-80-443-8080-tcp-01"]
+2024-03-30T17:43:27.995Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+2024-03-30T17:43:28.003Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:28.003Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-22-3389-tcp-01"]
+2024-03-30T17:43:28.057Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-npe-dev-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1")
+2024-03-30T17:43:28.066Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:28.067Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-80-443-8080-tcp-01"]
+2024-03-30T17:43:28.174Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-mgmt-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-mgmt-fw-1")
+2024-03-30T17:43:28.182Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:28.183Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-icmp-01"]
+2024-03-30T17:43:28.454Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+      - .disabled: was null, but now cty.False
+2024-03-30T17:43:28.463Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:28.463Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-icmp-01"]
+2024-03-30T17:43:28.542Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-ha-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-ha-fw-1")
+2024-03-30T17:43:28.548Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_severity=ERROR tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=d4395980-e8b7-db1c-7cfe-16f5063b95da tf_rpc=ApplyResourceChange @module=sdk.proto tf_resource_type=google_compute_firewall diagnostic_summary="Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-qa-1/global/networks/gcp-vpc-npe-qa-shr-1' was not found, notFound" diagnostic_detail="" @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_proto_version=5.4 timestamp=2024-03-30T17:43:28.548Z
+2024-03-30T17:43:28.549Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-npe-qa-shr-1\"].google_compute_firewall.rules[\"fw-qa-ingress-allow-icmp-01\"]" error: Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-qa-1/global/networks/gcp-vpc-npe-qa-shr-1' was not found, notFound
+2024-03-30T17:43:28.555Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:28.556Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-80-443-8080-tcp-01"]
+2024-03-30T17:43:28.558Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:28.559Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-icmp-01"]
+2024-03-30T17:43:28.776Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_summary="Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-stg-1/global/networks/gcp-vpc-npe-stg-shr-1' was not found, notFound" tf_req_id=39f0ae34-6864-4ef4-38a4-9a852315d0a3 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 @module=sdk.proto tf_resource_type=google_compute_firewall diagnostic_severity=ERROR tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ApplyResourceChange diagnostic_detail="" timestamp=2024-03-30T17:43:28.776Z
+2024-03-30T17:43:28.777Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-npe-stg-shr-1\"].google_compute_firewall.rules[\"fw-stg-ingress-allow-22-3389-tcp-01\"]" error: Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-stg-1/global/networks/gcp-vpc-npe-stg-shr-1' was not found, notFound
+2024-03-30T17:43:28.785Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:28.785Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-icmp-01"]
+2024-03-30T17:43:28.894Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_rpc=ApplyResourceChange diagnostic_summary="Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-stg-1/global/networks/gcp-vpc-npe-stg-shr-1' was not found, notFound" tf_proto_version=5.4 tf_resource_type=google_compute_firewall @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_severity=ERROR tf_req_id=17be42e5-a3ff-b20e-17d7-f65a02b84bca tf_provider_addr=registry.terraform.io/hashicorp/google @module=sdk.proto diagnostic_detail="" timestamp=2024-03-30T17:43:28.894Z
+2024-03-30T17:43:28.895Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-npe-stg-shr-1\"].google_compute_firewall.rules[\"fw-stg-ingress-allow-icmp-01\"]" error: Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-stg-1/global/networks/gcp-vpc-npe-stg-shr-1' was not found, notFound
+2024-03-30T17:43:28.903Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:28.903Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-22-3389-tcp-01"]
+2024-03-30T17:43:29.120Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google-beta\"]" produced an unexpected new value for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: was null, but now cty.False
+      - .peer_network: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/beta/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+2024-03-30T17:43:29.135Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:29.135Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-80-443-8080-tcp-01"]
+2024-03-30T17:43:29.305Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_proto_version=5.4 diagnostic_detail="" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=08f18e22-ba62-aeb7-8cd0-7d86086e27d4 tf_resource_type=google_compute_firewall tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_severity=ERROR diagnostic_summary="Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-prd-1/global/networks/gcp-vpc-prd-shr-1' was not found, notFound" @module=sdk.proto timestamp=2024-03-30T17:43:29.305Z
+2024-03-30T17:43:29.306Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-prd-shr-1\"].google_compute_firewall.rules[\"fw-prd-ingress-allow-80-443-8080-tcp-01\"]" error: Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-prd-1/global/networks/gcp-vpc-prd-shr-1' was not found, notFound
+2024-03-30T17:43:29.314Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:29.314Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-fgt-01"]
+2024-03-30T17:43:29.741Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_severity=ERROR diagnostic_summary="Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-qa-1/global/networks/gcp-vpc-npe-qa-shr-1' was not found, notFound" tf_req_id=dc76cecf-a193-8668-5b25-e681f9b4ebf5 tf_resource_type=google_compute_firewall diagnostic_detail="" tf_provider_addr=registry.terraform.io/hashicorp/google @module=sdk.proto tf_proto_version=5.4 tf_rpc=ApplyResourceChange timestamp=2024-03-30T17:43:29.741Z
+2024-03-30T17:43:29.742Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-npe-qa-shr-1\"].google_compute_firewall.rules[\"fw-qa-ingress-allow-80-443-8080-tcp-01\"]" error: Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-qa-1/global/networks/gcp-vpc-npe-qa-shr-1' was not found, notFound
+2024-03-30T17:43:29.749Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_ranges: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:29.750Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-fgt-01"]
+2024-03-30T17:43:39.733Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-out-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-out-fw-1")
+2024-03-30T17:43:39.849Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("gcp-vpc-npe-dev-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1")
+      - .disabled: was null, but now cty.False
+2024-03-30T17:43:39.905Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+2024-03-30T17:43:40.113Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-ha-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-ha-fw-1")
+2024-03-30T17:43:40.506Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-mgmt-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-mgmt-fw-1")
+2024-03-30T17:43:40.653Z [INFO]  Starting apply for module.vpc_peering_2_1["gcp-peering-02"].null_resource.module_depends_on
+2024-03-30T17:43:40.656Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:43:40.657Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-22-3389-tcp-01"]
+2024-03-30T17:43:40.667Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-npe-dev-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1")
+2024-03-30T17:43:40.671Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-03-30T17:43:40.671Z [INFO]  Starting apply for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.local_network_peering
+2024-03-30T17:43:40.857Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-mgmt-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-mgmt-fw-1")
+2024-03-30T17:43:40.928Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-out-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-out-fw-1")
+2024-03-30T17:43:41.226Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_rpc=ApplyResourceChange diagnostic_summary="Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-qa-1/global/networks/gcp-vpc-npe-qa-shr-1' was not found, notFound" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=0645ddca-0540-43e1-2f3a-5ae017b3c92f diagnostic_severity=ERROR tf_proto_version=5.4 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail="" tf_resource_type=google_compute_firewall @module=sdk.proto timestamp=2024-03-30T17:43:41.226Z
+2024-03-30T17:43:41.228Z [ERROR] vertex "module.vpc_firewall_rule[\"gcp-vpc-npe-qa-shr-1\"].google_compute_firewall.rules[\"fw-qa-ingress-allow-22-3389-tcp-01\"]" error: Error creating Firewall: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-qa-1/global/networks/gcp-vpc-npe-qa-shr-1' was not found, notFound
+2024-03-30T17:43:41.416Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-out-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-out-fw-1")
+2024-03-30T17:43:41.857Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: was null, but now cty.False
+      - .network: was cty.StringVal("gcp-vpc-prd-ha-fw-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-ha-fw-1")
+2024-03-30T17:43:42.053Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google-beta\"]" produced an unexpected new value for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: was null, but now cty.False
+      - .peer_network: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/beta/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+2024-03-30T17:43:42.059Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-03-30T17:43:42.060Z [INFO]  Starting apply for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.peer_network_peering
+2024-03-30T17:43:43.384Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google-beta\"]" produced an unexpected new value for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: was null, but now cty.False
+      - .peer_network: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/beta/projects/gcp-prj-inf-networkspk-dev-1/global/networks/gcp-vpc-npe-dev-shr-1")
+2024-03-30T17:43:44.960Z [INFO]  Terraform version: 1.7.5
+2024-03-30T17:43:44.960Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T17:43:44.961Z [INFO]  CLI args: []string{"terraform", "output", "-json"}
+2024-03-30T17:43:44.962Z [INFO]  CLI command args: []string{"output", "-json"}

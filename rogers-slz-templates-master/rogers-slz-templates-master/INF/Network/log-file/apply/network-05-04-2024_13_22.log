@@ -1,0 +1,662 @@
+2024-04-05T13:22:35.485Z [INFO]  Terraform version: 1.7.5
+2024-04-05T13:22:35.486Z [INFO]  Go runtime version: go1.21.8
+2024-04-05T13:22:35.486Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=network/state-file"}
+2024-04-05T13:22:35.486Z [INFO]  CLI command args: []string{"init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=network/state-file"}
+2024-04-05T13:22:52.392Z [INFO]  Terraform version: 1.7.5
+2024-04-05T13:22:52.393Z [INFO]  Go runtime version: go1.21.8
+2024-04-05T13:22:52.393Z [INFO]  CLI args: []string{"terraform", "plan", "-var=access_token=ya29.c.c0AY_VpZiTEZLxK6xLdvte7b4vunSHJYS8hAC_MgzIKd1A5bddOmmgOHszdff-ZbRt5gJscMfoTawrgu7pe2k687q8jnG8dIhwnqBExGuGE10YuiBqbL9bL86psPG1Swuj2laXEgXmIJlXgkykoMPSe_P5G-FINXGjmXlEXBEbV2DswNOtm721q6pxXW79OEQ2XbUuIbF6uH1UqRERvKLLD-5LGDFyetM0BPvd4Kuf_ZkvqknRNwF3xYwHmY-a7ES0C2j0uJaH4Wzz3td3pv81Bgi2ngxnfc1EwxJ57fUxNVvE_4Ot91DF7tpg-2KMs-Hks094omKIAeiY6oUtRGIx4aZ-J1n3iH0O9y_3SWPRg-vi6OME6gwC22FScdevdAPTmIN95IiNcNRjZX2IVPawFrpi6Fj8AfBjOPp1DXvTjTp_5B-9LGWkpsvJSJk65jP_nkLNZM_WTwbsciEYuLu5NIXabWK1ph7O9Ek4PqD-JDuz-2ZOjEgZgWBjfoza_lgk9vFYjgJ36mw_48pxA-574ZWwMeGhUP28gH_wigItcAP8f7M97hYbC-O2ndUd5Yv5Hg6bctd7yZ8zpJ3EFKJ1uRUywqHfHdVztA2FMBqaqGhCwY5txw0s3oDx-yUHIMyz3M2O-i0N5DODiwCw6BJ0NllPOecdfmMdLfJT8lijG689P7kr0yckFFn2SiqBczR2Ua8XOBVOOwa9kfi1igxntecg85wVd3ay2ctO9V9ZqpW0ZSvclb_xbjMwkQJJyfIMbqrlOrSsYMIkXMQnWwVWQ5eibyQqfV3hWsXepxi6owxXuS1M-w4ne9tgQStFUoQYgJ6Yr93Vx2Wf9eSOvisM8jz7iB2w1dzVv7jv_0uzOBxkSvSI-nXJpB6tk-gszVwwsfmk-oukOgjmew8t845F_OXY81X-6u4-zFlRo-bzylI3Zafs4m0qIdUsJ5Jq2im2eI6JlfJnmoi9kBS6FpI3RgtjV8roVQvebR-XeZi5BvlmV3Xwdv363k1", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/vpc.tfvars", "-var-file=../input-file/subnet.tfvars", "-var-file=../input-file/firewall.tfvars", "-var-file=../input-file/peering.tfvars", "-var-file=../input-file/route.tfvars", "-out=../plan-file/network-tf-plan.json"}
+2024-04-05T13:22:52.394Z [INFO]  CLI command args: []string{"plan", "-var=access_token=ya29.c.c0AY_VpZiTEZLxK6xLdvte7b4vunSHJYS8hAC_MgzIKd1A5bddOmmgOHszdff-ZbRt5gJscMfoTawrgu7pe2k687q8jnG8dIhwnqBExGuGE10YuiBqbL9bL86psPG1Swuj2laXEgXmIJlXgkykoMPSe_P5G-FINXGjmXlEXBEbV2DswNOtm721q6pxXW79OEQ2XbUuIbF6uH1UqRERvKLLD-5LGDFyetM0BPvd4Kuf_ZkvqknRNwF3xYwHmY-a7ES0C2j0uJaH4Wzz3td3pv81Bgi2ngxnfc1EwxJ57fUxNVvE_4Ot91DF7tpg-2KMs-Hks094omKIAeiY6oUtRGIx4aZ-J1n3iH0O9y_3SWPRg-vi6OME6gwC22FScdevdAPTmIN95IiNcNRjZX2IVPawFrpi6Fj8AfBjOPp1DXvTjTp_5B-9LGWkpsvJSJk65jP_nkLNZM_WTwbsciEYuLu5NIXabWK1ph7O9Ek4PqD-JDuz-2ZOjEgZgWBjfoza_lgk9vFYjgJ36mw_48pxA-574ZWwMeGhUP28gH_wigItcAP8f7M97hYbC-O2ndUd5Yv5Hg6bctd7yZ8zpJ3EFKJ1uRUywqHfHdVztA2FMBqaqGhCwY5txw0s3oDx-yUHIMyz3M2O-i0N5DODiwCw6BJ0NllPOecdfmMdLfJT8lijG689P7kr0yckFFn2SiqBczR2Ua8XOBVOOwa9kfi1igxntecg85wVd3ay2ctO9V9ZqpW0ZSvclb_xbjMwkQJJyfIMbqrlOrSsYMIkXMQnWwVWQ5eibyQqfV3hWsXepxi6owxXuS1M-w4ne9tgQStFUoQYgJ6Yr93Vx2Wf9eSOvisM8jz7iB2w1dzVv7jv_0uzOBxkSvSI-nXJpB6tk-gszVwwsfmk-oukOgjmew8t845F_OXY81X-6u4-zFlRo-bzylI3Zafs4m0qIdUsJ5Jq2im2eI6JlfJnmoi9kBS6FpI3RgtjV8roVQvebR-XeZi5BvlmV3Xwdv363k1", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/vpc.tfvars", "-var-file=../input-file/subnet.tfvars", "-var-file=../input-file/firewall.tfvars", "-var-file=../input-file/peering.tfvars", "-var-file=../input-file/route.tfvars", "-out=../plan-file/network-tf-plan.json"}
+2024-04-05T13:22:53.671Z [INFO]  backend/local: starting Plan operation
+2024-04-05T13:22:57.484Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:57.559Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:57.559Z
+2024-04-05T13:22:57.933Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:58.003Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:58.003Z
+2024-04-05T13:22:58.414Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:58.429Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:58.429Z
+2024-04-05T13:22:58.519Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:58.534Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:58.534Z
+2024-04-05T13:22:58.578Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:58.644Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:58.644Z
+2024-04-05T13:22:58.688Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:58.770Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:58.770Z
+2024-04-05T13:22:58.996Z [INFO]  backend/local: plan calling Plan
+2024-04-05T13:22:59.042Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:59.058Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:59.058Z
+2024-04-05T13:22:59.102Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:59.168Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:59.168Z
+2024-04-05T13:22:59.211Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:22:59.339Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:22:59.339Z
+2024-04-05T13:22:59.393Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=7001d852-33d5-8e9b-9434-80c9a24dc8ae tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" @module=google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 timestamp=2024-04-05T13:22:59.392Z
+2024-04-05T13:22:59.393Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=7001d852-33d5-8e9b-9434-80c9a24dc8ae @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" timestamp=2024-04-05T13:22:59.393Z
+2024-04-05T13:22:59.393Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @module=google tf_mux_provider="*proto5server.Server" tf_req_id=7001d852-33d5-8e9b-9434-80c9a24dc8ae timestamp=2024-04-05T13:22:59.393Z
+2024-04-05T13:22:59.393Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 @module=google tf_req_id=7001d852-33d5-8e9b-9434-80c9a24dc8ae timestamp=2024-04-05T13:22:59.393Z
+2024-04-05T13:22:59.523Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=7001d852-33d5-8e9b-9434-80c9a24dc8ae tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1621 @module=google timestamp=2024-04-05T13:22:59.523Z
+2024-04-05T13:22:59.530Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=bb5decbb-0a7b-69d6-c6e2-2a9c48afecbc @module=google_beta tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider timestamp=2024-04-05T13:22:59.529Z
+2024-04-05T13:22:59.530Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=bb5decbb-0a7b-69d6-c6e2-2a9c48afecbc tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta timestamp=2024-04-05T13:22:59.529Z
+2024-04-05T13:22:59.530Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=bb5decbb-0a7b-69d6-c6e2-2a9c48afecbc timestamp=2024-04-05T13:22:59.530Z
+2024-04-05T13:22:59.530Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta tf_req_id=bb5decbb-0a7b-69d6-c6e2-2a9c48afecbc timestamp=2024-04-05T13:22:59.530Z
+2024-04-05T13:22:59.582Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=bb5decbb-0a7b-69d6-c6e2-2a9c48afecbc tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1760 @module=google_beta tf_mux_provider="*proto5server.Server" timestamp=2024-04-05T13:22:59.582Z
+2024-04-05T13:23:03.721Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-networkspk-qa-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:04.663Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-networkspk-stg-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:04.684Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-networkspk-dev-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:04.690Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-networkspk-prd-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:04.690Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.project["gcp-prj-inf-networkhub-prd-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:05.076Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .user_labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:05.088Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-stg-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .user_labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:05.107Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-qa-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .user_labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:05.135Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-npe-stg-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+      - .enable_ula_internal_ipv6: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:05.184Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-npe-dev-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: planned value cty.False for a non-computed attribute
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-04-05T13:23:05.203Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-npe-qa-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: planned value cty.False for a non-computed attribute
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-04-05T13:23:05.226Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-ha-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: planned value cty.False for a non-computed attribute
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-04-05T13:23:05.228Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+      - .enable_ula_internal_ipv6: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:05.241Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-hub-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+      - .enable_ula_internal_ipv6: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:05.287Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-out-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+      - .enable_ula_internal_ipv6: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:05.345Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .user_labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:05.357Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .user_labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:05.511Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-mgmt-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: planned value cty.False for a non-computed attribute
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-04-05T13:23:21.028Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget during refresh.
+      - .budget_filter[0].projects: planned set element cty.StringVal("projects/gcp-prj-inf-networkhub-prd-1") does not correlate with any element in actual
+2024-04-05T13:23:21.038Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-04-05T13:23:21.061Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkspk-prd-1-budget-01"].google_billing_budget.budget during refresh.
+      - .budget_filter[0].projects: planned set element cty.StringVal("projects/gcp-prj-inf-networkspk-prd-1") does not correlate with any element in actual
+2024-04-05T13:23:21.085Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget during refresh.
+      - .budget_filter[0].projects: planned set element cty.StringVal("projects/gcp-prj-inf-networkspk-dev-1") does not correlate with any element in actual
+2024-04-05T13:23:21.096Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+2024-04-05T13:23:21.113Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-04-05T13:23:21.152Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkspk-stg-1-budget-01"].google_billing_budget.budget during refresh.
+      - .budget_filter[0].projects: planned set element cty.StringVal("projects/gcp-prj-inf-networkspk-stg-1") does not correlate with any element in actual
+2024-04-05T13:23:21.154Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkspk-qa-1-budget-01"].google_billing_budget.budget during refresh.
+      - .budget_filter[0].projects: planned set element cty.StringVal("projects/gcp-prj-inf-networkspk-qa-1") does not correlate with any element in actual
+2024-04-05T13:23:21.183Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-qa-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-04-05T13:23:21.185Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-stg-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-04-05T13:23:21.539Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.route["gcp-vpc-prd-hub-shr-1-rt-fgtilb-internet-01"].google_compute_route.route, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .next_hop_vpn_tunnel: planned value cty.StringVal("") for a non-computed attribute
+      - .next_hop_gateway: planned value cty.StringVal("") for a non-computed attribute
+      - .next_hop_instance: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:21.595Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.route["gcp-vpc-prd-out-fw-1-rt-igw-01"].google_compute_route.route during refresh.
+      - .tags: was null, but now cty.SetValEmpty(cty.String)
+2024-04-05T13:23:21.600Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.route["gcp-vpc-prd-out-fw-1-rt-igw-01"].google_compute_route.route, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .next_hop_vpn_tunnel: planned value cty.StringVal("") for a non-computed attribute
+      - .next_hop_ilb: planned value cty.StringVal("") for a non-computed attribute
+      - .next_hop_instance: planned value cty.StringVal("") for a non-computed attribute
+2024-04-05T13:23:22.506Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-npe-qa-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-qa-shr-1-yyz-digital-prv-tier-02"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:22.529Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-prd-mgmt-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-mgmt-fw-1-yyz-inf-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:22.546Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-npe-dev-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-dev-shr-1-yyz-digital-prv-tier-02"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:22.892Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:22.933Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-mon-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:23.239Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-npe-stg-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-stg-shr-1-yyz-digital-prv-tier-02"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:23.854Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-prd-out-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:23.885Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-prd-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-shr-1-yyz-digital-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:23.897Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-npe-dev-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-dev-shr-1-yyz-digital-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:24.122Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-prd-ha-fw-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-ha-fw-1-yyz-inf-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:24.203Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-04-05T13:23:24.234Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-npe-qa-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-qa-shr-1-yyz-digital-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:24.247Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-01"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-04-05T13:23:24.265Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-03"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:24.273Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-prd-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-shr-1-yyz-digital-prv-tier-02"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:24.287Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-npe-stg-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-npe-stg-shr-1-yyz-digital-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:24.309Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-04"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:24.581Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_subnets["gcp-vpc-prd-hub-shr-1"].google_compute_subnetwork.subnetwork["northamerica-northeast2/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-log-prv-tier-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .role: planned value cty.StringVal("") for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_access_type: planned value cty.StringVal("") for a non-computed attribute
+      - .log_config[0].metadata_fields: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:24.682Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-04"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-04-05T13:23:24.703Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-01"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-04-05T13:23:24.737Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:24.775Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-03"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-04-05T13:23:25.016Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.068Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.097Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.098Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.107Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.126Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.145Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.197Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:25.423Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.438Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.439Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.541Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.544Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.553Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.555Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.567Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.593Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.596Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-53-80-389-443-636-8080-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-04-05T13:23:25.618Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.836Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.844Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-fgt-01"] during refresh.
+      - Root object was present, but now absent
+2024-04-05T13:23:25.865Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.911Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.947Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.981Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"] during refresh.
+      - .target_tags: actual set element cty.StringVal("fgt") does not correlate with any element in plan
+      - .target_tags: length changed from 0 to 1
+      - .source_tags: planned set element cty.StringVal("fgt") does not correlate with any element in actual
+      - .allow: planned set element cty.ObjectVal(map[string]cty.Value{"ports":cty.ListValEmpty(cty.String), "protocol":cty.StringVal("all")}) does not correlate with any element in actual
+      - .allow: block set length changed from 1 to 2
+2024-04-05T13:23:25.991Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.995Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:25.998Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:23:26.034Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-04-05T13:23:26.101Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-04"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-04-05T13:23:26.226Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-03"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:26.228Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-01"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-04-05T13:23:26.622Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-04"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-04-05T13:23:26.627Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-01"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-04-05T13:23:26.678Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-04-05T13:23:26.682Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-03"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .import_subnet_routes_with_public_ip: planned value cty.False for a non-computed attribute
+2024-04-05T13:23:26.820Z [INFO]  backend/local: plan operation completed
+2024-04-05T13:23:26.821Z [INFO]  backend/local: writing plan output to: ../plan-file/network-tf-plan.json
+2024-04-05T13:24:49.709Z [INFO]  Terraform version: 1.7.5
+2024-04-05T13:24:49.709Z [INFO]  Go runtime version: go1.21.8
+2024-04-05T13:24:49.709Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/network-tf-plan.json"}
+2024-04-05T13:24:49.709Z [INFO]  CLI command args: []string{"apply", "../plan-file/network-tf-plan.json"}
+2024-04-05T13:24:50.666Z [INFO]  backend/local: starting Apply operation
+2024-04-05T13:24:55.954Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:24:56.030Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:24:56.030Z
+2024-04-05T13:24:56.405Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:24:56.475Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:24:56.474Z
+2024-04-05T13:24:56.851Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:24:56.866Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:24:56.866Z
+2024-04-05T13:24:56.913Z [INFO]  backend/local: apply calling Apply
+2024-04-05T13:24:56.959Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:24:56.989Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:24:56.988Z
+2024-04-05T13:24:57.030Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:24:57.096Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:24:57.096Z
+2024-04-05T13:24:57.141Z [INFO]  provider: configuring client automatic mTLS
+2024-04-05T13:24:57.280Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-04-05T13:24:57.280Z
+2024-04-05T13:24:57.329Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 @module=google tf_req_id=2d82e9a4-1cf1-849e-7e16-7693af7da9e0 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider timestamp=2024-04-05T13:24:57.329Z
+2024-04-05T13:24:57.329Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=2d82e9a4-1cf1-849e-7e16-7693af7da9e0 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 tf_mux_provider="*proto5server.Server" @module=google timestamp=2024-04-05T13:24:57.329Z
+2024-04-05T13:24:57.329Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=2d82e9a4-1cf1-849e-7e16-7693af7da9e0 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 timestamp=2024-04-05T13:24:57.329Z
+2024-04-05T13:24:57.329Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=2d82e9a4-1cf1-849e-7e16-7693af7da9e0 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 tf_rpc=ConfigureProvider timestamp=2024-04-05T13:24:57.329Z
+2024-04-05T13:24:57.410Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google_beta tf_mux_provider="*proto5server.Server" tf_req_id=1cbcedec-73c2-1135-3684-76355f100547 @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider timestamp=2024-04-05T13:24:57.410Z
+2024-04-05T13:24:57.410Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=1cbcedec-73c2-1135-3684-76355f100547 tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" timestamp=2024-04-05T13:24:57.410Z
+2024-04-05T13:24:57.411Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=1cbcedec-73c2-1135-3684-76355f100547 tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" timestamp=2024-04-05T13:24:57.410Z
+2024-04-05T13:24:57.411Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google_beta tf_req_id=1cbcedec-73c2-1135-3684-76355f100547 @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider timestamp=2024-04-05T13:24:57.410Z
+2024-04-05T13:24:57.415Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=2d82e9a4-1cf1-849e-7e16-7693af7da9e0 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1621 @module=google timestamp=2024-04-05T13:24:57.415Z
+2024-04-05T13:24:57.465Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @module=google_beta tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1760 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=1cbcedec-73c2-1135-3684-76355f100547 timestamp=2024-04-05T13:24:57.465Z
+2024-04-05T13:24:57.487Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-fgt-01"]
+2024-04-05T13:24:57.490Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-fgt-01"]
+2024-04-05T13:24:57.613Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-stg-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-04-05T13:24:57.614Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkspk-stg-1-budget-01"].google_billing_budget.budget
+2024-04-05T13:24:57.627Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-04-05T13:24:57.628Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkspk-prd-1-budget-01"].google_billing_budget.budget
+2024-04-05T13:24:57.633Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-04-05T13:24:57.634Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget
+2024-04-05T13:24:57.639Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-qa-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:24:57.640Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkspk-qa-1-budget-01"].google_billing_budget.budget
+2024-04-05T13:24:57.644Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .amount[0].last_period_amount: planned value cty.False for a non-computed attribute
+      - .amount[0].specified_amount[0].nanos: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .budget_filter[0].calendar_period: planned value cty.StringVal("MONTH") for a non-computed attribute
+      - .budget_filter[0].resource_ancestors: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .all_updates_rule[0].pubsub_topic: planned value cty.StringVal("") for a non-computed attribute
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+2024-04-05T13:24:57.645Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget
+2024-04-05T13:24:57.688Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-53-80-389-443-636-8080-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-04-05T13:24:57.688Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-53-80-389-443-636-8080-01"]
+2024-04-05T13:24:57.692Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+2024-04-05T13:24:57.693Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-icmp-01"]
+2024-04-05T13:24:57.696Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+2024-04-05T13:24:57.697Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-icmp-01"]
+2024-04-05T13:24:59.954Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+2024-04-05T13:24:59.955Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-icmp-01"]
+2024-04-05T13:24:59.969Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+2024-04-05T13:24:59.970Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-icmp-01"]
+2024-04-05T13:24:59.998Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:24:59.999Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"]
+2024-04-05T13:25:00.031Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:25:00.033Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-icmp-01"]
+2024-04-05T13:25:00.100Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:25:00.101Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-icmp-01"]
+2024-04-05T13:25:09.111Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:25:09.112Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-icmp-01"]
+2024-04-05T13:25:09.133Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2024-04-05T13:25:09.134Z [INFO]  Starting apply for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-icmp-01"]
+2024-04-05T13:25:09.866Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-53-80-389-443-636-8080-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("gcp-vpc-prd-hub-shr-1"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1")
+      - .disabled: was null, but now cty.False
+2024-04-05T13:25:24.800Z [INFO]  Terraform version: 1.7.5
+2024-04-05T13:25:24.801Z [INFO]  Go runtime version: go1.21.8
+2024-04-05T13:25:24.801Z [INFO]  CLI args: []string{"terraform", "output", "-json"}
+2024-04-05T13:25:24.802Z [INFO]  CLI command args: []string{"output", "-json"}

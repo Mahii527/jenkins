@@ -1,0 +1,172 @@
+{
+  "Billing_Budget_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-networkhub-prd-01-budget-01": [
+          "object",
+          {
+            "budget_amount": [
+              "list",
+              [
+                "object",
+                {
+                  "last_period_amount": "bool",
+                  "specified_amount": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "currency_code": "string",
+                        "nanos": "number",
+                        "units": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "budget_name": "string",
+            "budget_notification_email": "string",
+            "budget_notification_name": "string",
+            "budget_project": [
+              "set",
+              "string"
+            ],
+            "budget_threshold": [
+              "list",
+              [
+                "object",
+                {
+                  "spend_basis": "string",
+                  "threshold_percent": "number"
+                }
+              ]
+            ]
+          }
+        ],
+        "gcp-prj-inf-networkspk-dev-01-budget-01": [
+          "object",
+          {
+            "budget_amount": [
+              "list",
+              [
+                "object",
+                {
+                  "last_period_amount": "bool",
+                  "specified_amount": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "currency_code": "string",
+                        "nanos": "number",
+                        "units": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "budget_name": "string",
+            "budget_notification_email": "string",
+            "budget_notification_name": "string",
+            "budget_project": [
+              "set",
+              "string"
+            ],
+            "budget_threshold": [
+              "list",
+              [
+                "object",
+                {
+                  "spend_basis": "string",
+                  "threshold_percent": "number"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-networkhub-prd-01-budget-01": {
+        "budget_amount": [
+          {
+            "last_period_amount": null,
+            "specified_amount": [
+              {
+                "currency_code": "USD",
+                "nanos": null,
+                "units": "1000"
+              }
+            ]
+          }
+        ],
+        "budget_name": "gcp-prj-inf-networkhub-prd-01-budget-01",
+        "budget_notification_email": "ayush.shukla@hcl.com",
+        "budget_notification_name": "gcp-prj-inf-networkhub-prd-01-budget-01-notification-01",
+        "budget_project": [
+          "projects/gcp-prj-inf-networkhub-prd-01"
+        ],
+        "budget_threshold": [
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.5
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.75
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.9
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 1
+          }
+        ]
+      },
+      "gcp-prj-inf-networkspk-dev-01-budget-01": {
+        "budget_amount": [
+          {
+            "last_period_amount": null,
+            "specified_amount": [
+              {
+                "currency_code": "USD",
+                "nanos": null,
+                "units": "1000"
+              }
+            ]
+          }
+        ],
+        "budget_name": "gcp-prj-inf-networkspk-dev-01-budget-01",
+        "budget_notification_email": "ayush.shukla@hcl.com",
+        "budget_notification_name": "gcp-prj-inf-networkspk-dev-01-budget-01-notification-01",
+        "budget_project": [
+          "projects/gcp-prj-inf-networkspk-dev-01"
+        ],
+        "budget_threshold": [
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.5
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.75
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.9
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 1
+          }
+        ]
+      }
+    }
+  }
+}

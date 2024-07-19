@@ -1,0 +1,81 @@
+2024-04-03T07:02:23.595Z [INFO]  Terraform version: 1.7.5
+2024-04-03T07:02:23.595Z [INFO]  Go runtime version: go1.21.8
+2024-04-03T07:02:23.595Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/fortigate-tf-plan.json"}
+2024-04-03T07:02:23.597Z [INFO]  CLI command args: []string{"apply", "../plan-file/fortigate-tf-plan.json"}
+2024-04-03T07:02:24.396Z [INFO]  backend/local: starting Apply operation
+2024-04-03T07:02:28.060Z [INFO]  provider: configuring client automatic mTLS
+2024-04-03T07:02:28.143Z [INFO]  provider.terraform-provider-google_v5.23.0_x5: configuring server automatic mTLS: timestamp=2024-04-03T07:02:28.142Z
+2024-04-03T07:02:28.439Z [INFO]  provider: configuring client automatic mTLS
+2024-04-03T07:02:28.513Z [INFO]  provider.terraform-provider-google-beta_v5.23.0_x5: configuring server automatic mTLS: timestamp=2024-04-03T07:02:28.512Z
+2024-04-03T07:02:28.812Z [INFO]  provider: configuring client automatic mTLS
+2024-04-03T07:02:28.824Z [INFO]  provider.terraform-provider-random_v3.6.0_x5: configuring server automatic mTLS: timestamp=2024-04-03T07:02:28.824Z
+2024-04-03T07:02:28.873Z [INFO]  backend/local: apply calling Apply
+2024-04-03T07:02:28.920Z [INFO]  provider: configuring client automatic mTLS
+2024-04-03T07:02:28.987Z [INFO]  provider.terraform-provider-google_v5.23.0_x5: configuring server automatic mTLS: timestamp=2024-04-03T07:02:28.987Z
+2024-04-03T07:02:29.019Z [INFO]  provider: configuring client automatic mTLS
+2024-04-03T07:02:29.035Z [INFO]  provider.terraform-provider-random_v3.6.0_x5: configuring server automatic mTLS: timestamp=2024-04-03T07:02:29.035Z
+2024-04-03T07:02:29.084Z [INFO]  provider: configuring client automatic mTLS
+2024-04-03T07:02:29.151Z [INFO]  provider.terraform-provider-google-beta_v5.23.0_x5: configuring server automatic mTLS: timestamp=2024-04-03T07:02:29.150Z
+2024-04-03T07:02:29.184Z [INFO]  provider.terraform-provider-google_v5.23.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=42ddb185-810a-23d9-4b34-5b562628a9de tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1731 @module=google timestamp=2024-04-03T07:02:29.184Z
+2024-04-03T07:02:29.184Z [INFO]  provider.terraform-provider-google_v5.23.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=42ddb185-810a-23d9-4b34-5b562628a9de @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1732 @module=google tf_rpc=ConfigureProvider timestamp=2024-04-03T07:02:29.184Z
+2024-04-03T07:02:29.184Z [INFO]  provider.terraform-provider-google_v5.23.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=42ddb185-810a-23d9-4b34-5b562628a9de @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1731 tf_rpc=ConfigureProvider timestamp=2024-04-03T07:02:29.184Z
+2024-04-03T07:02:29.184Z [INFO]  provider.terraform-provider-google_v5.23.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=42ddb185-810a-23d9-4b34-5b562628a9de @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1732 @module=google tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider timestamp=2024-04-03T07:02:29.184Z
+2024-04-03T07:02:29.251Z [INFO]  provider.terraform-provider-google-beta_v5.23.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_mux_provider="*proto5server.Server" tf_req_id=bd7c3e98-68d2-eec1-07bd-2b9d627a0a07 @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1870 @module=google_beta timestamp=2024-04-03T07:02:29.251Z
+2024-04-03T07:02:29.251Z [INFO]  provider.terraform-provider-google-beta_v5.23.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1871 tf_mux_provider="*proto5server.Server" @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=bd7c3e98-68d2-eec1-07bd-2b9d627a0a07 tf_rpc=ConfigureProvider timestamp=2024-04-03T07:02:29.251Z
+2024-04-03T07:02:29.251Z [INFO]  provider.terraform-provider-google-beta_v5.23.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1870 @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_mux_provider="*proto5server.Server" tf_req_id=bd7c3e98-68d2-eec1-07bd-2b9d627a0a07 tf_rpc=ConfigureProvider timestamp=2024-04-03T07:02:29.251Z
+2024-04-03T07:02:29.251Z [INFO]  provider.terraform-provider-google-beta_v5.23.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google_beta tf_req_id=bd7c3e98-68d2-eec1-07bd-2b9d627a0a07 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1871 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta timestamp=2024-04-03T07:02:29.251Z
+2024-04-03T07:02:29.261Z [INFO]  provider.terraform-provider-google_v5.23.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=42ddb185-810a-23d9-4b34-5b562628a9de tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1651 @module=google timestamp=2024-04-03T07:02:29.261Z
+2024-04-03T07:02:29.302Z [INFO]  provider.terraform-provider-google-beta_v5.23.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1790 @module=google_beta tf_req_id=bd7c3e98-68d2-eec1-07bd-2b9d627a0a07 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider timestamp=2024-04-03T07:02:29.302Z
+2024-04-03T07:02:29.378Z [INFO]  Starting apply for module.regional_address["gcp-yyz-fgt-ha-priv-ip-01"].google_compute_address.default
+2024-04-03T07:02:29.380Z [INFO]  Starting apply for module.regional_address["gcp-yyz-fgt-int-priv-ip-01"].google_compute_address.default
+2024-04-03T07:02:29.381Z [INFO]  Starting apply for module.regional_address["gcp-yyz-fgt-mgmt-priv-ip-01"].google_compute_address.default
+2024-04-03T07:02:29.387Z [INFO]  Starting apply for module.regional_address["gcp-yyz-fgt-ilb-priv-ip-01"].google_compute_address.default
+2024-04-03T07:02:29.391Z [INFO]  Starting apply for module.regional_address["gcp-yyz-fgt-out-priv-ip-02"].google_compute_address.default
+2024-04-03T07:02:29.391Z [INFO]  Starting apply for module.regional_address["gcp-yyz-fgt-int-priv-ip-02"].google_compute_address.default
+2024-04-03T07:02:29.393Z [INFO]  Starting apply for module.regional_address["gcp-yyz-fgt-out-priv-ip-01"].google_compute_address.default
+2024-04-03T07:02:33.745Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.regional_address["gcp-yyz-fgt-mgmt-priv-ip-01"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .subnetwork: was cty.StringVal("gcp-vpc-prd-mgmt-fw-1-yyz-inf-prv-tier-01"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-mgmt-fw-1-yyz-inf-prv-tier-01")
+      - .ipv6_endpoint_type: was null, but now cty.StringVal("")
+      - .network: was null, but now cty.StringVal("")
+      - .ip_version: was null, but now cty.StringVal("")
+2024-04-03T07:02:33.823Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.regional_address["gcp-yyz-fgt-out-priv-ip-01"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was null, but now cty.StringVal("")
+      - .ip_version: was null, but now cty.StringVal("")
+      - .ipv6_endpoint_type: was null, but now cty.StringVal("")
+      - .subnetwork: was cty.StringVal("gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01")
+2024-04-03T07:02:33.826Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.regional_address["gcp-yyz-fgt-ilb-priv-ip-01"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .subnetwork: was cty.StringVal("gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01")
+      - .network: was null, but now cty.StringVal("")
+      - .ip_version: was null, but now cty.StringVal("")
+      - .ipv6_endpoint_type: was null, but now cty.StringVal("")
+2024-04-03T07:02:33.836Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.regional_address["gcp-yyz-fgt-int-priv-ip-01"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ip_version: was null, but now cty.StringVal("")
+      - .ipv6_endpoint_type: was null, but now cty.StringVal("")
+      - .network: was null, but now cty.StringVal("")
+      - .subnetwork: was cty.StringVal("gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01")
+2024-04-03T07:02:33.850Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.regional_address["gcp-yyz-fgt-int-priv-ip-02"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .subnetwork: was cty.StringVal("gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01")
+      - .ip_version: was null, but now cty.StringVal("")
+      - .ipv6_endpoint_type: was null, but now cty.StringVal("")
+      - .network: was null, but now cty.StringVal("")
+2024-04-03T07:02:33.890Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.regional_address["gcp-yyz-fgt-ha-priv-ip-01"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .subnetwork: was cty.StringVal("gcp-vpc-prd-ha-fw-1-yyz-inf-prv-tier-01"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-ha-fw-1-yyz-inf-prv-tier-01")
+      - .network: was null, but now cty.StringVal("")
+      - .ip_version: was null, but now cty.StringVal("")
+      - .ipv6_endpoint_type: was null, but now cty.StringVal("")
+2024-04-03T07:02:33.981Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.regional_address["gcp-yyz-fgt-out-priv-ip-02"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .subnetwork: was cty.StringVal("gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01")
+      - .ipv6_endpoint_type: was null, but now cty.StringVal("")
+      - .network: was null, but now cty.StringVal("")
+      - .ip_version: was null, but now cty.StringVal("")
+2024-04-03T07:02:35.834Z [INFO]  Terraform version: 1.7.5
+2024-04-03T07:02:35.834Z [INFO]  Go runtime version: go1.21.8
+2024-04-03T07:02:35.835Z [INFO]  CLI args: []string{"terraform", "output", "-json"}
+2024-04-03T07:02:35.835Z [INFO]  CLI command args: []string{"output", "-json"}

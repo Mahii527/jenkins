@@ -1,0 +1,66 @@
+steps:
+
+# [START TERRAFORM]
+      
+  - id: 'terraform plan'
+    name: 'us-central1-docker.pkg.dev/peak-comfort-413811/terraform/terraform'
+    entrypoint: 'sh'
+    args: 
+    - -c
+    - |
+      
+      
+      cd ${_TF_HANDLER}/${_TF_FILES_LOCATION}/  
+      echo ""
+
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo "*************** Git Repository Credentials ******************"
+
+      git config --global credential.'https://source.developers.google.com'.helper gcloud.sh && 
+
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo "*************** TERRAFORM INIT ******************"
+
+      export TF_LOG=${_TF_LOG}
+      export TF_LOG_PATH="${_TF_HANDLER}.log"
+
+      terraform init -backend-config=bucket=${_TF_GCS} -backend-config=prefix="${_TF_HANDLER}/${_TF_STATE_FOLDER}"
+
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo "*************** TERRAFORM PLAN Initiated, Please wait..!! ******************"
+
+      terraform plan \
+      -var="access_token=$(gcloud auth print-access-token)" \
+      -var="project_id=${_PROJECT_ID}" \
+      -var-file=${_JSON_FILE_1} \
+      -var-file=${_JSON_FILE_2} \
+      -var-file=${_JSON_FILE_3} \
+      -var-file=${_JSON_FILE_4} \
+      -out=${_PLAN_FILE}
+
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo -e "----------------------------------------------------------------------------------------------------------"
+
+      echo "*************** Saving terraform log file to gcs ******************"
+
+      gsutil cp ${_TF_HANDLER}.log gs://${_TF_GCS}/${_TF_HANDLER}/${_TF_LOG_FOLDER}/${_TF_PLAN_LOG_FOLDER}/${_TF_HANDLER}-$(date +"%d-%m-%Y_%H:%M").log
+
+# [END TERRAFORM]
+
+substitutions:
+    _PROJECT_ID:          'peak-comfort-413811'
+    _JSON_FILE_1:         '../input-file/vpc.tfvars'
+    _JSON_FILE_2:         '../input-file/subnet.tfvars'
+    _JSON_FILE_3:         '../input-file/firewall.tfvars'
+    _JSON_FILE_4:         '../input-file/peering.tfvars'
+    _PLAN_FILE:           '../plan-file/vpc-tf-plan.json'
+    _TF_LOG:              'INFO'
+    _TF_HANDLER:          'lz-vpc'
+    _TF_GCS:              'slz-terraform-remote-backend'
+    _TF_STATE_FOLDER:     'state-file'
+    _TF_LOG_FOLDER:       'log-file'
+    _TF_PLAN_LOG_FOLDER:  'plan'
+    _TF_FILES_LOCATION:   'template'

@@ -1,0 +1,707 @@
+{
+  "Billing_Budget_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-automation-prd-01-budget-01": [
+          "object",
+          {
+            "budget_amount": [
+              "list",
+              [
+                "object",
+                {
+                  "last_period_amount": "bool",
+                  "specified_amount": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "currency_code": "string",
+                        "nanos": "number",
+                        "units": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "budget_name": "string",
+            "budget_notification_email": "string",
+            "budget_notification_name": "string",
+            "budget_project": [
+              "set",
+              "string"
+            ],
+            "budget_threshold": [
+              "list",
+              [
+                "object",
+                {
+                  "spend_basis": "string",
+                  "threshold_percent": "number"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-automation-prd-01-budget-01": {
+        "budget_amount": [
+          {
+            "last_period_amount": false,
+            "specified_amount": [
+              {
+                "currency_code": "USD",
+                "nanos": 0,
+                "units": "1000"
+              }
+            ]
+          }
+        ],
+        "budget_name": "gcp-prj-inf-automation-prd-01-budget-01",
+        "budget_notification_email": "jitendra.lodhi@rci.rogers.com",
+        "budget_notification_name": "gcp-prj-inf-automation-prd-01-budget-01-notification-01",
+        "budget_project": [
+          "projects/gcp-prj-inf-automation-prd-01"
+        ],
+        "budget_threshold": [
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.5
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.75
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.9
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 1
+          }
+        ]
+      }
+    }
+  },
+  "Bucket_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-inf-cloudautomation-sbuc-01": [
+          "object",
+          {
+            "google_bucket_details": [
+              "object",
+              {
+                "autoclass": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "enabled": "bool",
+                      "terminal_storage_class": "string"
+                    }
+                  ]
+                ],
+                "cors": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "max_age_seconds": "number",
+                      "method": [
+                        "list",
+                        "string"
+                      ],
+                      "origin": [
+                        "list",
+                        "string"
+                      ],
+                      "response_header": [
+                        "list",
+                        "string"
+                      ]
+                    }
+                  ]
+                ],
+                "custom_placement_config": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "data_locations": [
+                        "set",
+                        "string"
+                      ]
+                    }
+                  ]
+                ],
+                "default_event_based_hold": "bool",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "enable_object_retention": "bool",
+                "encryption": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "default_kms_key_name": "string"
+                    }
+                  ]
+                ],
+                "force_destroy": "bool",
+                "id": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "lifecycle_rule": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "action": [
+                        "set",
+                        [
+                          "object",
+                          {
+                            "storage_class": "string",
+                            "type": "string"
+                          }
+                        ]
+                      ],
+                      "condition": [
+                        "set",
+                        [
+                          "object",
+                          {
+                            "age": "number",
+                            "created_before": "string",
+                            "custom_time_before": "string",
+                            "days_since_custom_time": "number",
+                            "days_since_noncurrent_time": "number",
+                            "matches_prefix": [
+                              "list",
+                              "string"
+                            ],
+                            "matches_storage_class": [
+                              "list",
+                              "string"
+                            ],
+                            "matches_suffix": [
+                              "list",
+                              "string"
+                            ],
+                            "no_age": "bool",
+                            "noncurrent_time_before": "string",
+                            "num_newer_versions": "number",
+                            "with_state": "string"
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                "location": "string",
+                "logging": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "log_bucket": "string",
+                      "log_object_prefix": "string"
+                    }
+                  ]
+                ],
+                "name": "string",
+                "project": "string",
+                "public_access_prevention": "string",
+                "requester_pays": "bool",
+                "retention_policy": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "is_locked": "bool",
+                      "retention_period": "number"
+                    }
+                  ]
+                ],
+                "rpo": "string",
+                "self_link": "string",
+                "soft_delete_policy": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "effective_time": "string",
+                      "retention_duration_seconds": "number"
+                    }
+                  ]
+                ],
+                "storage_class": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "read": "string",
+                    "update": "string"
+                  }
+                ],
+                "uniform_bucket_level_access": "bool",
+                "url": "string",
+                "versioning": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "enabled": "bool"
+                    }
+                  ]
+                ],
+                "website": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "main_page_suffix": "string",
+                      "not_found_page": "string"
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-inf-cloudautomation-sbuc-01": {
+        "google_bucket_details": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "default_event_based_hold": false,
+          "effective_labels": {},
+          "enable_object_retention": false,
+          "encryption": [],
+          "force_destroy": false,
+          "id": "gcp-yyz-prd-inf-cloudautomation-sbuc-01",
+          "labels": {},
+          "lifecycle_rule": [
+            {
+              "action": [
+                {
+                  "storage_class": "",
+                  "type": "Delete"
+                }
+              ],
+              "condition": [
+                {
+                  "age": 0,
+                  "created_before": "",
+                  "custom_time_before": "",
+                  "days_since_custom_time": 0,
+                  "days_since_noncurrent_time": 0,
+                  "matches_prefix": [],
+                  "matches_storage_class": [],
+                  "matches_suffix": [],
+                  "no_age": false,
+                  "noncurrent_time_before": "",
+                  "num_newer_versions": 5,
+                  "with_state": "ARCHIVED"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "storage_class": "",
+                  "type": "Delete"
+                }
+              ],
+              "condition": [
+                {
+                  "age": 0,
+                  "created_before": "",
+                  "custom_time_before": "",
+                  "days_since_custom_time": 0,
+                  "days_since_noncurrent_time": 1,
+                  "matches_prefix": [],
+                  "matches_storage_class": [],
+                  "matches_suffix": [],
+                  "no_age": false,
+                  "noncurrent_time_before": "",
+                  "num_newer_versions": 0,
+                  "with_state": "ANY"
+                }
+              ]
+            }
+          ],
+          "location": "US",
+          "logging": [],
+          "name": "gcp-yyz-prd-inf-cloudautomation-sbuc-01",
+          "project": "gcp-prj-inf-automation-prd-01",
+          "public_access_prevention": "enforced",
+          "requester_pays": false,
+          "retention_policy": [],
+          "rpo": "DEFAULT",
+          "self_link": "https://www.googleapis.com/storage/v1/b/gcp-yyz-prd-inf-cloudautomation-sbuc-01",
+          "soft_delete_policy": [
+            {
+              "effective_time": "2024-03-29T14:07:45.133Z",
+              "retention_duration_seconds": 604800
+            }
+          ],
+          "storage_class": "STANDARD",
+          "terraform_labels": {},
+          "timeouts": null,
+          "uniform_bucket_level_access": true,
+          "url": "gs://gcp-yyz-prd-inf-cloudautomation-sbuc-01",
+          "versioning": [
+            {
+              "enabled": true
+            }
+          ],
+          "website": []
+        }
+      }
+    }
+  },
+  "Custom_Role_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "inf_automation_crl_role_01": [
+          "object",
+          {
+            "Custom_Role_Details": [
+              "object",
+              {
+                "deleted": "bool",
+                "description": "string",
+                "id": "string",
+                "name": "string",
+                "org_id": "string",
+                "permissions": [
+                  "set",
+                  "string"
+                ],
+                "role_id": "string",
+                "stage": "string",
+                "title": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "inf_automation_crl_role_01": {
+        "Custom_Role_Details": {
+          "deleted": false,
+          "description": "Custom Role for Secure Landing Zone Build. Created on: 2024-03-29",
+          "id": "organizations/179572310621/roles/inf_automation_crl_role_01",
+          "name": "organizations/179572310621/roles/inf_automation_crl_role_01",
+          "org_id": "179572310621",
+          "permissions": [
+            "billing.resourcebudgets.read",
+            "billing.resourcebudgets.write",
+            "compute.addresses.get",
+            "compute.addresses.list",
+            "compute.firewalls.get",
+            "compute.firewalls.list",
+            "compute.networks.get",
+            "compute.networks.list",
+            "compute.networks.use",
+            "compute.organizations.disableXpnHost",
+            "compute.organizations.disableXpnResource",
+            "compute.organizations.enableXpnHost",
+            "compute.organizations.enableXpnResource",
+            "compute.regions.get",
+            "compute.regions.list",
+            "compute.subnetworks.get",
+            "compute.subnetworks.list",
+            "compute.subnetworks.use",
+            "compute.zones.get",
+            "compute.zones.list",
+            "iam.roles.create",
+            "iam.roles.get",
+            "iam.roles.list",
+            "iam.roles.update",
+            "iam.serviceAccounts.actAs",
+            "iam.serviceAccounts.get",
+            "iam.serviceAccounts.list",
+            "monitoring.notificationChannelDescriptors.get",
+            "monitoring.notificationChannelDescriptors.list",
+            "monitoring.notificationChannels.create",
+            "monitoring.notificationChannels.delete",
+            "monitoring.notificationChannels.get",
+            "monitoring.notificationChannels.list",
+            "monitoring.notificationChannels.sendVerificationCode",
+            "monitoring.notificationChannels.update",
+            "monitoring.notificationChannels.verify",
+            "resourcemanager.folders.create",
+            "resourcemanager.folders.get",
+            "resourcemanager.organizations.get",
+            "resourcemanager.projects.create",
+            "resourcemanager.projects.get",
+            "resourcemanager.projects.getIamPolicy",
+            "resourcemanager.projects.list",
+            "resourcemanager.projects.move",
+            "resourcemanager.projects.update",
+            "serviceusage.services.use",
+            "source.repos.get",
+            "storage.buckets.get",
+            "storage.objects.get"
+          ],
+          "role_id": "inf_automation_crl_role_01",
+          "stage": "",
+          "title": "inf-automation-crl-role-01"
+        }
+      }
+    }
+  },
+  "Project_APIs_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {}
+    ],
+    "value": {}
+  },
+  "Project_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-automation-prd-01": [
+          "object",
+          {
+            "project_details": [
+              "object",
+              {
+                "auto_create_network": "bool",
+                "billing_account": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "folder_id": "string",
+                "id": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "number": "string",
+                "org_id": "string",
+                "project_id": "string",
+                "skip_delete": "bool",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "read": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-automation-prd-01": {
+        "project_details": {
+          "auto_create_network": false,
+          "billing_account": "0169BA-63D6C3-3F9651",
+          "effective_labels": {},
+          "folder_id": "811312481972",
+          "id": "projects/gcp-prj-inf-automation-prd-01",
+          "labels": {},
+          "name": "CloudAutomation",
+          "number": "888523839952",
+          "org_id": "",
+          "project_id": "gcp-prj-inf-automation-prd-01",
+          "skip_delete": false,
+          "terraform_labels": {},
+          "timeouts": null
+        }
+      }
+    }
+  },
+  "Repo_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-inf-cloudautomation-modules-srep-01": [
+          "object",
+          {
+            "repo_details": [
+              "object",
+              {
+                "id": "string",
+                "name": "string",
+                "project": "string",
+                "pubsub_configs": [
+                  "set",
+                  [
+                    "object",
+                    {
+                      "message_format": "string",
+                      "service_account_email": "string",
+                      "topic": "string"
+                    }
+                  ]
+                ],
+                "size": "number",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "url": "string"
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-prd-inf-cloudautomation-templates-srep-01": [
+          "object",
+          {
+            "repo_details": [
+              "object",
+              {
+                "id": "string",
+                "name": "string",
+                "project": "string",
+                "pubsub_configs": [
+                  "set",
+                  [
+                    "object",
+                    {
+                      "message_format": "string",
+                      "service_account_email": "string",
+                      "topic": "string"
+                    }
+                  ]
+                ],
+                "size": "number",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "url": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-inf-cloudautomation-modules-srep-01": {
+        "repo_details": {
+          "id": "projects/gcp-prj-inf-automation-prd-01/repos/gcp-yyz-prd-inf-cloudautomation-modules-srep-01",
+          "name": "gcp-yyz-prd-inf-cloudautomation-modules-srep-01",
+          "project": "gcp-prj-inf-automation-prd-01",
+          "pubsub_configs": [],
+          "size": 66558,
+          "timeouts": null,
+          "url": "https://source.developers.google.com/p/gcp-prj-inf-automation-prd-01/r/gcp-yyz-prd-inf-cloudautomation-modules-srep-01"
+        }
+      },
+      "gcp-yyz-prd-inf-cloudautomation-templates-srep-01": {
+        "repo_details": {
+          "id": "projects/gcp-prj-inf-automation-prd-01/repos/gcp-yyz-prd-inf-cloudautomation-templates-srep-01",
+          "name": "gcp-yyz-prd-inf-cloudautomation-templates-srep-01",
+          "project": "gcp-prj-inf-automation-prd-01",
+          "pubsub_configs": [],
+          "size": 605666,
+          "timeouts": null,
+          "url": "https://source.developers.google.com/p/gcp-prj-inf-automation-prd-01/r/gcp-yyz-prd-inf-cloudautomation-templates-srep-01"
+        }
+      }
+    }
+  },
+  "SA_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "svc-cloudautomation": [
+          "object",
+          {
+            "Service_Account_Details": [
+              "object",
+              {
+                "account_id": "string",
+                "create_ignore_already_exists": "bool",
+                "description": "string",
+                "disabled": "bool",
+                "display_name": "string",
+                "email": "string",
+                "id": "string",
+                "member": "string",
+                "name": "string",
+                "project": "string",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string"
+                  }
+                ],
+                "unique_id": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "svc-cloudautomation": {
+        "Service_Account_Details": {
+          "account_id": "svc-cloudautomation",
+          "create_ignore_already_exists": null,
+          "description": "Cloud Automation Service Account for IaaC",
+          "disabled": false,
+          "display_name": "svc-cloudautomation",
+          "email": "svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com",
+          "id": "projects/gcp-prj-inf-automation-prd-01/serviceAccounts/svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com",
+          "member": "serviceAccount:svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com",
+          "name": "projects/gcp-prj-inf-automation-prd-01/serviceAccounts/svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com",
+          "project": "gcp-prj-inf-automation-prd-01",
+          "timeouts": null,
+          "unique_id": "110563384310513854222"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+2024-02-29T18:23:08.211Z [INFO]  Terraform version: 1.7.2
+2024-02-29T18:23:08.211Z [INFO]  Go runtime version: go1.21.5
+2024-02-29T18:23:08.211Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade"}
+2024-02-29T18:23:08.212Z [INFO]  CLI command args: []string{"init", "-upgrade"}
+2024-02-29T18:23:26.682Z [INFO]  Terraform version: 1.7.2
+2024-02-29T18:23:26.682Z [INFO]  Go runtime version: go1.21.5
+2024-02-29T18:23:26.682Z [INFO]  CLI args: []string{"terraform", "plan", "-var", "access_token=ya29.a0AfB_byCD6Zh6Qr_vNjX0C8aWOiTQGViC4dR6hrHdVPC5NAPfqGDLPfSJUngt35QeZDStUGYZwruLBPikxytziXprzX9WJykUKDshwhQ-YRtC36CLF7EK63ayhPacla42AKmMSJ96oSzZn9aMYOQRCsrRHW-Do6cQzh2JCLKDlfjRo2-aWAhB5LnDhLfI1kl4jNILdMmY8WK5nGCsriEen04WNn5rQu9zC1sk5-nqpWEZnxyeIaqhvQd0B0U1tS2ikfEwXtJMVYOGC5EivAUh0h-3jyV5eQd7SqxWMfLD49cBvQRt22rqw9CtGBTYnTikWEjdG6DO8_8Vy3wrSGUDvHt_eh1hE43GG3CwcLlyLunlXcTSZQzpK8fFCBrJXDK5RUUn0Uu9XjdT3ikcFJtY6pDlcuYJZzMaCgYKAYASARASFQHGX2Mi2U3h6C6_IhgxR1y6Gr7CgA0422", "-var=project_id=peak-comfort-413811", "-var-file=../input-json-file/vpc.tfvars", "-var-file=../input-json-file/subnet.tfvars", "-var-file=../input-json-file/firewall.tfvars", "-var-file=../input-json-file/peering.tfvars", "-out=../plan-file/vpc-tf-plan.json"}
+2024-02-29T18:23:26.683Z [INFO]  CLI command args: []string{"plan", "-var", "access_token=ya29.a0AfB_byCD6Zh6Qr_vNjX0C8aWOiTQGViC4dR6hrHdVPC5NAPfqGDLPfSJUngt35QeZDStUGYZwruLBPikxytziXprzX9WJykUKDshwhQ-YRtC36CLF7EK63ayhPacla42AKmMSJ96oSzZn9aMYOQRCsrRHW-Do6cQzh2JCLKDlfjRo2-aWAhB5LnDhLfI1kl4jNILdMmY8WK5nGCsriEen04WNn5rQu9zC1sk5-nqpWEZnxyeIaqhvQd0B0U1tS2ikfEwXtJMVYOGC5EivAUh0h-3jyV5eQd7SqxWMfLD49cBvQRt22rqw9CtGBTYnTikWEjdG6DO8_8Vy3wrSGUDvHt_eh1hE43GG3CwcLlyLunlXcTSZQzpK8fFCBrJXDK5RUUn0Uu9XjdT3ikcFJtY6pDlcuYJZzMaCgYKAYASARASFQHGX2Mi2U3h6C6_IhgxR1y6Gr7CgA0422", "-var=project_id=peak-comfort-413811", "-var-file=../input-json-file/vpc.tfvars", "-var-file=../input-json-file/subnet.tfvars", "-var-file=../input-json-file/firewall.tfvars", "-var-file=../input-json-file/peering.tfvars", "-out=../plan-file/vpc-tf-plan.json"}
+2024-02-29T18:23:27.486Z [INFO]  backend/local: starting Plan operation
+2024-02-29T18:23:29.969Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:30.048Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:30.048Z
+2024-02-29T18:23:30.480Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:30.555Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:30.554Z
+2024-02-29T18:23:31.001Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:31.017Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:31.016Z
+2024-02-29T18:23:31.093Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:31.156Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:31.155Z
+2024-02-29T18:23:31.215Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:31.256Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:31.256Z
+2024-02-29T18:23:31.344Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:31.439Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:31.439Z
+2024-02-29T18:23:31.586Z [INFO]  backend/local: plan calling Plan
+2024-02-29T18:23:31.602Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:31.616Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:31.615Z
+2024-02-29T18:23:31.661Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:31.727Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:31.726Z
+2024-02-29T18:23:31.769Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:31.913Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:31.913Z
+2024-02-29T18:23:31.964Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 @module=google_beta tf_req_id=8e0d0ddf-6165-fc7e-71e2-ed2a016ba662 tf_rpc=ConfigureProvider timestamp=2024-02-29T18:23:31.964Z
+2024-02-29T18:23:31.964Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta tf_mux_provider="*proto5server.Server" tf_req_id=8e0d0ddf-6165-fc7e-71e2-ed2a016ba662 timestamp=2024-02-29T18:23:31.964Z
+2024-02-29T18:23:31.964Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=8e0d0ddf-6165-fc7e-71e2-ed2a016ba662 timestamp=2024-02-29T18:23:31.964Z
+2024-02-29T18:23:31.964Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google_beta tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=8e0d0ddf-6165-fc7e-71e2-ed2a016ba662 timestamp=2024-02-29T18:23:31.964Z
+2024-02-29T18:23:32.057Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: Terraform is using this identity: ayush25shukla@gmail.com: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider tf_req_id=8e0d0ddf-6165-fc7e-71e2-ed2a016ba662 @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1760 @module=google_beta timestamp=2024-02-29T18:23:32.057Z
+2024-02-29T18:23:32.069Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 @module=google tf_req_id=de7dd4da-da69-5bde-5782-0eabd8e8a764 tf_rpc=ConfigureProvider timestamp=2024-02-29T18:23:32.069Z
+2024-02-29T18:23:32.069Z [INFO]  provider.terraform-provider-google_v5.18.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=de7dd4da-da69-5bde-5782-0eabd8e8a764 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 @module=google timestamp=2024-02-29T18:23:32.069Z
+2024-02-29T18:23:32.069Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=de7dd4da-da69-5bde-5782-0eabd8e8a764 @module=google tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 tf_rpc=ConfigureProvider timestamp=2024-02-29T18:23:32.069Z
+2024-02-29T18:23:32.070Z [INFO]  provider.terraform-provider-google_v5.18.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=de7dd4da-da69-5bde-5782-0eabd8e8a764 @module=google tf_mux_provider="*proto5server.Server" timestamp=2024-02-29T18:23:32.069Z
+2024-02-29T18:23:32.113Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: Terraform is using this identity: ayush25shukla@gmail.com: @module=google tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1621 tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=de7dd4da-da69-5bde-5782-0eabd8e8a764 timestamp=2024-02-29T18:23:32.112Z
+2024-02-29T18:23:32.151Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-02-29T18:23:32.151Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["0"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-02-29T18:23:32.176Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["0"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-02-29T18:23:32.188Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["0"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-02-29T18:23:32.207Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["0"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-02-29T18:23:32.214Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["0"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-02-29T18:23:32.221Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-mqtt-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-02-29T18:23:32.222Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-iap-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-02-29T18:23:32.232Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-icmp-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-02-29T18:23:32.239Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-health-check-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-02-29T18:23:32.291Z [INFO]  backend/local: plan operation completed
+2024-02-29T18:23:32.291Z [INFO]  backend/local: writing plan output to: ../plan-file/vpc-tf-plan.json
+2024-02-29T18:23:37.331Z [INFO]  Terraform version: 1.7.2
+2024-02-29T18:23:37.332Z [INFO]  Go runtime version: go1.21.5
+2024-02-29T18:23:37.332Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/vpc-tf-plan.json"}
+2024-02-29T18:23:37.333Z [INFO]  CLI command args: []string{"apply", "../plan-file/vpc-tf-plan.json"}
+2024-02-29T18:23:38.074Z [INFO]  backend/local: starting Apply operation
+2024-02-29T18:23:40.818Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:40.895Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:40.895Z
+2024-02-29T18:23:41.256Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:41.323Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:41.323Z
+2024-02-29T18:23:41.681Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:41.696Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:41.696Z
+2024-02-29T18:23:41.744Z [INFO]  backend/local: apply calling Apply
+2024-02-29T18:23:41.790Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:41.805Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:41.805Z
+2024-02-29T18:23:41.850Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:41.913Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:41.913Z
+2024-02-29T18:23:41.962Z [INFO]  provider: configuring client automatic mTLS
+2024-02-29T18:23:42.030Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: configuring server automatic mTLS: timestamp=2024-02-29T18:23:42.030Z
+2024-02-29T18:23:42.183Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 tf_req_id=c258988f-9a80-55dc-d74c-9764489b993d tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-02-29T18:23:42.183Z
+2024-02-29T18:23:42.184Z [INFO]  provider.terraform-provider-google_v5.18.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 tf_req_id=c258988f-9a80-55dc-d74c-9764489b993d tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-02-29T18:23:42.183Z
+2024-02-29T18:23:42.184Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 @module=google tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=c258988f-9a80-55dc-d74c-9764489b993d timestamp=2024-02-29T18:23:42.184Z
+2024-02-29T18:23:42.184Z [INFO]  provider.terraform-provider-google_v5.18.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=c258988f-9a80-55dc-d74c-9764489b993d tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 @module=google tf_rpc=ConfigureProvider timestamp=2024-02-29T18:23:42.184Z
+2024-02-29T18:23:42.204Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 @module=google_beta tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=c3c04d01-2d53-7e64-e8b3-00391306a49e timestamp=2024-02-29T18:23:42.204Z
+2024-02-29T18:23:42.204Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=c3c04d01-2d53-7e64-e8b3-00391306a49e tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta tf_mux_provider="*proto5server.Server" timestamp=2024-02-29T18:23:42.204Z
+2024-02-29T18:23:42.205Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google_beta tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=c3c04d01-2d53-7e64-e8b3-00391306a49e timestamp=2024-02-29T18:23:42.205Z
+2024-02-29T18:23:42.205Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=c3c04d01-2d53-7e64-e8b3-00391306a49e @module=google_beta tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 timestamp=2024-02-29T18:23:42.205Z
+2024-02-29T18:23:42.245Z [INFO]  provider.terraform-provider-google_v5.18.0_x5: Terraform is using this identity: ayush25shukla@gmail.com: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1621 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google @module=google tf_req_id=c258988f-9a80-55dc-d74c-9764489b993d tf_rpc=ConfigureProvider timestamp=2024-02-29T18:23:42.245Z
+2024-02-29T18:23:42.259Z [INFO]  provider.terraform-provider-google-beta_v5.18.0_x5: Terraform is using this identity: ayush25shukla@gmail.com: @module=google_beta tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1760 tf_req_id=c3c04d01-2d53-7e64-e8b3-00391306a49e tf_rpc=ConfigureProvider timestamp=2024-02-29T18:23:42.259Z
+2024-02-29T18:23:42.280Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["0"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-02-29T18:23:42.280Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-02-29T18:23:42.281Z [INFO]  Starting apply for module.vpc["0"].google_compute_network.vpc
+2024-02-29T18:23:42.281Z [INFO]  Starting apply for module.vpc["1"].google_compute_network.vpc
+2024-02-29T18:23:54.232Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc["0"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: was null, but now cty.False
+2024-02-29T18:24:04.828Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc["1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_ula_internal_ipv6: was null, but now cty.False
+2024-02-29T18:24:04.842Z [INFO]  Starting apply for module.vpc_peering_1_2["0"].null_resource.module_depends_on
+2024-02-29T18:24:04.850Z [INFO]  Starting apply for module.vpc_subnets["0"].google_compute_subnetwork.subnetwork["us-central1/qa-sub-svc-gke-node"]
+2024-02-29T18:24:04.858Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["0"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-02-29T18:24:04.859Z [INFO]  Starting apply for module.vpc_peering_1_2["0"].google_compute_network_peering.local_network_peering
+2024-02-29T18:24:04.868Z [INFO]  Starting apply for module.vpc_subnets["0"].google_compute_subnetwork.subnetwork["us-central1/qa-sub-svc-mgmt"]
+2024-02-29T18:24:16.896Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google-beta\"]" produced an unexpected new value for module.vpc_peering_1_2["0"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: was null, but now cty.False
+      - .peer_network: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc2"), but now cty.StringVal("https://www.googleapis.com/compute/beta/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc2")
+2024-02-29T18:24:17.300Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["0"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-02-29T18:24:17.301Z [INFO]  Starting apply for module.vpc_peering_1_2["0"].google_compute_network_peering.peer_network_peering
+2024-02-29T18:24:19.675Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["0"].google_compute_subnetwork.subnetwork["us-central1/qa-sub-svc-mgmt"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("qa-host-shared-vpc"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc")
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+2024-02-29T18:24:31.140Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_subnets["0"].google_compute_subnetwork.subnetwork["us-central1/qa-sub-svc-gke-node"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("qa-host-shared-vpc"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc")
+      - .role: was null, but now cty.StringVal("")
+      - .description: was null, but now cty.StringVal("")
+      - .ipv6_access_type: was null, but now cty.StringVal("")
+2024-02-29T18:24:31.185Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-mqtt-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-02-29T18:24:31.185Z [INFO]  Starting apply for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-mqtt-allow"]
+2024-02-29T18:24:31.187Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-icmp-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-02-29T18:24:31.187Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-iap-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-02-29T18:24:31.187Z [INFO]  Starting apply for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-iap-allow"]
+2024-02-29T18:24:31.189Z [INFO]  Starting apply for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-icmp-allow"]
+2024-02-29T18:24:31.194Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-health-check-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-02-29T18:24:31.195Z [INFO]  Starting apply for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-health-check-allow"]
+2024-02-29T18:24:39.762Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google-beta\"]" produced an unexpected new value for module.vpc_peering_1_2["0"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .peer_network: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc"), but now cty.StringVal("https://www.googleapis.com/compute/beta/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc")
+      - .import_subnet_routes_with_public_ip: was null, but now cty.False
+2024-02-29T18:24:40.054Z [INFO]  Starting apply for module.vpc_peering_2_1["0"].null_resource.module_depends_on
+2024-02-29T18:24:40.064Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["0"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-02-29T18:24:40.064Z [INFO]  Starting apply for module.vpc_peering_2_1["0"].google_compute_network_peering.local_network_peering
+2024-02-29T18:24:41.279Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google-beta\"]" produced an unexpected new value for module.vpc_peering_2_1["0"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: was null, but now cty.False
+      - .peer_network: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc"), but now cty.StringVal("https://www.googleapis.com/compute/beta/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc")
+2024-02-29T18:24:41.285Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["0"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-02-29T18:24:41.286Z [INFO]  Starting apply for module.vpc_peering_2_1["0"].google_compute_network_peering.peer_network_peering
+2024-02-29T18:24:42.562Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google-beta\"]" produced an unexpected new value for module.vpc_peering_2_1["0"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .import_subnet_routes_with_public_ip: was null, but now cty.False
+      - .peer_network: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc2"), but now cty.StringVal("https://www.googleapis.com/compute/beta/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc2")
+2024-02-29T18:24:43.518Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-health-check-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("qa-host-shared-vpc"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc")
+      - .disabled: was null, but now cty.False
+2024-02-29T18:24:43.723Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-icmp-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("qa-host-shared-vpc"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc")
+      - .disabled: was null, but now cty.False
+2024-02-29T18:24:43.879Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-iap-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("qa-host-shared-vpc"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc")
+      - .disabled: was null, but now cty.False
+2024-02-29T18:24:43.917Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.vpc_firewall_rule["0"].google_compute_firewall.rules["qa-host-fw-ingress-mqtt-allow"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network: was cty.StringVal("qa-host-shared-vpc"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/peak-comfort-413811/global/networks/qa-host-shared-vpc")
+      - .disabled: was null, but now cty.False

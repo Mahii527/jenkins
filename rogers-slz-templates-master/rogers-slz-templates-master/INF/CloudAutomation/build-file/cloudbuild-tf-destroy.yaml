@@ -1,0 +1,68 @@
+steps:
+
+# [START TERRAFORM]
+      
+  - id: 'terraform destroy'
+    name: 'us-central1-docker.pkg.dev/peak-comfort-413811/terraform/terraform'
+    entrypoint: 'sh'
+    args: 
+    - -c
+    - |
+      
+      
+      cd ${_TF_HANDLER}/${_TF_FILES_LOCATION}/  
+      echo ""
+
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo "*************** Git Repository Credentials ******************"
+
+      git config --global credential.'https://source.developers.google.com'.helper gcloud.sh && 
+
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo "*************** TERRAFORM INIT ******************"
+
+      export TF_LOG=${_TF_LOG}
+      export TF_LOG_PATH="${_TF_HANDLER}.log"
+
+      terraform init -backend-config=bucket=${_TF_GCS} -backend-config=prefix="${_TF_HANDLER}/${_TF_STATE_FOLDER}"
+
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo -e "----------------------------------------------------------------------------------------------------------"
+
+      echo "*************** TERRAFORM DESTROY is going to start, Please wait..!! ******************"
+
+      terraform destroy \
+      -var="access_token=$(gcloud auth print-access-token)" \
+      -var="project_id=${_PROJECT_ID}" \
+      -var="labels=${_LABELS_TFVARS_PATH}" \
+      -var-file=${_TFVARS_FILE_1} \
+      -var-file=${_TFVARS_FILE_2} \
+      -var-file=${_TFVARS_FILE_3} \
+      -var-file=${_TFVARS_FILE_4} \
+      --auto-approve
+
+      echo -e "----------------------------------------------------------------------------------------------------------"
+      echo -e "----------------------------------------------------------------------------------------------------------"
+
+      echo "*************** Saving terraform log file to gcs ******************"
+
+      gsutil cp ${_TF_HANDLER}.log gs://${_TF_GCS}/${_TF_HANDLER}/${_TF_LOG_FOLDER}/${_TF_DESTROY_LOG_FOLDER}/${_TF_HANDLER}-$(date +"%d-%m-%Y_%H:%M").log
+
+# [END TERRAFORM]
+
+substitutions:
+    _PROJECT_ID:            'peak-comfort-413811'
+    _TFVARS_FILE_1:         '../input-file/project.tfvars'
+    _TFVARS_FILE_2:         '../input-file/budget.tfvars'
+    _TFVARS_FILE_3:         '../input-file/api.tfvars'
+    _TFVARS_FILE_4:         '../input-file/bucket.tfvars'
+    _PLAN_FILE:             '../plan-file/platform-tf-plan.json'
+    _TF_LOG:                'INFO'
+    _TF_HANDLER:            'platform'
+    _TF_GCS:                'slz-terraform-remote-backend'
+    _TF_STATE_FOLDER:       'state-file'
+    _TF_LOG_FOLDER:         'log-file'
+    _TF_DESTROY_LOG_FOLDER: 'destroy'
+    _TF_FILES_LOCATION:     'template'

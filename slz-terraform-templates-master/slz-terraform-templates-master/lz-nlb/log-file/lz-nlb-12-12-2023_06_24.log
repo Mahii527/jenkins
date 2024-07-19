@@ -1,0 +1,11 @@
+2023-12-12T06:24:29.200Z [INFO]  Terraform version: 1.6.4
+2023-12-12T06:24:29.200Z [INFO]  Go runtime version: go1.21.3
+2023-12-12T06:24:29.200Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade"}
+2023-12-12T06:24:29.202Z [INFO]  CLI command args: []string{"init", "-upgrade"}
+2023-12-12T06:24:42.163Z [INFO]  Terraform version: 1.6.4
+2023-12-12T06:24:42.163Z [INFO]  Go runtime version: go1.21.3
+2023-12-12T06:24:42.163Z [INFO]  CLI args: []string{"terraform", "plan", "-var", "access_token=ya29.a0AfB_byA_Yb_FtJqjzO0zB_hX9OaAHr3NSHII5e0wgjji33RjjkjGmFQBIW396oab_ofdvnmWhqQNG4I1zlSt9RcK5QQVAw1mzJyw6RreTZATOObakhygeuiwqvvwMkx0GnNIPLYt1UFhIHW_TP2LmSVKvfdplmopil917ppQVQvibe_HUK_MyFr89gWUm04N6lFm7PUshfRIpiCapthOfs2J7XWBJHweKBRYkcseJpI35k9jlFg9n9AmTGASBH7iFjXJ85DABfldrHA_nIl6uGsc-Yd_SuxWpotJkpoKvNu4ERbWuBHvCwiSbwzyRkuk3GBWLHu3zaR1aQCSxwEZaRlsD6Bml3QOGsaZp49k3mtwSjGFp0MJmVYdHVfUyluFZyip2PIVPWuMPij7JgrA3JdHi0NuqwaCgYKAdsSARESFQHGX2MizYtPNIsmJsFBAm3oqIV5hQ0421", "-var-file=../input-json-file/nlb.tfvars.json", "-out=../plan-file/nlb-tf-plan.json"}
+2023-12-12T06:24:42.164Z [INFO]  CLI command args: []string{"plan", "-var", "access_token=ya29.a0AfB_byA_Yb_FtJqjzO0zB_hX9OaAHr3NSHII5e0wgjji33RjjkjGmFQBIW396oab_ofdvnmWhqQNG4I1zlSt9RcK5QQVAw1mzJyw6RreTZATOObakhygeuiwqvvwMkx0GnNIPLYt1UFhIHW_TP2LmSVKvfdplmopil917ppQVQvibe_HUK_MyFr89gWUm04N6lFm7PUshfRIpiCapthOfs2J7XWBJHweKBRYkcseJpI35k9jlFg9n9AmTGASBH7iFjXJ85DABfldrHA_nIl6uGsc-Yd_SuxWpotJkpoKvNu4ERbWuBHvCwiSbwzyRkuk3GBWLHu3zaR1aQCSxwEZaRlsD6Bml3QOGsaZp49k3mtwSjGFp0MJmVYdHVfUyluFZyip2PIVPWuMPij7JgrA3JdHi0NuqwaCgYKAdsSARESFQHGX2MizYtPNIsmJsFBAm3oqIV5hQ0421", "-var-file=../input-json-file/nlb.tfvars.json", "-out=../plan-file/nlb-tf-plan.json"}
+2023-12-12T06:24:42.858Z [INFO]  backend/local: starting Plan operation
+2023-12-12T06:27:05.138Z [WARN]  backend/local: Failed to request user input for variable "health_check": interrupted
+2023-12-12T06:27:05.138Z [WARN]  backend/local: Failed to request user input for variable "target_pool": interrupted

@@ -1,0 +1,39 @@
+2023-12-07T07:08:59.826Z [INFO]  Terraform version: 1.6.4
+2023-12-07T07:08:59.826Z [INFO]  Go runtime version: go1.21.3
+2023-12-07T07:08:59.826Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade"}
+2023-12-07T07:08:59.827Z [INFO]  CLI command args: []string{"init", "-upgrade"}
+2023-12-07T07:09:12.740Z [INFO]  Terraform version: 1.6.4
+2023-12-07T07:09:12.741Z [INFO]  Go runtime version: go1.21.3
+2023-12-07T07:09:12.741Z [INFO]  CLI args: []string{"terraform", "plan", "-var", "access_token=ya29.a0AfB_byD8lyxq5h19-60zaGdcUTwbnUCusbIgpGanV-OZfKLiMQKd8NZGCBEGE2frZufeJrPWLJpOpUMmue1jOyC7O_Vo_ijuP80mhA8ZgNlp11aaZVcJpjMJGc-PBVdo9QYGkoLfBmmmygOIYpdaBWZ_sxNPmQyV4DCRYgodF5i8p8EQy0tw-RVbSae8yZYEVnmK4rA-qhFi8nphQ8ZbJZ7PeRyrRi4Az-gSv2jt6GBY9aGNDrI2tHHYTpvyyjMUYjjMmb48u87Uznif__0KrsyE-2ohC34-kLeYIKct1zN7m_U30Hsna7N1ngkoXN2YMokMb7mmRppv6ohBgKXxVS-7v81Lxd9MGKTGU-JCp6mqjR_zbDagNP7kkBm3TtvrRz4Z-QLOrasz0Szi1e3a55AtXs61aCgYKATQSARESFQHGX2Minep0UX5lkD-ZonGZPNOGqg0419", "-var-file=../input-json-file/alb.tfvars.json", "-out=../plan-file/alb-tf-plan.json"}
+2023-12-07T07:09:12.742Z [INFO]  CLI command args: []string{"plan", "-var", "access_token=ya29.a0AfB_byD8lyxq5h19-60zaGdcUTwbnUCusbIgpGanV-OZfKLiMQKd8NZGCBEGE2frZufeJrPWLJpOpUMmue1jOyC7O_Vo_ijuP80mhA8ZgNlp11aaZVcJpjMJGc-PBVdo9QYGkoLfBmmmygOIYpdaBWZ_sxNPmQyV4DCRYgodF5i8p8EQy0tw-RVbSae8yZYEVnmK4rA-qhFi8nphQ8ZbJZ7PeRyrRi4Az-gSv2jt6GBY9aGNDrI2tHHYTpvyyjMUYjjMmb48u87Uznif__0KrsyE-2ohC34-kLeYIKct1zN7m_U30Hsna7N1ngkoXN2YMokMb7mmRppv6ohBgKXxVS-7v81Lxd9MGKTGU-JCp6mqjR_zbDagNP7kkBm3TtvrRz4Z-QLOrasz0Szi1e3a55AtXs61aCgYKATQSARESFQHGX2Minep0UX5lkD-ZonGZPNOGqg0419", "-var-file=../input-json-file/alb.tfvars.json", "-out=../plan-file/alb-tf-plan.json"}
+2023-12-07T07:09:13.410Z [INFO]  backend/local: starting Plan operation
+2023-12-07T07:09:15.095Z [INFO]  provider: configuring client automatic mTLS
+2023-12-07T07:09:15.215Z [INFO]  provider.terraform-provider-google_v5.8.0_x5: configuring server automatic mTLS: timestamp=2023-12-07T07:09:15.214Z
+2023-12-07T07:09:15.431Z [INFO]  provider: configuring client automatic mTLS
+2023-12-07T07:09:15.554Z [INFO]  provider.terraform-provider-google-beta_v5.8.0_x5: configuring server automatic mTLS: timestamp=2023-12-07T07:09:15.554Z
+2023-12-07T07:09:15.817Z [INFO]  provider: configuring client automatic mTLS
+2023-12-07T07:09:15.937Z [INFO]  provider.terraform-provider-google_v5.8.0_x5: configuring server automatic mTLS: timestamp=2023-12-07T07:09:15.937Z
+2023-12-07T07:09:16.273Z [INFO]  backend/local: plan calling Plan
+2023-12-07T07:09:16.307Z [INFO]  provider: configuring client automatic mTLS
+2023-12-07T07:09:16.431Z [INFO]  provider.terraform-provider-google_v5.8.0_x5: configuring server automatic mTLS: timestamp=2023-12-07T07:09:16.431Z
+2023-12-07T07:09:16.745Z [INFO]  provider.terraform-provider-google_v5.8.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=6599d2be-8e7f-a537-b969-99b0c344980a @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1630 tf_rpc=ConfigureProvider timestamp=2023-12-07T07:09:16.745Z
+2023-12-07T07:09:16.745Z [INFO]  provider.terraform-provider-google_v5.8.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_provider_addr=registry.terraform.io/hashicorp/google tf_mux_provider="*proto5server.Server" tf_req_id=6599d2be-8e7f-a537-b969-99b0c344980a tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1631 @module=google timestamp=2023-12-07T07:09:16.745Z
+2023-12-07T07:09:16.745Z [INFO]  provider.terraform-provider-google_v5.8.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_req_id=6599d2be-8e7f-a537-b969-99b0c344980a tf_provider_addr=registry.terraform.io/hashicorp/google tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1630 @module=google timestamp=2023-12-07T07:09:16.745Z
+2023-12-07T07:09:16.746Z [INFO]  provider.terraform-provider-google_v5.8.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1631 tf_mux_provider="*proto5server.Server" tf_req_id=6599d2be-8e7f-a537-b969-99b0c344980a timestamp=2023-12-07T07:09:16.745Z
+2023-12-07T07:09:16.807Z [INFO]  provider.terraform-provider-google_v5.8.0_x5: Terraform is using this identity: ayush.shukla@hcl.com: @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1550 tf_req_id=6599d2be-8e7f-a537-b969-99b0c344980a tf_rpc=ConfigureProvider timestamp=2023-12-07T07:09:16.807Z
+2023-12-07T07:09:17.891Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.bucket["0"].google_storage_bucket.bucket, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .requester_pays: planned value cty.False for a non-computed attribute
+      - .default_event_based_hold: planned value cty.False for a non-computed attribute
+      - .enable_object_retention: planned value cty.False for a non-computed attribute
+      - .website: block count in plan (1) disagrees with count in config (0)
+2023-12-07T07:09:18.297Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.ssl["0"].google_compute_managed_ssl_certificate.default[0], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .type: planned value cty.StringVal("MANAGED") for a non-computed attribute
+2023-12-07T07:09:18.300Z [ERROR] prepareFinalInputVariableValue: module.armor["1"].var.security_policy_cves_and_vulnerabilities_rules has unsuitable type
+  got:  {{{} map[rule_apache_log4j:{{{} map[action:{{{} %!s(cty.primitiveTypeKind=83)}} description:{{{} %!s(cty.primitiveTypeKind=83)}} expres,sion:{{{} %!s(cty.primitiveTypeKind=83)}} preview:{{{} %!s(cty.primitiveTypeKind=66)}} priority:{{{} %!s(cty.primitiveTypeKind=83)}}] map[]}} rule_json_sqli:{{{} map[action:{{{} %!s(cty.primitiveTypeKind=83)}} description:{{{} %!s(cty.primitiveTypeKind=83)}} expression:{{{} %!s(cty.primitiveTypeKind=83)}} preview:{{{} %!s(cty.primitiveTypeKind=66)}} priority:{{{} %!s(cty.primitiveTypeKind=83)}}] map[]}}] map[]}}
+  want: {{{} {{{} map[action:{{{} %!s(cty.primitiveTypeKind=83)}} description:{{{} %!s(cty.primitiveTypeKind=83)}} expression:{{{} %!s(cty.primitiveTypeKind=83)}} preview:{{{} %!s(cty.primitiveTypeKind=66)}} priority:{{{} %!s(cty.primitiveTypeKind=83)}}] map[]}}}}
+2023-12-07T07:09:18.300Z [ERROR] vertex "module.armor[\"1\"].var.security_policy_cves_and_vulnerabilities_rules" error: Invalid value for input variable
+2023-12-07T07:09:18.300Z [ERROR] vertex "module.armor.var.security_policy_cves_and_vulnerabilities_rules (expand)" error: Invalid value for input variable
+2023-12-07T07:09:18.303Z [INFO]  backend/local: plan operation completed
+2023-12-07T07:09:18.303Z [INFO]  backend/local: writing plan output to: ../plan-file/alb-tf-plan.json

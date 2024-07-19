@@ -1,0 +1,652 @@
+{
+  "Bigquery_Dataset_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp_yyz_prd_inf_bgqr_01": [
+          "object",
+          {
+            "bigquery_dataset_details": [
+              "object",
+              {
+                "access": [
+                  "set",
+                  [
+                    "object",
+                    {
+                      "dataset": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "dataset": [
+                              "list",
+                              [
+                                "object",
+                                {
+                                  "dataset_id": "string",
+                                  "project_id": "string"
+                                }
+                              ]
+                            ],
+                            "target_types": [
+                              "list",
+                              "string"
+                            ]
+                          }
+                        ]
+                      ],
+                      "domain": "string",
+                      "group_by_email": "string",
+                      "iam_member": "string",
+                      "role": "string",
+                      "routine": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "dataset_id": "string",
+                            "project_id": "string",
+                            "routine_id": "string"
+                          }
+                        ]
+                      ],
+                      "special_group": "string",
+                      "user_by_email": "string",
+                      "view": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "dataset_id": "string",
+                            "project_id": "string",
+                            "table_id": "string"
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                "creation_time": "number",
+                "dataset_id": "string",
+                "default_collation": "string",
+                "default_encryption_configuration": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "kms_key_name": "string"
+                    }
+                  ]
+                ],
+                "default_partition_expiration_ms": "number",
+                "default_table_expiration_ms": "number",
+                "delete_contents_on_destroy": "bool",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "etag": "string",
+                "friendly_name": "string",
+                "id": "string",
+                "is_case_insensitive": "bool",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "last_modified_time": "number",
+                "location": "string",
+                "max_time_travel_hours": "string",
+                "project": "string",
+                "self_link": "string",
+                "storage_billing_model": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp_yyz_prd_inf_bgqr_01": {
+        "bigquery_dataset_details": {
+          "access": [
+            {
+              "dataset": [],
+              "domain": "",
+              "group_by_email": "",
+              "iam_member": "",
+              "role": "OWNER",
+              "routine": [],
+              "special_group": "",
+              "user_by_email": "svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com",
+              "view": []
+            },
+            {
+              "dataset": [],
+              "domain": "",
+              "group_by_email": "",
+              "iam_member": "",
+              "role": "OWNER",
+              "routine": [],
+              "special_group": "projectOwners",
+              "user_by_email": "",
+              "view": []
+            },
+            {
+              "dataset": [],
+              "domain": "",
+              "group_by_email": "",
+              "iam_member": "",
+              "role": "READER",
+              "routine": [],
+              "special_group": "projectReaders",
+              "user_by_email": "",
+              "view": []
+            },
+            {
+              "dataset": [],
+              "domain": "",
+              "group_by_email": "",
+              "iam_member": "",
+              "role": "WRITER",
+              "routine": [],
+              "special_group": "projectWriters",
+              "user_by_email": "",
+              "view": []
+            }
+          ],
+          "creation_time": 1711815094348,
+          "dataset_id": "gcp_yyz_prd_inf_bgqr_01",
+          "default_collation": "",
+          "default_encryption_configuration": [],
+          "default_partition_expiration_ms": 0,
+          "default_table_expiration_ms": 0,
+          "delete_contents_on_destroy": false,
+          "description": "Billing related exports from day-0 saved into multi-regional dataset",
+          "effective_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "sox",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "etag": "CpkPuUgSu1kCoUGa8bFoHQ==",
+          "friendly_name": "billing-dataset-01",
+          "id": "projects/gcp-prj-inf-billing-prd-01/datasets/gcp_yyz_prd_inf_bgqr_01",
+          "is_case_insensitive": false,
+          "labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "sox",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "last_modified_time": 1711815094348,
+          "location": "US",
+          "max_time_travel_hours": "",
+          "project": "gcp-prj-inf-billing-prd-01",
+          "self_link": "https://bigquery.googleapis.com/bigquery/v2/projects/gcp-prj-inf-billing-prd-01/datasets/gcp_yyz_prd_inf_bgqr_01",
+          "storage_billing_model": "",
+          "terraform_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "sox",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "timeouts": null
+        }
+      }
+    }
+  },
+  "Billing_Budget_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-billing-prd-01-budget-01": [
+          "object",
+          {
+            "budget_amount": [
+              "list",
+              [
+                "object",
+                {
+                  "last_period_amount": "bool",
+                  "specified_amount": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "currency_code": "string",
+                        "nanos": "number",
+                        "units": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "budget_name": "string",
+            "budget_notification_email": "string",
+            "budget_notification_name": "string",
+            "budget_project": [
+              "set",
+              "string"
+            ],
+            "budget_threshold": [
+              "list",
+              [
+                "object",
+                {
+                  "spend_basis": "string",
+                  "threshold_percent": "number"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-billing-prd-01-budget-01": {
+        "budget_amount": [
+          {
+            "last_period_amount": false,
+            "specified_amount": [
+              {
+                "currency_code": "USD",
+                "nanos": 0,
+                "units": "1000"
+              }
+            ]
+          }
+        ],
+        "budget_name": "gcp-prj-inf-billing-prd-01-budget-01",
+        "budget_notification_email": "jitendra.lodhi@rci.rogers.com",
+        "budget_notification_name": "gcp-prj-inf-billing-prd-01-budget-01-notification-01",
+        "budget_project": [
+          "projects/gcp-prj-inf-billing-prd-01"
+        ],
+        "budget_threshold": [
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.5
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.75
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.9
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 1
+          }
+        ]
+      }
+    }
+  },
+  "Project_APIs_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-billing-prd-01": [
+          "object",
+          {
+            "google_apis-details": [
+              "object",
+              {
+                "bigquery.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "bigquerydatatransfer.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "cloudbilling.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "compute.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "iam.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "logging.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "monitoring.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-billing-prd-01": {
+        "google_apis-details": {
+          "bigquery.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-billing-prd-01/bigquery.googleapis.com",
+            "project": "gcp-prj-inf-billing-prd-01",
+            "service": "bigquery.googleapis.com",
+            "timeouts": null
+          },
+          "bigquerydatatransfer.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-billing-prd-01/bigquerydatatransfer.googleapis.com",
+            "project": "gcp-prj-inf-billing-prd-01",
+            "service": "bigquerydatatransfer.googleapis.com",
+            "timeouts": null
+          },
+          "cloudbilling.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-billing-prd-01/cloudbilling.googleapis.com",
+            "project": "gcp-prj-inf-billing-prd-01",
+            "service": "cloudbilling.googleapis.com",
+            "timeouts": null
+          },
+          "compute.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-billing-prd-01/compute.googleapis.com",
+            "project": "gcp-prj-inf-billing-prd-01",
+            "service": "compute.googleapis.com",
+            "timeouts": null
+          },
+          "iam.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-billing-prd-01/iam.googleapis.com",
+            "project": "gcp-prj-inf-billing-prd-01",
+            "service": "iam.googleapis.com",
+            "timeouts": null
+          },
+          "logging.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-billing-prd-01/logging.googleapis.com",
+            "project": "gcp-prj-inf-billing-prd-01",
+            "service": "logging.googleapis.com",
+            "timeouts": null
+          },
+          "monitoring.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-billing-prd-01/monitoring.googleapis.com",
+            "project": "gcp-prj-inf-billing-prd-01",
+            "service": "monitoring.googleapis.com",
+            "timeouts": null
+          }
+        }
+      }
+    }
+  },
+  "Project_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-billing-prd-01": [
+          "object",
+          {
+            "project_details": [
+              "object",
+              {
+                "auto_create_network": "bool",
+                "billing_account": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "folder_id": "string",
+                "id": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "number": "string",
+                "org_id": "string",
+                "project_id": "string",
+                "skip_delete": "bool",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "read": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-billing-prd-01": {
+        "project_details": {
+          "auto_create_network": false,
+          "billing_account": "0169BA-63D6C3-3F9651",
+          "effective_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "sox",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "folder_id": "484007343305",
+          "id": "projects/gcp-prj-inf-billing-prd-01",
+          "labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "sox",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "name": "Billing",
+          "number": "697865862876",
+          "org_id": "",
+          "project_id": "gcp-prj-inf-billing-prd-01",
+          "skip_delete": false,
+          "terraform_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "sox",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "timeouts": null
+        }
+      }
+    }
+  }
+}

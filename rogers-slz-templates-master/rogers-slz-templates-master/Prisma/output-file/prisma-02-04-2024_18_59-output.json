@@ -1,0 +1,7 @@
+{
+  "user_instruction": {
+    "sensitive": false,
+    "type": "string",
+    "value": "Successfully Configured !!\n\n What to do next ?\n\t1. Please download the file gcp-prj-inf-logging-prd-1-qidph.json\n\nUse the downloaded JSON file and Proceed at Prisma Cloud UI"
+  }
+}

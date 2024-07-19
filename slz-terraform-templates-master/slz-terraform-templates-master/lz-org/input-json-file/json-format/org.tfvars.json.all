@@ -1,0 +1,48 @@
+{
+    "folders": [],
+
+    "projects": [],
+
+    "org_policy": [],
+
+    "folder_policy": [],
+
+    "project_policy": [],
+
+    "billing_budget": [],
+
+    "apis": [
+        {
+            "project_id": "reference-host-prj",
+            "gcp_apis_list": ["dns.googleapis.com","servicenetworking.googleapis.com","servicemanagement.googleapis.com",
+                              "compute.googleapis.com","container.googleapis.com","containerregistry.googleapis.com",
+                              "cloudbuild.googleapis.com"]
+        },
+        {
+            "project_id": "reference-service-prj",
+            "gcp_apis_list": ["servicemanagement.googleapis.com","compute.googleapis.com","container.googleapis.com",
+                              "containerregistry.googleapis.com","cloudbuild.googleapis.com"]
+        },
+        {
+            "project_id": "reference-analytics-prj",
+            "gcp_apis_list": ["serviceusage.googleapis.com"]
+        },
+        {
+            "project_id": "reference-fleet-prj",
+            "gcp_apis_list": ["compute.googleapis.com"]
+        }
+    ],
+
+    "host_project": [
+        {
+            "host_project_id": "reference-host-prj",
+            "shared_vpc": true
+        }
+    ],
+    "service_project": [
+        {
+            "host_project_id": "reference-host-prj",
+            "service_project_id": ["reference-service-prj", "reference-analytics-prj", "reference-fleet-prj"]
+        }
+    ]
+}

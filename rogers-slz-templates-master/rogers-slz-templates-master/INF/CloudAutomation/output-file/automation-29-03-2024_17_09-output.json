@@ -1,0 +1,93 @@
+{
+  "Billing_Budget_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {}
+    ],
+    "value": {}
+  },
+  "Bucket_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {}
+    ],
+    "value": {}
+  },
+  "Project_APIs_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {}
+    ],
+    "value": {}
+  },
+  "Project_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-automation-prd-01": [
+          "object",
+          {
+            "project_details": [
+              "object",
+              {
+                "auto_create_network": "bool",
+                "billing_account": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "folder_id": "string",
+                "id": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "number": "string",
+                "org_id": "string",
+                "project_id": "string",
+                "skip_delete": "bool",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "read": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-automation-prd-01": {
+        "project_details": {
+          "auto_create_network": false,
+          "billing_account": "0169BA-63D6C3-3F9651",
+          "effective_labels": {},
+          "folder_id": "",
+          "id": "projects/gcp-prj-inf-automation-prd-01",
+          "labels": {},
+          "name": "CloudAutomation",
+          "number": "888523839952",
+          "org_id": "179572310621",
+          "project_id": "gcp-prj-inf-automation-prd-01",
+          "skip_delete": false,
+          "terraform_labels": {},
+          "timeouts": null
+        }
+      }
+    }
+  }
+}

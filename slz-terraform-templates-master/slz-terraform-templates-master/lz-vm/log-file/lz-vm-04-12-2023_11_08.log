@@ -1,0 +1,37 @@
+2023-12-04T11:08:38.464Z [INFO]  Terraform version: 1.6.4
+2023-12-04T11:08:38.464Z [INFO]  Go runtime version: go1.21.3
+2023-12-04T11:08:38.464Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade"}
+2023-12-04T11:08:38.465Z [INFO]  CLI command args: []string{"init", "-upgrade"}
+2023-12-04T11:08:50.302Z [INFO]  Terraform version: 1.6.4
+2023-12-04T11:08:50.303Z [INFO]  Go runtime version: go1.21.3
+2023-12-04T11:08:50.303Z [INFO]  CLI args: []string{"terraform", "plan", "-var", "access_token=ya29.a0AfB_byBt0yB0T-_GfK5ey4dj8SCmUkXaFWCPrwPV_310qM1BVWqcMe6fuezzW9y9FxnxsynT3GuYSRqceVqgonsuLlviShmYmh_OpAMWJ9lCCvBWS0ASddECJGumxv4hTDvq1UrrlRXKJ-5zUt8U6n9FaAYsIqDZzh2kcvRublE6MEaj5S0HiU4wEi9lnxXjc1ALk5zjcwFXiY-Q6NXqIhbCI1Eb0Zh5o4Bl60b8jThyzvEgAGnWom14aLgY_nxxW0GHoKt6FZ70W0NQTe9fmx_A7qmE2k4OvqU-9wY_MKVJg2zu8pizu3ETW69Q5gl-SQXzBN21EvV1xkC88EHp7KfpziXlXZSRCSGU78RDOSl_tfJrxUcBOInBAiZWcs-gPu2ggfKlRUnKVXLQwxuAJkBcMcV0oXRaaCgYKAeQSARESFQHGX2MiCmtTYpx_2-xFyFUW2ZkZuw0423", "-var-file=../input-json-file/vm.tfvars.json", "-out=../plan-file/vm-tf-plan.json"}
+2023-12-04T11:08:50.304Z [INFO]  CLI command args: []string{"plan", "-var", "access_token=ya29.a0AfB_byBt0yB0T-_GfK5ey4dj8SCmUkXaFWCPrwPV_310qM1BVWqcMe6fuezzW9y9FxnxsynT3GuYSRqceVqgonsuLlviShmYmh_OpAMWJ9lCCvBWS0ASddECJGumxv4hTDvq1UrrlRXKJ-5zUt8U6n9FaAYsIqDZzh2kcvRublE6MEaj5S0HiU4wEi9lnxXjc1ALk5zjcwFXiY-Q6NXqIhbCI1Eb0Zh5o4Bl60b8jThyzvEgAGnWom14aLgY_nxxW0GHoKt6FZ70W0NQTe9fmx_A7qmE2k4OvqU-9wY_MKVJg2zu8pizu3ETW69Q5gl-SQXzBN21EvV1xkC88EHp7KfpziXlXZSRCSGU78RDOSl_tfJrxUcBOInBAiZWcs-gPu2ggfKlRUnKVXLQwxuAJkBcMcV0oXRaaCgYKAeQSARESFQHGX2MiCmtTYpx_2-xFyFUW2ZkZuw0423", "-var-file=../input-json-file/vm.tfvars.json", "-out=../plan-file/vm-tf-plan.json"}
+2023-12-04T11:08:51.022Z [INFO]  backend/local: starting Plan operation
+2023-12-04T11:08:54.716Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:54.837Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:54.837Z
+2023-12-04T11:08:55.047Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:55.170Z [INFO]  provider.terraform-provider-google-beta_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:55.170Z
+2023-12-04T11:08:55.405Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:55.512Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:55.512Z
+2023-12-04T11:08:55.772Z [INFO]  backend/local: plan calling Plan
+2023-12-04T11:08:55.776Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:55.885Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:55.885Z
+2023-12-04T11:08:56.111Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=e1b35ed5-49a0-2983-d9a7-4e5cf04a85a7 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1600 @module=google tf_rpc=ConfigureProvider timestamp=2023-12-04T11:08:56.110Z
+2023-12-04T11:08:56.111Z [INFO]  provider.terraform-provider-google_v5.7.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1601 @module=google tf_req_id=e1b35ed5-49a0-2983-d9a7-4e5cf04a85a7 timestamp=2023-12-04T11:08:56.111Z
+2023-12-04T11:08:56.111Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_req_id=e1b35ed5-49a0-2983-d9a7-4e5cf04a85a7 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1600 @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider timestamp=2023-12-04T11:08:56.111Z
+2023-12-04T11:08:56.111Z [INFO]  provider.terraform-provider-google_v5.7.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=e1b35ed5-49a0-2983-d9a7-4e5cf04a85a7 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1601 @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider timestamp=2023-12-04T11:08:56.111Z
+2023-12-04T11:08:56.167Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Terraform is using this identity: ayush.shukla@hcl.com: tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1520 @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=e1b35ed5-49a0-2983-d9a7-4e5cf04a85a7 timestamp=2023-12-04T11:08:56.167Z
+2023-12-04T11:08:57.555Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.VM-01["0"].google_compute_instance.default during refresh.
+      - Root object was present, but now absent
+2023-12-04T11:08:57.574Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.VM-01["0"].google_compute_instance.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .can_ip_forward: planned value cty.False for a non-computed attribute
+      - .tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .reservation_affinity: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .service_account[0].scopes: planned value cty.SetVal([]cty.Value{cty.StringVal("https://www.googleapis.com/auth/cloud-platform")}) does not match config value cty.SetVal([]cty.Value{cty.StringVal("cloud-platform")})
+      - .boot_disk[0].mode: planned value cty.StringVal("READ_WRITE") for a non-computed attribute
+      - .boot_disk[0].auto_delete: planned value cty.True for a non-computed attribute
+      - .confidential_instance_config: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .scheduling: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2023-12-04T11:08:57.590Z [INFO]  backend/local: plan operation completed
+2023-12-04T11:08:57.590Z [INFO]  backend/local: writing plan output to: ../plan-file/vm-tf-plan.json

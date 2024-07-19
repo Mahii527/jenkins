@@ -1,0 +1,81 @@
+2023-12-12T07:00:24.487Z [INFO]  Terraform version: 1.6.4
+2023-12-12T07:00:24.487Z [INFO]  Go runtime version: go1.21.3
+2023-12-12T07:00:24.487Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade"}
+2023-12-12T07:00:24.488Z [INFO]  CLI command args: []string{"init", "-upgrade"}
+2023-12-12T07:00:34.006Z [INFO]  Terraform version: 1.6.4
+2023-12-12T07:00:34.006Z [INFO]  Go runtime version: go1.21.3
+2023-12-12T07:00:34.006Z [INFO]  CLI args: []string{"terraform", "plan", "-var", "access_token=ya29.a0AfB_byA_Yb_FtJqjzO0zB_hX9OaAHr3NSHII5e0wgjji33RjjkjGmFQBIW396oab_ofdvnmWhqQNG4I1zlSt9RcK5QQVAw1mzJyw6RreTZATOObakhygeuiwqvvwMkx0GnNIPLYt1UFhIHW_TP2LmSVKvfdplmopil917ppQVQvibe_HUK_MyFr89gWUm04N6lFm7PUshfRIpiCapthOfs2J7XWBJHweKBRYkcseJpI35k9jlFg9n9AmTGASBH7iFjXJ85DABfldrHA_nIl6uGsc-Yd_SuxWpotJkpoKvNu4ERbWuBHvCwiSbwzyRkuk3GBWLHu3zaR1aQCSxwEZaRlsD6Bml3QOGsaZp49k3mtwSjGFp0MJmVYdHVfUyluFZyip2PIVPWuMPij7JgrA3JdHi0NuqwaCgYKAdsSARESFQHGX2MizYtPNIsmJsFBAm3oqIV5hQ0421", "-var-file=../input-json-file/bucket.tfvars.json", "-var-file=../input-json-file/ssl.tfvars.json", "-var-file=../input-json-file/armor.tfvars.json", "-var-file=../input-json-file/alb.tfvars.json", "-out=../plan-file/alb-tf-plan.json"}
+2023-12-12T07:00:34.007Z [INFO]  CLI command args: []string{"plan", "-var", "access_token=ya29.a0AfB_byA_Yb_FtJqjzO0zB_hX9OaAHr3NSHII5e0wgjji33RjjkjGmFQBIW396oab_ofdvnmWhqQNG4I1zlSt9RcK5QQVAw1mzJyw6RreTZATOObakhygeuiwqvvwMkx0GnNIPLYt1UFhIHW_TP2LmSVKvfdplmopil917ppQVQvibe_HUK_MyFr89gWUm04N6lFm7PUshfRIpiCapthOfs2J7XWBJHweKBRYkcseJpI35k9jlFg9n9AmTGASBH7iFjXJ85DABfldrHA_nIl6uGsc-Yd_SuxWpotJkpoKvNu4ERbWuBHvCwiSbwzyRkuk3GBWLHu3zaR1aQCSxwEZaRlsD6Bml3QOGsaZp49k3mtwSjGFp0MJmVYdHVfUyluFZyip2PIVPWuMPij7JgrA3JdHi0NuqwaCgYKAdsSARESFQHGX2MizYtPNIsmJsFBAm3oqIV5hQ0421", "-var-file=../input-json-file/bucket.tfvars.json", "-var-file=../input-json-file/ssl.tfvars.json", "-var-file=../input-json-file/armor.tfvars.json", "-var-file=../input-json-file/alb.tfvars.json", "-out=../plan-file/alb-tf-plan.json"}
+2023-12-12T07:00:34.701Z [INFO]  backend/local: starting Plan operation
+2023-12-12T07:00:37.969Z [INFO]  provider: configuring client automatic mTLS
+2023-12-12T07:00:38.099Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: configuring server automatic mTLS: timestamp=2023-12-12T07:00:38.098Z
+2023-12-12T07:00:38.298Z [INFO]  provider: configuring client automatic mTLS
+2023-12-12T07:00:38.429Z [INFO]  provider.terraform-provider-google-beta_v5.9.0_x5: configuring server automatic mTLS: timestamp=2023-12-12T07:00:38.429Z
+2023-12-12T07:00:38.673Z [INFO]  provider: configuring client automatic mTLS
+2023-12-12T07:00:38.794Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: configuring server automatic mTLS: timestamp=2023-12-12T07:00:38.794Z
+2023-12-12T07:00:39.075Z [INFO]  backend/local: plan calling Plan
+2023-12-12T07:00:39.094Z [INFO]  provider: configuring client automatic mTLS
+2023-12-12T07:00:39.216Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: configuring server automatic mTLS: timestamp=2023-12-12T07:00:39.216Z
+2023-12-12T07:00:39.483Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=c7591480-415c-f23f-b44d-a802b444c538 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1640 @module=google tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider timestamp=2023-12-12T07:00:39.482Z
+2023-12-12T07:00:39.483Z [INFO]  provider.terraform-provider-google_v5.9.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_req_id=c7591480-415c-f23f-b44d-a802b444c538 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1641 tf_rpc=ConfigureProvider @module=google tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2023-12-12T07:00:39.482Z
+2023-12-12T07:00:39.483Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=c7591480-415c-f23f-b44d-a802b444c538 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1640 @module=google timestamp=2023-12-12T07:00:39.483Z
+2023-12-12T07:00:39.483Z [INFO]  provider.terraform-provider-google_v5.9.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1641 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @module=google tf_req_id=c7591480-415c-f23f-b44d-a802b444c538 timestamp=2023-12-12T07:00:39.483Z
+2023-12-12T07:00:39.537Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: Terraform is using this identity: ayush.shukla@hcl.com: @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1560 tf_req_id=c7591480-415c-f23f-b44d-a802b444c538 timestamp=2023-12-12T07:00:39.536Z
+2023-12-12T07:00:40.635Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.bucket["0"].google_storage_bucket.bucket, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_object_retention: planned value cty.False for a non-computed attribute
+      - .default_event_based_hold: planned value cty.False for a non-computed attribute
+      - .requester_pays: planned value cty.False for a non-computed attribute
+      - .website: block count in plan (1) disagrees with count in config (0)
+2023-12-12T07:00:41.097Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.ssl["0"].google_compute_managed_ssl_certificate.default[0], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .type: planned value cty.StringVal("MANAGED") for a non-computed attribute
+2023-12-12T07:00:41.611Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.armor["1"].google_compute_security_policy.policy during refresh.
+      - .rule: planned set element cty.ObjectVal(map[string]cty.Value{"action":cty.StringVal("throttle"), "description":cty.StringVal("Throttling traffic rule"), "header_action":cty.ListValEmpty(cty.Object(map[string]cty.Type{"request_headers_to_adds":cty.List(cty.Object(map[string]cty.Type{"header_name":cty.String, "header_value":cty.String}))})), "match":cty.ListVal([]cty.Value{cty.ObjectVal(map[string]cty.Value{"config":cty.ListVal([]cty.Value{cty.ObjectVal(map[string]cty.Value{"src_ip_ranges":cty.SetVal([]cty.Value{cty.StringVal("*")})})}), "expr":cty.ListValEmpty(cty.Object(map[string]cty.Type{"expression":cty.String})), "versioned_expr":cty.StringVal("SRC_IPS_V1")})}), "preview":cty.False, "priority":cty.NumberIntVal(400), "rate_limit_options":cty.ListVal([]cty.Value{cty.ObjectVal(map[string]cty.Value{"ban_duration_sec":cty.NullVal(cty.Number), "ban_threshold":cty.ListValEmpty(cty.Object(map[string]cty.Type{"count":cty.Number, "interval_sec":cty.Number})), "conform_action":cty.StringVal("allow"), "enforce_on_key":cty.StringVal("ALL"), "enforce_on_key_name":cty.NullVal(cty.String), "exceed_action":cty.StringVal("deny(429)"), "exceed_redirect_options":cty.ListValEmpty(cty.Object(map[string]cty.Type{"target":cty.String, "type":cty.String})), "rate_limit_threshold":cty.ListVal([]cty.Value{cty.ObjectVal(map[string]cty.Value{"count":cty.NumberIntVal(100), "interval_sec":cty.NumberIntVal(60)})})})}), "redirect_options":cty.ListValEmpty(cty.Object(map[string]cty.Type{"target":cty.String, "type":cty.String}))}) does not correlate with any element in actual
+2023-12-12T07:00:41.736Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.armor["1"].google_compute_security_policy.policy, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .advanced_options_config: block count in plan (1) disagrees with count in config (0)
+2023-12-12T07:00:42.203Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.alb["0"].google_compute_backend_bucket.backend[0], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .custom_response_headers: planned value cty.ListValEmpty(cty.String) for a non-computed attribute
+      - .compression_mode: planned value cty.StringVal("") for a non-computed attribute
+      - .cdn_policy: block count in plan (1) disagrees with count in config (0)
+2023-12-12T07:00:42.958Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.alb["0"].google_compute_target_https_proxy.default[0], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .certificate_manager_certificates: planned value cty.ListValEmpty(cty.String) for a non-computed attribute
+      - .certificate_map: planned value cty.StringVal("") for a non-computed attribute
+      - .http_keep_alive_timeout_sec: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .ssl_policy: planned value cty.StringVal("") for a non-computed attribute
+      - .quic_override: planned value cty.StringVal("NONE") for a non-computed attribute
+      - .server_tls_policy: planned value cty.StringVal("") for a non-computed attribute
+2023-12-12T07:00:43.322Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.alb["0"].google_compute_global_forwarding_rule.frontend, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .ip_version: planned value cty.StringVal("") for a non-computed attribute
+      - .source_ip_ranges: planned value cty.ListValEmpty(cty.String) for a non-computed attribute
+2023-12-12T07:00:43.395Z [INFO]  backend/local: plan operation completed
+2023-12-12T07:00:43.396Z [INFO]  backend/local: writing plan output to: ../plan-file/alb-tf-plan.json
+2023-12-12T07:00:57.277Z [INFO]  Terraform version: 1.6.4
+2023-12-12T07:00:57.277Z [INFO]  Go runtime version: go1.21.3
+2023-12-12T07:00:57.277Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/alb-tf-plan.json"}
+2023-12-12T07:00:57.278Z [INFO]  CLI command args: []string{"apply", "../plan-file/alb-tf-plan.json"}
+2023-12-12T07:00:57.982Z [INFO]  backend/local: starting Apply operation
+2023-12-12T07:01:01.168Z [INFO]  provider: configuring client automatic mTLS
+2023-12-12T07:01:01.298Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: configuring server automatic mTLS: timestamp=2023-12-12T07:01:01.297Z
+2023-12-12T07:01:01.476Z [INFO]  provider: configuring client automatic mTLS
+2023-12-12T07:01:01.595Z [INFO]  provider.terraform-provider-google-beta_v5.9.0_x5: configuring server automatic mTLS: timestamp=2023-12-12T07:01:01.595Z
+2023-12-12T07:01:01.838Z [INFO]  backend/local: apply calling Apply
+2023-12-12T07:01:01.869Z [INFO]  provider: configuring client automatic mTLS
+2023-12-12T07:01:01.980Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: configuring server automatic mTLS: timestamp=2023-12-12T07:01:01.980Z
+2023-12-12T07:01:02.229Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1640 @module=google tf_mux_provider="*proto5server.Server" tf_req_id=1fb29c71-3578-8cc1-bf95-92e686921ec3 timestamp=2023-12-12T07:01:02.229Z
+2023-12-12T07:01:02.229Z [INFO]  provider.terraform-provider-google_v5.9.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1641 tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=1fb29c71-3578-8cc1-bf95-92e686921ec3 timestamp=2023-12-12T07:01:02.229Z
+2023-12-12T07:01:02.229Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=1fb29c71-3578-8cc1-bf95-92e686921ec3 tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1640 @module=google timestamp=2023-12-12T07:01:02.229Z
+2023-12-12T07:01:02.229Z [INFO]  provider.terraform-provider-google_v5.9.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=1fb29c71-3578-8cc1-bf95-92e686921ec3 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1641 @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider timestamp=2023-12-12T07:01:02.229Z
+2023-12-12T07:01:02.272Z [INFO]  provider.terraform-provider-google_v5.9.0_x5: Terraform is using this identity: ayush.shukla@hcl.com: tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @module=google tf_mux_provider="*proto5server.Server" tf_req_id=1fb29c71-3578-8cc1-bf95-92e686921ec3 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1560 timestamp=2023-12-12T07:01:02.272Z
+2023-12-12T07:01:02.483Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.armor["1"].google_compute_security_policy.policy, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .advanced_options_config: block count in plan (1) disagrees with count in config (0)
+2023-12-12T07:01:02.519Z [INFO]  Starting apply for module.armor["1"].google_compute_security_policy.policy
+2023-12-12T07:01:14.720Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.armor["1"].google_compute_security_policy.policy, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .adaptive_protection_config: block count changed from 0 to 1

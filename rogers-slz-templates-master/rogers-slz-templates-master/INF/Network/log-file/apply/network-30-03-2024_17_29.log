@@ -1,0 +1,1095 @@
+2024-03-30T17:29:57.596Z [INFO]  Terraform version: 1.7.5
+2024-03-30T17:29:57.596Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T17:29:57.596Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=network/state-file"}
+2024-03-30T17:29:57.596Z [INFO]  CLI command args: []string{"init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=network/state-file"}
+2024-03-30T17:30:08.040Z [INFO]  Terraform version: 1.7.5
+2024-03-30T17:30:08.041Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T17:30:08.041Z [INFO]  CLI args: []string{"terraform", "plan", "-var=access_token=ya29.c.c0AY_VpZidIJaplZ6ivMozd_goYaz1fJEKqa5s4BLPIixLXaW_DNV3FgVjXTWUY--gCjukcF2Iv9tzObXEcpf8ZJXMk1DG8aTv_MZmMXTIT8xYuVi7bvdi0dQd7DdtfnEK-YRVcHq63ODoFY3fKpCVCrTiTXn8x_RN2Bnnk9_zm-IAqfQORwz5eobrlxTK3d_JBl1iq41Susch24WeXK2ihuMvkjqC6P7cf7Sh9e0xiJNHCAUzyNOLQV92PmzrsJuepsU4uoB_bfnSTvGeuYwPJiqrf612ccn6s3qHs0L5yaa8UOcYd_7Vz6tqXOoLPdl0r4ZL2dGsbK41rzuZESvbueBWoasYKD6Zh-BJglwje3bKxpcpmUuYlqJr8AOEcGJbpjk6NnzW2-cH2DBRqy26MddLTrl0z4MYIP_aPbH5wVtRfF5qVoQZPutMk6NIY6PYrP3oBxYJSvzlOjkwES45yynUKfsDDE1aRQZt0vVYGf6OoO5MTK-hnTErVUpE5U31fcC8OYacAjyUjeWz93CwC1j0od0lZg1dIPGFr1Cg6RwFDbgo_ylae_KiWMNV8Y9Vl4cwmuCx69WIuKdsOiBBIqXv6KxETXIgNoXy233Jzgd1gK83CPmGeXuuL_h4hMo036qPFearqoeaHaeN0v3ycLjWqNxciBqPZbyvtolkH689DXhplI2Y3rxeQeSgUXJ-508d8F9tSfOBcuY_-sqVyyIX7Y6hel9jIhJbbRvin_w3_FXbpp1it_MX-_78Xw4XOx1ZpzczQMRFn_htmkJ5zyWkJVle6XxOvYOy1BfMUeibxrmrSu0iBeku0Ozc4nrecwnQqRdkjFk-beIBgevhsRWsanqO8pw_el7tcdxVhmeX_YkFbjX6YhO-VmOlY0JghpaOeR09IU4-8F5sRMI7laQbrO8qleZYr2dr0syVXMd6d5al6B35JZw4MIfdsmesO-Bq4sygx4ezeoQjyvIzinevu86MqYcFoOnwBiMofSZe9sqJ3mu8bIX", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/vpc.tfvars", "-var-file=../input-file/subnet.tfvars", "-var-file=../input-file/firewall.tfvars", "-var-file=../input-file/peering.tfvars", "-out=../plan-file/network-tf-plan.json"}
+2024-03-30T17:30:08.045Z [INFO]  CLI command args: []string{"plan", "-var=access_token=ya29.c.c0AY_VpZidIJaplZ6ivMozd_goYaz1fJEKqa5s4BLPIixLXaW_DNV3FgVjXTWUY--gCjukcF2Iv9tzObXEcpf8ZJXMk1DG8aTv_MZmMXTIT8xYuVi7bvdi0dQd7DdtfnEK-YRVcHq63ODoFY3fKpCVCrTiTXn8x_RN2Bnnk9_zm-IAqfQORwz5eobrlxTK3d_JBl1iq41Susch24WeXK2ihuMvkjqC6P7cf7Sh9e0xiJNHCAUzyNOLQV92PmzrsJuepsU4uoB_bfnSTvGeuYwPJiqrf612ccn6s3qHs0L5yaa8UOcYd_7Vz6tqXOoLPdl0r4ZL2dGsbK41rzuZESvbueBWoasYKD6Zh-BJglwje3bKxpcpmUuYlqJr8AOEcGJbpjk6NnzW2-cH2DBRqy26MddLTrl0z4MYIP_aPbH5wVtRfF5qVoQZPutMk6NIY6PYrP3oBxYJSvzlOjkwES45yynUKfsDDE1aRQZt0vVYGf6OoO5MTK-hnTErVUpE5U31fcC8OYacAjyUjeWz93CwC1j0od0lZg1dIPGFr1Cg6RwFDbgo_ylae_KiWMNV8Y9Vl4cwmuCx69WIuKdsOiBBIqXv6KxETXIgNoXy233Jzgd1gK83CPmGeXuuL_h4hMo036qPFearqoeaHaeN0v3ycLjWqNxciBqPZbyvtolkH689DXhplI2Y3rxeQeSgUXJ-508d8F9tSfOBcuY_-sqVyyIX7Y6hel9jIhJbbRvin_w3_FXbpp1it_MX-_78Xw4XOx1ZpzczQMRFn_htmkJ5zyWkJVle6XxOvYOy1BfMUeibxrmrSu0iBeku0Ozc4nrecwnQqRdkjFk-beIBgevhsRWsanqO8pw_el7tcdxVhmeX_YkFbjX6YhO-VmOlY0JghpaOeR09IU4-8F5sRMI7laQbrO8qleZYr2dr0syVXMd6d5al6B35JZw4MIfdsmesO-Bq4sygx4ezeoQjyvIzinevu86MqYcFoOnwBiMofSZe9sqJ3mu8bIX", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/vpc.tfvars", "-var-file=../input-file/subnet.tfvars", "-var-file=../input-file/firewall.tfvars", "-var-file=../input-file/peering.tfvars", "-out=../plan-file/network-tf-plan.json"}
+2024-03-30T17:30:08.828Z [INFO]  backend/local: starting Plan operation
+2024-03-30T17:30:11.216Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:11.293Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:11.293Z
+2024-03-30T17:30:11.600Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:11.669Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:11.669Z
+2024-03-30T17:30:11.982Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:11.995Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:11.995Z
+2024-03-30T17:30:12.063Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:12.076Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:12.076Z
+2024-03-30T17:30:12.118Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:12.178Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:12.178Z
+2024-03-30T17:30:12.219Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:12.283Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:12.283Z
+2024-03-30T17:30:12.431Z [INFO]  backend/local: plan calling Plan
+2024-03-30T17:30:12.459Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:12.471Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:12.471Z
+2024-03-30T17:30:12.512Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:12.573Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:12.573Z
+2024-03-30T17:30:12.613Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:12.687Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:12.686Z
+2024-03-30T17:30:12.736Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 @module=google tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=77421d51-f01c-b0bd-4bec-78a754153938 timestamp=2024-03-30T17:30:12.736Z
+2024-03-30T17:30:12.736Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=77421d51-f01c-b0bd-4bec-78a754153938 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 @module=google timestamp=2024-03-30T17:30:12.736Z
+2024-03-30T17:30:12.737Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 @module=google tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=77421d51-f01c-b0bd-4bec-78a754153938 tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider timestamp=2024-03-30T17:30:12.737Z
+2024-03-30T17:30:12.737Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=77421d51-f01c-b0bd-4bec-78a754153938 tf_rpc=ConfigureProvider @module=google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 timestamp=2024-03-30T17:30:12.737Z
+2024-03-30T17:30:12.809Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1621 @module=google tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=77421d51-f01c-b0bd-4bec-78a754153938 timestamp=2024-03-30T17:30:12.809Z
+2024-03-30T17:30:12.811Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=96b84fd0-ca60-7887-e163-72e9fe0c7a68 @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 @module=google_beta tf_rpc=ConfigureProvider timestamp=2024-03-30T17:30:12.811Z
+2024-03-30T17:30:12.811Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta tf_req_id=96b84fd0-ca60-7887-e163-72e9fe0c7a68 tf_rpc=ConfigureProvider timestamp=2024-03-30T17:30:12.811Z
+2024-03-30T17:30:12.811Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 tf_rpc=ConfigureProvider @module=google_beta tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=96b84fd0-ca60-7887-e163-72e9fe0c7a68 timestamp=2024-03-30T17:30:12.811Z
+2024-03-30T17:30:12.812Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google_beta @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=96b84fd0-ca60-7887-e163-72e9fe0c7a68 tf_rpc=ConfigureProvider timestamp=2024-03-30T17:30:12.811Z
+2024-03-30T17:30:12.859Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider tf_req_id=96b84fd0-ca60-7887-e163-72e9fe0c7a68 @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1760 @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta timestamp=2024-03-30T17:30:12.859Z
+2024-03-30T17:30:17.917Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-mgmt-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:30:17.929Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-out-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:30:17.930Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-npe-dev-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:30:17.932Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-hub-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:30:17.932Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+2024-03-30T17:30:17.932Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-ha-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:30:17.938Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+2024-03-30T17:30:17.960Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-03-30T17:30:17.975Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_1_2["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+2024-03-30T17:30:18.014Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.local_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-03-30T17:30:18.029Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.033Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.034Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.034Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.036Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.038Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.039Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-shr-1"].google_compute_firewall.rules["fw-prd-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.047Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.047Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_ranges: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.048Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.053Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.057Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-stg-shr-1"].google_compute_firewall.rules["fw-stg-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.057Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.060Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.062Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.065Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.066Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-qa-shr-1"].google_compute_firewall.rules["fw-qa-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.069Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.086Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.086Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.088Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-22-3389-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.089Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.094Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-hub-shr-1"].google_compute_firewall.rules["fw-hub-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.094Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-npe-dev-shr-1"].google_compute_firewall.rules["fw-dev-ingress-allow-80-443-8080-tcp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.095Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-ha-fw-1"].google_compute_firewall.rules["fw-ha-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.095Z [WARN]  Provider "registry.terraform.io/hashicorp/google-beta" produced an invalid plan for module.vpc_peering_2_1["gcp-peering-02"].google_compute_network_peering.peer_network_peering, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .export_subnet_routes_with_public_ip: planned value cty.True for a non-computed attribute
+      - .stack_type: planned value cty.StringVal("IPV4_ONLY") for a non-computed attribute
+2024-03-30T17:30:18.098Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.101Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-out-fw-1"].google_compute_firewall.rules["fw-out-ingress-allow-icmp-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+      - .target_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.101Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc_firewall_rule["gcp-vpc-prd-mgmt-fw-1"].google_compute_firewall.rules["fw-mgmt-ingress-allow-fgt-01"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_tags: planned value cty.NullVal(cty.Set(cty.String)) does not match config value cty.SetValEmpty(cty.String)
+2024-03-30T17:30:18.223Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkspk-dev-01-budget-01"].google_monitoring_notification_channel.budget_notify during refresh.
+      - .user_labels: was null, but now cty.MapValEmpty(cty.String)
+2024-03-30T17:30:18.223Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkhub-prd-01-budget-01"].google_monitoring_notification_channel.budget_notify during refresh.
+      - .user_labels: was null, but now cty.MapValEmpty(cty.String)
+2024-03-30T17:30:18.236Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .all_updates_rule[0].monitoring_notification_channels: planned value cty.UnknownVal(cty.List(cty.String)) does not match config value cty.ListVal([]cty.Value{cty.UnknownVal(cty.String)})
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+2024-03-30T17:30:18.236Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].monitoring_notification_channels: planned value cty.UnknownVal(cty.List(cty.String)) does not match config value cty.ListVal([]cty.Value{cty.UnknownVal(cty.String)})
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-03-30T17:30:18.382Z [INFO]  backend/local: plan operation completed
+2024-03-30T17:30:18.382Z [INFO]  backend/local: writing plan output to: ../plan-file/network-tf-plan.json
+2024-03-30T17:30:35.216Z [INFO]  Terraform version: 1.7.5
+2024-03-30T17:30:35.216Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T17:30:35.216Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/network-tf-plan.json"}
+2024-03-30T17:30:35.216Z [INFO]  CLI command args: []string{"apply", "../plan-file/network-tf-plan.json"}
+2024-03-30T17:30:35.972Z [INFO]  backend/local: starting Apply operation
+2024-03-30T17:30:37.191Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:37.259Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:37.259Z
+2024-03-30T17:30:37.525Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:37.590Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:37.590Z
+2024-03-30T17:30:37.901Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:37.914Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:37.914Z
+2024-03-30T17:30:37.960Z [INFO]  backend/local: apply calling Apply
+2024-03-30T17:30:38.061Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:38.075Z [INFO]  provider.terraform-provider-null_v3.2.2_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:38.075Z
+2024-03-30T17:30:38.116Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:38.179Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:38.178Z
+2024-03-30T17:30:38.225Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T17:30:38.294Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T17:30:38.294Z
+2024-03-30T17:30:38.348Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 @module=google_beta tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=c6cb2917-54d1-d9d4-fa3a-673e646bce16 timestamp=2024-03-30T17:30:38.348Z
+2024-03-30T17:30:38.348Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google_beta tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 tf_mux_provider="*proto5server.Server" tf_req_id=c6cb2917-54d1-d9d4-fa3a-673e646bce16 timestamp=2024-03-30T17:30:38.348Z
+2024-03-30T17:30:38.349Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google_beta tf_req_id=c6cb2917-54d1-d9d4-fa3a-673e646bce16 tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1840 timestamp=2024-03-30T17:30:38.349Z
+2024-03-30T17:30:38.349Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1841 @module=google_beta tf_req_id=c6cb2917-54d1-d9d4-fa3a-673e646bce16 timestamp=2024-03-30T17:30:38.349Z
+2024-03-30T17:30:38.402Z [INFO]  provider.terraform-provider-google-beta_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google-beta/google-beta/fwtransport/framework_config.go:1760 tf_provider_addr=registry.terraform.io/hashicorp/google-beta tf_req_id=c6cb2917-54d1-d9d4-fa3a-673e646bce16 @module=google_beta timestamp=2024-03-30T17:30:38.401Z
+2024-03-30T17:30:38.408Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_req_id=80d705d8-3a72-b6e1-5193-d08f06cfe3e1 tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 @module=google timestamp=2024-03-30T17:30:38.408Z
+2024-03-30T17:30:38.408Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_rpc=ConfigureProvider @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=80d705d8-3a72-b6e1-5193-d08f06cfe3e1 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 timestamp=2024-03-30T17:30:38.408Z
+2024-03-30T17:30:38.409Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_mux_provider="*proto5server.Server" tf_req_id=80d705d8-3a72-b6e1-5193-d08f06cfe3e1 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1701 tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider timestamp=2024-03-30T17:30:38.408Z
+2024-03-30T17:30:38.409Z [INFO]  provider.terraform-provider-google_v5.19.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=80d705d8-3a72-b6e1-5193-d08f06cfe3e1 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1702 timestamp=2024-03-30T17:30:38.409Z
+2024-03-30T17:30:38.458Z [INFO]  provider.terraform-provider-google_v5.19.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @module=google tf_req_id=80d705d8-3a72-b6e1-5193-d08f06cfe3e1 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1621 timestamp=2024-03-30T17:30:38.458Z
+2024-03-30T17:30:38.493Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkhub-prd-01-budget-01"].google_monitoring_notification_channel.budget_notify
+2024-03-30T17:30:38.494Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkspk-dev-01-budget-01"].google_monitoring_notification_channel.budget_notify
+2024-03-30T17:30:40.327Z [INFO]  Starting apply for module.project["gcp-prj-inf-networkspk-qa-01"].google_project.project
+2024-03-30T17:30:40.330Z [INFO]  Starting apply for module.project["gcp-prj-inf-networkspk-prd-01"].google_project.project
+2024-03-30T17:30:40.331Z [INFO]  Starting apply for module.project["gcp-prj-inf-networkspk-stg-01"].google_project.project
+2024-03-30T17:30:40.338Z [INFO]  Starting apply for module.project["gcp-prj-inf-networkspk-qa-1"].google_project.project
+2024-03-30T17:30:40.340Z [INFO]  Starting apply for module.project["gcp-prj-inf-networkspk-prd-1"].google_project.project
+2024-03-30T17:30:40.348Z [INFO]  Starting apply for module.project["gcp-prj-inf-networkspk-stg-1"].google_project.project
+2024-03-30T17:34:19.088Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.project["gcp-prj-inf-networkspk-stg-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: was null, but now cty.StringVal("")
+2024-03-30T17:34:19.877Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.project["gcp-prj-inf-networkspk-qa-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: was null, but now cty.StringVal("")
+2024-03-30T17:34:20.081Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.project["gcp-prj-inf-networkspk-prd-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: was null, but now cty.StringVal("")
+2024-03-30T17:34:20.097Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+2024-03-30T17:34:20.098Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+2024-03-30T17:34:20.098Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify
+2024-03-30T17:34:20.099Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_monitoring_notification_channel.budget_notify
+2024-03-30T17:34:20.099Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-ha-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:34:20.099Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["compute.googleapis.com"]
+2024-03-30T17:34:20.103Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["monitoring.googleapis.com"]
+2024-03-30T17:34:20.104Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["logging.googleapis.com"]
+2024-03-30T17:34:20.105Z [INFO]  Starting apply for module.vpc["gcp-vpc-prd-ha-fw-1"].google_compute_network.vpc
+2024-03-30T17:34:20.105Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["servicenetworking.googleapis.com"]
+2024-03-30T17:34:20.106Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["dns.googleapis.com"]
+2024-03-30T17:34:20.106Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["logging.googleapis.com"]
+2024-03-30T17:34:20.106Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["iam.googleapis.com"]
+2024-03-30T17:34:20.513Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_severity=ERROR diagnostic_summary="Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkhub-prd-1' was not found, notFound" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=ee13ad95-d99f-1096-0e13-bb25b048314a tf_resource_type=google_compute_network @module=sdk.proto tf_proto_version=5.4 diagnostic_detail="" tf_rpc=ApplyResourceChange timestamp=2024-03-30T17:34:20.513Z
+2024-03-30T17:34:20.514Z [ERROR] vertex "module.vpc[\"gcp-vpc-prd-ha-fw-1\"].google_compute_network.vpc" error: Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkhub-prd-1' was not found, notFound
+2024-03-30T17:34:20.519Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["dns.googleapis.com"]
+2024-03-30T17:34:21.052Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: was null, but now cty.StringVal("")
+2024-03-30T17:34:21.057Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["compute.googleapis.com"]
+2024-03-30T17:34:21.973Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: was null, but now cty.StringVal("")
+2024-03-30T17:34:21.978Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-out-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:34:21.978Z [INFO]  Starting apply for module.vpc["gcp-vpc-prd-out-fw-1"].google_compute_network.vpc
+2024-03-30T17:34:22.207Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail="" tf_rpc=ApplyResourceChange @module=sdk.proto diagnostic_severity=ERROR tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google tf_resource_type=google_compute_network diagnostic_summary="Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkhub-prd-1' was not found, notFound" tf_req_id=4a4a198c-99ed-6cb8-f3ac-e6fcb9bbc092 timestamp=2024-03-30T17:34:22.207Z
+2024-03-30T17:34:22.208Z [ERROR] vertex "module.vpc[\"gcp-vpc-prd-out-fw-1\"].google_compute_network.vpc" error: Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkhub-prd-1' was not found, notFound
+2024-03-30T17:34:22.212Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-mgmt-fw-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:34:22.213Z [INFO]  Starting apply for module.vpc["gcp-vpc-prd-mgmt-fw-1"].google_compute_network.vpc
+2024-03-30T17:34:22.606Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_provider_addr=registry.terraform.io/hashicorp/google @module=sdk.proto tf_rpc=ApplyResourceChange tf_req_id=684af5da-cbd4-f185-44e3-45ddfc0cadbc diagnostic_detail="" diagnostic_severity=ERROR diagnostic_summary="Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkhub-prd-1' was not found, notFound" tf_proto_version=5.4 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_resource_type=google_compute_network timestamp=2024-03-30T17:34:22.606Z
+2024-03-30T17:34:22.607Z [ERROR] vertex "module.vpc[\"gcp-vpc-prd-mgmt-fw-1\"].google_compute_network.vpc" error: Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkhub-prd-1' was not found, notFound
+2024-03-30T17:34:22.616Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["secretmanager.googleapis.com"]
+2024-03-30T17:34:24.912Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+  | Help Token: ARqICRNhal4OVo4fLUIE6ScUD2u8_eX4iQbiYfDmawZGM97k8zfXsAlyC85v7OdgyhloQR8nQK6yijbF37ITkD3WPOOpnHVUBRdI7K2SbKhQPQGe
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkhub-prd-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_provider_addr=registry.terraform.io/hashicorp/google diagnostic_detail="" tf_req_id=7dc2f422-c8c2-5e12-d3f7-944ce265f05d tf_rpc=ApplyResourceChange tf_resource_type=google_project_service @module=sdk.proto diagnostic_severity=ERROR tf_proto_version=5.4 timestamp=2024-03-30T17:34:24.911Z
+2024-03-30T17:34:24.912Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkhub-prd-1\"].google_project_service.gcp_apis[\"compute.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+Help Token: ARqICRNhal4OVo4fLUIE6ScUD2u8_eX4iQbiYfDmawZGM97k8zfXsAlyC85v7OdgyhloQR8nQK6yijbF37ITkD3WPOOpnHVUBRdI7K2SbKhQPQGe
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkhub-prd-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:24.917Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-npe-dev-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:34:24.917Z [INFO]  Starting apply for module.vpc["gcp-vpc-npe-dev-shr-1"].google_compute_network.vpc
+2024-03-30T17:34:25.503Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_summary="Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-dev-1' was not found, notFound" tf_resource_type=google_compute_network tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google diagnostic_detail="" tf_req_id=2d21fa6f-44b6-af5d-5c58-337e20117dbb @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 @module=sdk.proto tf_rpc=ApplyResourceChange diagnostic_severity=ERROR timestamp=2024-03-30T17:34:25.503Z
+2024-03-30T17:34:25.504Z [ERROR] vertex "module.vpc[\"gcp-vpc-npe-dev-shr-1\"].google_compute_network.vpc" error: Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkspk-dev-1' was not found, notFound
+2024-03-30T17:34:25.507Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["container.googleapis.com"]
+2024-03-30T17:34:25.907Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_severity=ERROR
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+  | Help Token: ARqICRPSKMSevk5U-1yw4Mcwx4s5h_FQ_vwGopeD1OFGxdo5em3QLJA1qQc0pVzdz3Z4D9UvjawFp0U3t877hfZoVod92sB6zOyn8V-Kvw-VZWXG
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkhub-prd-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_proto_version=5.4 tf_rpc=ApplyResourceChange @module=sdk.proto tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=5a188af7-d0f8-4a83-511f-c9921be850b9 tf_resource_type=google_project_service @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail="" timestamp=2024-03-30T17:34:25.907Z
+2024-03-30T17:34:25.908Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkhub-prd-1\"].google_project_service.gcp_apis[\"servicenetworking.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+Help Token: ARqICRPSKMSevk5U-1yw4Mcwx4s5h_FQ_vwGopeD1OFGxdo5em3QLJA1qQc0pVzdz3Z4D9UvjawFp0U3t877hfZoVod92sB6zOyn8V-Kvw-VZWXG
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkhub-prd-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:25.911Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["container.googleapis.com"]
+2024-03-30T17:34:25.918Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_severity=ERROR tf_req_id=8d0faa09-d124-6a57-a434-e399af6e7824 @module=sdk.proto @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google tf_resource_type=google_project_service tf_rpc=ApplyResourceChange diagnostic_detail=""
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+  | Help Token: ARqICRPl2GYKS12fSDFH63xcZ6_OOZHyGpF6rdC3ernAWymFLgmuwjKNg5PFtXjhROSS5iNpMBVl1dndh_er7mWphq0s5iTyf4YFa7yKXVTvRuxO
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkspk-dev-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   timestamp=2024-03-30T17:34:25.918Z
+2024-03-30T17:34:25.919Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkspk-dev-1\"].google_project_service.gcp_apis[\"logging.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+Help Token: ARqICRPl2GYKS12fSDFH63xcZ6_OOZHyGpF6rdC3ernAWymFLgmuwjKNg5PFtXjhROSS5iNpMBVl1dndh_er7mWphq0s5iTyf4YFa7yKXVTvRuxO
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkspk-dev-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:25.923Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.vpc["gcp-vpc-prd-hub-shr-1"].google_compute_network.vpc, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .network_firewall_policy_enforcement_order: planned value cty.StringVal("AFTER_CLASSIC_FIREWALL") for a non-computed attribute
+2024-03-30T17:34:25.923Z [INFO]  Starting apply for module.vpc["gcp-vpc-prd-hub-shr-1"].google_compute_network.vpc
+2024-03-30T17:34:26.301Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_severity=ERROR tf_resource_type=google_compute_network tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_provider_addr=registry.terraform.io/hashicorp/google diagnostic_summary="Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkhub-prd-1' was not found, notFound" tf_req_id=605a79d3-70a5-9d7d-1718-77f0b63794d9 @module=sdk.proto diagnostic_detail="" tf_proto_version=5.4 timestamp=2024-03-30T17:34:26.301Z
+2024-03-30T17:34:26.301Z [ERROR] vertex "module.vpc[\"gcp-vpc-prd-hub-shr-1\"].google_compute_network.vpc" error: Error creating Network: googleapi: Error 404: The resource 'projects/gcp-prj-inf-networkhub-prd-1' was not found, notFound
+2024-03-30T17:34:26.305Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["iam.googleapis.com"]
+2024-03-30T17:34:26.312Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+  | Help Token: ARqICRPMBw4JY6kVM5DWFwqGp0mCpYi-Kvoyrxl6XUTztJCgaz6YU26ezHN-ezHTYr-VKX0ny6R3lqGo--pCL_GfOmCNJ2is8FdRj_uDOx046vb9
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkspk-dev-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_proto_version=5.4 diagnostic_detail="" tf_resource_type=google_project_service @module=sdk.proto diagnostic_severity=ERROR tf_req_id=0e3fc744-131e-8ecd-46d6-a3beef0a3f52 tf_rpc=ApplyResourceChange timestamp=2024-03-30T17:34:26.312Z
+2024-03-30T17:34:26.312Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkspk-dev-1\"].google_project_service.gcp_apis[\"monitoring.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+Help Token: ARqICRPMBw4JY6kVM5DWFwqGp0mCpYi-Kvoyrxl6XUTztJCgaz6YU26ezHN-ezHTYr-VKX0ny6R3lqGo--pCL_GfOmCNJ2is8FdRj_uDOx046vb9
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkspk-dev-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:26.315Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail=""
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+  | Help Token: ARqICRPYkKa9ioxbqJe6LGSWWd3r4wn-WJcX-LJ2vij5rWQJUkC-HlP4f_cs_5mMcCxN0beLrPgr_g184LYykSUG921jdjGi31vL4DUbJpp2EBE5
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkhub-prd-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_req_id=1e1aea55-1228-fce7-6385-e6b066ff9f0b tf_rpc=ApplyResourceChange @module=sdk.proto diagnostic_severity=ERROR tf_proto_version=5.4 tf_resource_type=google_project_service tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-30T17:34:26.314Z
+2024-03-30T17:34:26.315Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkhub-prd-1\"].google_project_service.gcp_apis[\"iam.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+Help Token: ARqICRPYkKa9ioxbqJe6LGSWWd3r4wn-WJcX-LJ2vij5rWQJUkC-HlP4f_cs_5mMcCxN0beLrPgr_g184LYykSUG921jdjGi31vL4DUbJpp2EBE5
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkhub-prd-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:26.316Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkhub-prd-1"].google_project_service.gcp_apis["monitoring.googleapis.com"]
+2024-03-30T17:34:26.319Z [INFO]  Starting apply for module.apis["gcp-prj-inf-networkspk-dev-1"].google_project_service.gcp_apis["servicenetworking.googleapis.com"]
+2024-03-30T17:34:27.305Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic:
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+  | Help Token: ARqICRMLjY2MU3Gu81GXT8H9eCyO9AuSnNaV4QT7B6khT3RSjHAvcFXYiDSVRjVGWYeH8Ssprev55jZQyOWrcw94pBRLKhIEzBlV469TY_UmTU1k
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkhub-prd-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_req_id=d0d0da2e-aed2-c6fc-3adf-a3b347ad8786 @module=sdk.proto diagnostic_detail="" tf_proto_version=5.4 tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_severity=ERROR tf_provider_addr=registry.terraform.io/hashicorp/google tf_resource_type=google_project_service timestamp=2024-03-30T17:34:27.304Z
+2024-03-30T17:34:27.305Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkhub-prd-1\"].google_project_service.gcp_apis[\"logging.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+Help Token: ARqICRMLjY2MU3Gu81GXT8H9eCyO9AuSnNaV4QT7B6khT3RSjHAvcFXYiDSVRjVGWYeH8Ssprev55jZQyOWrcw94pBRLKhIEzBlV469TY_UmTU1k
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkhub-prd-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:27.315Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-03-30T17:34:27.315Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkhub-prd-1-budget-01"].google_billing_budget.budget
+2024-03-30T17:34:27.712Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_resource_type=google_project_service diagnostic_detail="" tf_proto_version=5.4 tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 @module=sdk.proto
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+  | Help Token: ARqICRPzZiT9UUXh8J7g5l55Xq4NxZTbX3XRY7W-ABqWK2TMbJO2vmaB45WP8oUF-pE-wJeFAuY5xt3tGsmOztMfoaJYgEA-6-eep4a11tt92UOz
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkspk-dev-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=08816e26-02c9-c4de-7f90-f0ee12773005 diagnostic_severity=ERROR timestamp=2024-03-30T17:34:27.712Z
+2024-03-30T17:34:27.712Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkspk-dev-1\"].google_project_service.gcp_apis[\"dns.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+Help Token: ARqICRPzZiT9UUXh8J7g5l55Xq4NxZTbX3XRY7W-ABqWK2TMbJO2vmaB45WP8oUF-pE-wJeFAuY5xt3tGsmOztMfoaJYgEA-6-eep4a11tt92UOz
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkspk-dev-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:27.716Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_proto_version=5.4 tf_req_id=419e96e3-1fdb-c04a-398f-cad0b91f49d1 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_resource_type=google_project_service @module=sdk.proto diagnostic_detail="" tf_rpc=ApplyResourceChange diagnostic_severity=ERROR
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+  | Help Token: ARqICRNIBdPRFlPVZ1dH7k0QpF_WFjrA8opUCJOSCYok9qyqAXhyAXPeAKQsh8_7TWqSXMbZkDUYJb84Rp7PHfkVzcOm_OZMNM_FtrlyCZT6pqAD
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkhub-prd-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-30T17:34:27.716Z
+2024-03-30T17:34:27.717Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkhub-prd-1\"].google_project_service.gcp_apis[\"dns.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+Help Token: ARqICRNIBdPRFlPVZ1dH7k0QpF_WFjrA8opUCJOSCYok9qyqAXhyAXPeAKQsh8_7TWqSXMbZkDUYJb84Rp7PHfkVzcOm_OZMNM_FtrlyCZT6pqAD
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkhub-prd-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:27.720Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-03-30T17:34:27.720Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-networkspk-dev-1-budget-01"].google_billing_budget.budget
+2024-03-30T17:34:28.104Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_severity=ERROR tf_req_id=b7f7e432-c44a-b9e0-ca6e-03f2f91fa3a7 @module=sdk.proto tf_resource_type=google_project_service tf_provider_addr=registry.terraform.io/hashicorp/google tf_proto_version=5.4 tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail=""
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+  | Help Token: ARqICRMZ9ysXaHOQGPBuXTtW7Ahz0Puk3oSzgP4ylyh3E-E9_E9tqA5EjYz6Ozv0psaDbGvmNMmYu_BRGmDxUGvo7YUVGNgher-jy-njzuAVza9H
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkhub-prd-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   timestamp=2024-03-30T17:34:28.104Z
+2024-03-30T17:34:28.104Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkhub-prd-1\"].google_project_service.gcp_apis[\"secretmanager.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+Help Token: ARqICRMZ9ysXaHOQGPBuXTtW7Ahz0Puk3oSzgP4ylyh3E-E9_E9tqA5EjYz6Ozv0psaDbGvmNMmYu_BRGmDxUGvo7YUVGNgher-jy-njzuAVza9H
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkhub-prd-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:28.527Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_provider_addr=registry.terraform.io/hashicorp/google tf_proto_version=5.4 tf_req_id=7fd42c0d-6610-5417-4cc2-5de177c01b13 tf_rpc=ApplyResourceChange diagnostic_severity=ERROR diagnostic_summary="Error creating Budget: googleapi: Error 403: The caller does not have permission" diagnostic_detail="" @module=sdk.proto tf_resource_type=google_billing_budget @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 timestamp=2024-03-30T17:34:28.526Z
+2024-03-30T17:34:28.527Z [ERROR] vertex "module.billing_budget[\"gcp-prj-inf-networkhub-prd-1-budget-01\"].google_billing_budget.budget" error: Error creating Budget: googleapi: Error 403: The caller does not have permission
+2024-03-30T17:34:28.707Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_rpc=ApplyResourceChange diagnostic_severity=ERROR tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google diagnostic_detail=""
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+  | Help Token: ARqICRPkemxpaLXfajpC4O1wMWZy82T-LdLeX-pbZj5GWsSULxpczLhYTazmTJh_46Wc7ErS5CjJh4zEqBrAFCImYCFP_LZCilhGNmisv3Bp47yQ
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkspk-dev-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_req_id=eb811d4c-0ff7-15c6-47cd-07c335c888ce tf_resource_type=google_project_service @module=sdk.proto timestamp=2024-03-30T17:34:28.707Z
+2024-03-30T17:34:28.708Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkspk-dev-1\"].google_project_service.gcp_apis[\"compute.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+Help Token: ARqICRPkemxpaLXfajpC4O1wMWZy82T-LdLeX-pbZj5GWsSULxpczLhYTazmTJh_46Wc7ErS5CjJh4zEqBrAFCImYCFP_LZCilhGNmisv3Bp47yQ
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkspk-dev-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:28.928Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: tf_proto_version=5.4 tf_req_id=ee383c9a-b58e-a425-74a2-8fc3d99f768d tf_resource_type=google_billing_budget @module=sdk.proto tf_provider_addr=registry.terraform.io/hashicorp/google diagnostic_summary="Error creating Budget: googleapi: Error 403: The caller does not have permission" @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail="" diagnostic_severity=ERROR tf_rpc=ApplyResourceChange timestamp=2024-03-30T17:34:28.928Z
+2024-03-30T17:34:28.929Z [ERROR] vertex "module.billing_budget[\"gcp-prj-inf-networkspk-dev-1-budget-01\"].google_billing_budget.budget" error: Error creating Budget: googleapi: Error 403: The caller does not have permission
+2024-03-30T17:34:29.504Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 @module=sdk.proto tf_req_id=7bb72507-1060-600b-01d8-551ce6aa2703 diagnostic_detail="" diagnostic_severity=ERROR tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ApplyResourceChange
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+  | Help Token: ARqICRNlUg3lE9PFbX2JulcemG5ioHYDSLTYvbWJOlfRAk5Go7omM2TkwrfZebWPuOlWqXuBWmViEWVtxZXvOD_VZRHYWqy50xQlZ0CIdAdPVYQ8
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkhub-prd-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_resource_type=google_project_service timestamp=2024-03-30T17:34:29.504Z
+2024-03-30T17:34:29.505Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkhub-prd-1\"].google_project_service.gcp_apis[\"container.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+Help Token: ARqICRNlUg3lE9PFbX2JulcemG5ioHYDSLTYvbWJOlfRAk5Go7omM2TkwrfZebWPuOlWqXuBWmViEWVtxZXvOD_VZRHYWqy50xQlZ0CIdAdPVYQ8
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkhub-prd-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:30.310Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_severity=ERROR
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+  | Help Token: ARqICRONOlZDh7FEp_uw6XZhzHkjlXcgAxjTd22q6vgIEt7shG04ihJ5mXNi6Oyx-IuANY3m5xliAI3Q2rY1mMKoQ056zBiZEiY1kewTuAwr5edC
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkspk-dev-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_proto_version=5.4 tf_resource_type=google_project_service @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 @module=sdk.proto diagnostic_detail="" tf_req_id=4c80f68b-31fe-c1d9-40f8-fb2a9a00e6bf tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ApplyResourceChange timestamp=2024-03-30T17:34:30.310Z
+2024-03-30T17:34:30.310Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkspk-dev-1\"].google_project_service.gcp_apis[\"container.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+Help Token: ARqICRONOlZDh7FEp_uw6XZhzHkjlXcgAxjTd22q6vgIEt7shG04ihJ5mXNi6Oyx-IuANY3m5xliAI3Q2rY1mMKoQ056zBiZEiY1kewTuAwr5edC
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkspk-dev-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:30.515Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 @module=sdk.proto tf_rpc=ApplyResourceChange diagnostic_detail="" tf_resource_type=google_project_service diagnostic_severity=ERROR
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+  | Help Token: ARqICROXY-pgV0c21w7WtxyAhLzNKqSXxd9BJE2Grar3YSsLAirTI1m5Z6ILPSOvxI-WkLxXoMTgwqLgFyNuWTcGlxxOLdfYQ0NijiNNcG3nWP1t
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkhub-prd-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_req_id=abb52f18-c0b8-e279-2ca8-241b4f9137e9 tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-30T17:34:30.515Z
+2024-03-30T17:34:30.515Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkhub-prd-1\"].google_project_service.gcp_apis[\"monitoring.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkhub-prd-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkhub-prd-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkhub-prd-1: googleapi: Error 403: Project 'gcp-prj-inf-networkhub-prd-1' not found or permission denied.
+Help Token: ARqICROXY-pgV0c21w7WtxyAhLzNKqSXxd9BJE2Grar3YSsLAirTI1m5Z6ILPSOvxI-WkLxXoMTgwqLgFyNuWTcGlxxOLdfYQ0NijiNNcG3nWP1t
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkhub-prd-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkhub-prd-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:30.714Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic: diagnostic_detail="" tf_proto_version=5.4 tf_req_id=7fcfdd74-bdcc-c82b-cec0-040a3420ca36 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+  | Help Token: ARqICRO5omS92UPKsVPW78NmKyeW8tzPmXp5PTSg41JWF-Tn_lo0LXtdHd95R91w8pY4osojF8m6zfjzP-xlRzSBJhzEs1M-qVvFOSiKimTfbn14
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkspk-dev-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_resource_type=google_project_service diagnostic_severity=ERROR tf_rpc=ApplyResourceChange @module=sdk.proto tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-30T17:34:30.713Z
+2024-03-30T17:34:30.714Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkspk-dev-1\"].google_project_service.gcp_apis[\"iam.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+Help Token: ARqICRO5omS92UPKsVPW78NmKyeW8tzPmXp5PTSg41JWF-Tn_lo0LXtdHd95R91w8pY4osojF8m6zfjzP-xlRzSBJhzEs1M-qVvFOSiKimTfbn14
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkspk-dev-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:31.113Z [ERROR] provider.terraform-provider-google_v5.19.0_x5: Response contains error diagnostic:
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+  | Help Token: ARqICRPJtQ7v3FMzKsiRiOI5Y4sYJEwn-FFofouI2tlJsXwf-4f697ZdWOz78ozEGYp0gODR4VZKJ60-sOhRIXESfqY21NaLc3bCsXH3ZDyWtgcs
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "resource_id": "gcp-prj-inf-networkspk-dev-1",
+  |       "type": "Project"
+  |     },
+  |     "reason": "RESOURCES_NOT_FOUND"
+  |   }
+  | ]
+  | , forbidden
+   tf_req_id=fa776773-2644-db0a-a4a2-7c25aa3b262f tf_resource_type=google_project_service @module=sdk.proto diagnostic_severity=ERROR tf_rpc=ApplyResourceChange diagnostic_detail="" tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 timestamp=2024-03-30T17:34:31.113Z
+2024-03-30T17:34:31.114Z [ERROR] vertex "module.apis[\"gcp-prj-inf-networkspk-dev-1\"].google_project_service.gcp_apis[\"servicenetworking.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-networkspk-dev-1` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-networkspk-dev-1" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-networkspk-dev-1: googleapi: Error 403: Project 'gcp-prj-inf-networkspk-dev-1' not found or permission denied.
+Help Token: ARqICRPJtQ7v3FMzKsiRiOI5Y4sYJEwn-FFofouI2tlJsXwf-4f697ZdWOz78ozEGYp0gODR4VZKJ60-sOhRIXESfqY21NaLc3bCsXH3ZDyWtgcs
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=210002\u0026type=Project\u0026resource_id=gcp-prj-inf-networkspk-dev-1",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "resource_id": "gcp-prj-inf-networkspk-dev-1",
+      "type": "Project"
+    },
+    "reason": "RESOURCES_NOT_FOUND"
+  }
+]
+, forbidden
+2024-03-30T17:34:32.087Z [INFO]  Terraform version: 1.7.5
+2024-03-30T17:34:32.087Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T17:34:32.087Z [INFO]  CLI args: []string{"terraform", "output", "-json"}
+2024-03-30T17:34:32.088Z [INFO]  CLI command args: []string{"output", "-json"}

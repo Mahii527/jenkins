@@ -1,0 +1,70 @@
+2023-12-04T11:07:50.377Z [INFO]  Terraform version: 1.6.4
+2023-12-04T11:07:50.377Z [INFO]  Go runtime version: go1.21.3
+2023-12-04T11:07:50.377Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade"}
+2023-12-04T11:07:50.378Z [INFO]  CLI command args: []string{"init", "-upgrade"}
+2023-12-04T11:08:03.843Z [INFO]  Terraform version: 1.6.4
+2023-12-04T11:08:03.843Z [INFO]  Go runtime version: go1.21.3
+2023-12-04T11:08:03.843Z [INFO]  CLI args: []string{"terraform", "plan", "-var", "access_token=ya29.a0AfB_byBt0yB0T-_GfK5ey4dj8SCmUkXaFWCPrwPV_310qM1BVWqcMe6fuezzW9y9FxnxsynT3GuYSRqceVqgonsuLlviShmYmh_OpAMWJ9lCCvBWS0ASddECJGumxv4hTDvq1UrrlRXKJ-5zUt8U6n9FaAYsIqDZzh2kcvRublE6MEaj5S0HiU4wEi9lnxXjc1ALk5zjcwFXiY-Q6NXqIhbCI1Eb0Zh5o4Bl60b8jThyzvEgAGnWom14aLgY_nxxW0GHoKt6FZ70W0NQTe9fmx_A7qmE2k4OvqU-9wY_MKVJg2zu8pizu3ETW69Q5gl-SQXzBN21EvV1xkC88EHp7KfpziXlXZSRCSGU78RDOSl_tfJrxUcBOInBAiZWcs-gPu2ggfKlRUnKVXLQwxuAJkBcMcV0oXRaaCgYKAeQSARESFQHGX2MiCmtTYpx_2-xFyFUW2ZkZuw0423", "-var-file=../input-json-file/psc.tfvars.json", "-out=../plan-file/psc-tf-plan.json"}
+2023-12-04T11:08:03.844Z [INFO]  CLI command args: []string{"plan", "-var", "access_token=ya29.a0AfB_byBt0yB0T-_GfK5ey4dj8SCmUkXaFWCPrwPV_310qM1BVWqcMe6fuezzW9y9FxnxsynT3GuYSRqceVqgonsuLlviShmYmh_OpAMWJ9lCCvBWS0ASddECJGumxv4hTDvq1UrrlRXKJ-5zUt8U6n9FaAYsIqDZzh2kcvRublE6MEaj5S0HiU4wEi9lnxXjc1ALk5zjcwFXiY-Q6NXqIhbCI1Eb0Zh5o4Bl60b8jThyzvEgAGnWom14aLgY_nxxW0GHoKt6FZ70W0NQTe9fmx_A7qmE2k4OvqU-9wY_MKVJg2zu8pizu3ETW69Q5gl-SQXzBN21EvV1xkC88EHp7KfpziXlXZSRCSGU78RDOSl_tfJrxUcBOInBAiZWcs-gPu2ggfKlRUnKVXLQwxuAJkBcMcV0oXRaaCgYKAeQSARESFQHGX2MiCmtTYpx_2-xFyFUW2ZkZuw0423", "-var-file=../input-json-file/psc.tfvars.json", "-out=../plan-file/psc-tf-plan.json"}
+2023-12-04T11:08:04.545Z [INFO]  backend/local: starting Plan operation
+2023-12-04T11:08:07.272Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:07.412Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:07.412Z
+2023-12-04T11:08:07.659Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:07.796Z [INFO]  provider.terraform-provider-google-beta_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:07.795Z
+2023-12-04T11:08:08.045Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:08.161Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:08.161Z
+2023-12-04T11:08:08.410Z [INFO]  backend/local: plan calling Plan
+2023-12-04T11:08:08.424Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:08.538Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:08.537Z
+2023-12-04T11:08:08.771Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_req_id=b11e0cc3-36c7-b9d7-3263-e2001d9d9446 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1600 @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider timestamp=2023-12-04T11:08:08.770Z
+2023-12-04T11:08:08.771Z [INFO]  provider.terraform-provider-google_v5.7.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_req_id=b11e0cc3-36c7-b9d7-3263-e2001d9d9446 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1601 timestamp=2023-12-04T11:08:08.770Z
+2023-12-04T11:08:08.771Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Authenticating using configured Google JSON 'access_token'...: @module=google tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1600 tf_mux_provider="*proto5server.Server" tf_req_id=b11e0cc3-36c7-b9d7-3263-e2001d9d9446 tf_rpc=ConfigureProvider timestamp=2023-12-04T11:08:08.770Z
+2023-12-04T11:08:08.771Z [INFO]  provider.terraform-provider-google_v5.7.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1601 @module=google tf_mux_provider="*proto5server.Server" tf_req_id=b11e0cc3-36c7-b9d7-3263-e2001d9d9446 tf_rpc=ConfigureProvider timestamp=2023-12-04T11:08:08.770Z
+2023-12-04T11:08:08.870Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Terraform is using this identity: ayush.shukla@hcl.com: tf_rpc=ConfigureProvider @module=google tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1520 tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=b11e0cc3-36c7-b9d7-3263-e2001d9d9446 timestamp=2023-12-04T11:08:08.869Z
+2023-12-04T11:08:09.283Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for module.regional_address["0"].google_compute_address.default during refresh.
+      - .users[0]: was cty.StringVal("https://www.googleapis.com/compute/v1/projects/reference-service-prj/regions/us-central1/forwardingRules/qa-udp-nlb-frontend"), but now cty.StringVal("https://www.googleapis.com/compute/v1/projects/reference-service-prj/regions/us-central1/forwardingRules/qa-svc-udp-nlb-frontend")
+2023-12-04T11:08:09.290Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.regional_address["0"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_endpoint_type: planned value cty.StringVal("") for a non-computed attribute
+      - .network: planned value cty.StringVal("") for a non-computed attribute
+      - .labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .ip_version: planned value cty.StringVal("") for a non-computed attribute
+2023-12-04T11:08:09.291Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.regional_address["2"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_endpoint_type: planned value cty.StringVal("") for a non-computed attribute
+      - .network: planned value cty.StringVal("") for a non-computed attribute
+      - .labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .ip_version: planned value cty.StringVal("") for a non-computed attribute
+2023-12-04T11:08:09.332Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.global_address["1"].google_compute_global_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .purpose: planned value cty.StringVal("") for a non-computed attribute
+      - .ip_version: planned value cty.StringVal("") for a non-computed attribute
+      - .network: planned value cty.StringVal("") for a non-computed attribute
+2023-12-04T11:08:09.346Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.global_address["0"].google_compute_global_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ip_version: planned value cty.StringVal("") for a non-computed attribute
+2023-12-04T11:08:10.298Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.regional_address["1"].google_compute_address.default, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .labels: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .ip_version: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_endpoint_type: planned value cty.StringVal("") for a non-computed attribute
+      - .network: planned value cty.StringVal("") for a non-computed attribute
+2023-12-04T11:08:11.799Z [INFO]  backend/local: plan operation completed
+2023-12-04T11:08:11.800Z [INFO]  backend/local: writing plan output to: ../plan-file/psc-tf-plan.json
+2023-12-04T11:08:23.555Z [INFO]  Terraform version: 1.6.4
+2023-12-04T11:08:23.555Z [INFO]  Go runtime version: go1.21.3
+2023-12-04T11:08:23.556Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/psc-tf-plan.json"}
+2023-12-04T11:08:23.557Z [INFO]  CLI command args: []string{"apply", "../plan-file/psc-tf-plan.json"}
+2023-12-04T11:08:24.241Z [INFO]  backend/local: starting Apply operation
+2023-12-04T11:08:26.982Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:27.093Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:27.093Z
+2023-12-04T11:08:27.286Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:27.404Z [INFO]  provider.terraform-provider-google-beta_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:27.404Z
+2023-12-04T11:08:27.610Z [INFO]  backend/local: apply calling Apply
+2023-12-04T11:08:27.618Z [INFO]  provider: configuring client automatic mTLS
+2023-12-04T11:08:27.734Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: configuring server automatic mTLS: timestamp=2023-12-04T11:08:27.733Z
+2023-12-04T11:08:27.984Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1600 @module=google tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=5d0d12eb-3ed2-451d-c634-6459eaf1e6c6 tf_rpc=ConfigureProvider timestamp=2023-12-04T11:08:27.984Z
+2023-12-04T11:08:27.984Z [INFO]  provider.terraform-provider-google_v5.7.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1601 @module=google tf_mux_provider="*proto5server.Server" tf_req_id=5d0d12eb-3ed2-451d-c634-6459eaf1e6c6 timestamp=2023-12-04T11:08:27.984Z
+2023-12-04T11:08:27.984Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=5d0d12eb-3ed2-451d-c634-6459eaf1e6c6 tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1600 @module=google timestamp=2023-12-04T11:08:27.984Z
+2023-12-04T11:08:27.984Z [INFO]  provider.terraform-provider-google_v5.7.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1601 @module=google tf_req_id=5d0d12eb-3ed2-451d-c634-6459eaf1e6c6 tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2023-12-04T11:08:27.984Z
+2023-12-04T11:08:28.031Z [INFO]  provider.terraform-provider-google_v5.7.0_x5: Terraform is using this identity: ayush.shukla@hcl.com: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1520 @module=google tf_rpc=ConfigureProvider tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=5d0d12eb-3ed2-451d-c634-6459eaf1e6c6 timestamp=2023-12-04T11:08:28.031Z

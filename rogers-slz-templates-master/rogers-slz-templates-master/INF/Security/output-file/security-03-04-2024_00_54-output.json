@@ -1,0 +1,928 @@
+{
+  "Billing_Budget_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-logging-prd-1-budget-01": [
+          "object",
+          {
+            "budget_amount": [
+              "list",
+              [
+                "object",
+                {
+                  "last_period_amount": "bool",
+                  "specified_amount": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "currency_code": "string",
+                        "nanos": "number",
+                        "units": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "budget_name": "string",
+            "budget_notification_email": "string",
+            "budget_notification_name": "string",
+            "budget_project": [
+              "set",
+              "string"
+            ],
+            "budget_threshold": [
+              "list",
+              [
+                "object",
+                {
+                  "spend_basis": "string",
+                  "threshold_percent": "number"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-logging-prd-1-budget-01": {
+        "budget_amount": [
+          {
+            "last_period_amount": false,
+            "specified_amount": [
+              {
+                "currency_code": "USD",
+                "nanos": 0,
+                "units": "1000"
+              }
+            ]
+          }
+        ],
+        "budget_name": "gcp-prj-inf-logging-prd-1-budget-01",
+        "budget_notification_email": "jitendra.lodhi@rci.rogers.com",
+        "budget_notification_name": "gcp-prj-inf-logging-prd-1-budget-01-notification-01",
+        "budget_project": [
+          "projects/gcp-prj-inf-logging-prd-1"
+        ],
+        "budget_threshold": [
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.5
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.75
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.9
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 1
+          }
+        ]
+      }
+    }
+  },
+  "Custom_Role_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "inf_sentinel_crl_role_01": [
+          "object",
+          {
+            "Custom_Role_Details": [
+              "object",
+              {
+                "deleted": "bool",
+                "description": "string",
+                "id": "string",
+                "name": "string",
+                "permissions": [
+                  "set",
+                  "string"
+                ],
+                "project": "string",
+                "role_id": "string",
+                "stage": "string",
+                "title": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "inf_sentinel_crl_role_01": {
+        "Custom_Role_Details": {
+          "deleted": false,
+          "description": "Custom Role for Audit logs for Sentinel. Created on: 2024-04-02",
+          "id": "projects/gcp-prj-inf-logging-prd-1/roles/inf_sentinel_crl_role_01",
+          "name": "projects/gcp-prj-inf-logging-prd-1/roles/inf_sentinel_crl_role_01",
+          "permissions": [
+            "pubsub.subscriptions.consume",
+            "pubsub.subscriptions.get",
+            "pubsub.subscriptions.list",
+            "pubsub.topics.get",
+            "pubsub.topics.list"
+          ],
+          "project": "gcp-prj-inf-logging-prd-1",
+          "role_id": "inf_sentinel_crl_role_01",
+          "stage": "",
+          "title": "inf-sentinel-crl-role-01"
+        }
+      }
+    }
+  },
+  "Org_Sink_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-siem-sink-01": [
+          "object",
+          {
+            "Organization_Logging_Sink_Details": [
+              "object",
+              {
+                "bigquery_options": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "use_partitioned_tables": "bool"
+                    }
+                  ]
+                ],
+                "description": "string",
+                "destination": "string",
+                "disabled": "bool",
+                "exclusions": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "description": "string",
+                      "disabled": "bool",
+                      "filter": "string",
+                      "name": "string"
+                    }
+                  ]
+                ],
+                "filter": "string",
+                "id": "string",
+                "include_children": "bool",
+                "name": "string",
+                "org_id": "string",
+                "writer_identity": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-siem-sink-01": {
+        "Organization_Logging_Sink_Details": {
+          "bigquery_options": [],
+          "description": "It will be used as sink audit logs to the identified pub/sub subscription in Logging project",
+          "destination": "pubsub.googleapis.com/projects/gcp-prj-inf-logging-prd-1/topics/gcp-yyz-prd-sentinal-psub-01",
+          "disabled": false,
+          "exclusions": [],
+          "filter": "",
+          "id": "organizations/179572310621/sinks/gcp-yyz-prd-siem-sink-01",
+          "include_children": true,
+          "name": "gcp-yyz-prd-siem-sink-01",
+          "org_id": "179572310621",
+          "writer_identity": "serviceAccount:service-org-179572310621@gcp-sa-logging.iam.gserviceaccount.com"
+        }
+      }
+    }
+  },
+  "Project_APIs_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-logging-prd-1": [
+          "object",
+          {
+            "google_apis-details": [
+              "object",
+              {
+                "bigquery.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "bigquerydatatransfer.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "compute.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "iam.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "logging.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "monitoring.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "pubsub.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-logging-prd-1": {
+        "google_apis-details": {
+          "bigquery.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-logging-prd-1/bigquery.googleapis.com",
+            "project": "gcp-prj-inf-logging-prd-1",
+            "service": "bigquery.googleapis.com",
+            "timeouts": null
+          },
+          "bigquerydatatransfer.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-logging-prd-1/bigquerydatatransfer.googleapis.com",
+            "project": "gcp-prj-inf-logging-prd-1",
+            "service": "bigquerydatatransfer.googleapis.com",
+            "timeouts": null
+          },
+          "compute.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-logging-prd-1/compute.googleapis.com",
+            "project": "gcp-prj-inf-logging-prd-1",
+            "service": "compute.googleapis.com",
+            "timeouts": null
+          },
+          "iam.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-logging-prd-1/iam.googleapis.com",
+            "project": "gcp-prj-inf-logging-prd-1",
+            "service": "iam.googleapis.com",
+            "timeouts": null
+          },
+          "logging.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-logging-prd-1/logging.googleapis.com",
+            "project": "gcp-prj-inf-logging-prd-1",
+            "service": "logging.googleapis.com",
+            "timeouts": null
+          },
+          "monitoring.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-logging-prd-1/monitoring.googleapis.com",
+            "project": "gcp-prj-inf-logging-prd-1",
+            "service": "monitoring.googleapis.com",
+            "timeouts": null
+          },
+          "pubsub.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-logging-prd-1/pubsub.googleapis.com",
+            "project": "gcp-prj-inf-logging-prd-1",
+            "service": "pubsub.googleapis.com",
+            "timeouts": null
+          }
+        }
+      }
+    }
+  },
+  "Project_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-logging-prd-1": [
+          "object",
+          {
+            "project_details": [
+              "object",
+              {
+                "auto_create_network": "bool",
+                "billing_account": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "folder_id": "string",
+                "id": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "number": "string",
+                "org_id": "string",
+                "project_id": "string",
+                "skip_delete": "bool",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "read": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-logging-prd-1": {
+        "project_details": {
+          "auto_create_network": false,
+          "billing_account": "0169BA-63D6C3-3F9651",
+          "effective_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "folder_id": "951704879488",
+          "id": "projects/gcp-prj-inf-logging-prd-1",
+          "labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "name": "Logging",
+          "number": "765449061299",
+          "org_id": "",
+          "project_id": "gcp-prj-inf-logging-prd-1",
+          "skip_delete": false,
+          "terraform_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "timeouts": null
+        }
+      }
+    }
+  },
+  "Pubsub_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-sentinal-psub-01": [
+          "object",
+          {
+            "pubsub_subsciption_details": [
+              "object",
+              {
+                "ack_deadline_seconds": "number",
+                "bigquery_config": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "drop_unknown_fields": "bool",
+                      "table": "string",
+                      "use_table_schema": "bool",
+                      "use_topic_schema": "bool",
+                      "write_metadata": "bool"
+                    }
+                  ]
+                ],
+                "cloud_storage_config": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "avro_config": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "write_metadata": "bool"
+                          }
+                        ]
+                      ],
+                      "bucket": "string",
+                      "filename_prefix": "string",
+                      "filename_suffix": "string",
+                      "max_bytes": "number",
+                      "max_duration": "string",
+                      "state": "string"
+                    }
+                  ]
+                ],
+                "dead_letter_policy": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "dead_letter_topic": "string",
+                      "max_delivery_attempts": "number"
+                    }
+                  ]
+                ],
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "enable_exactly_once_delivery": "bool",
+                "enable_message_ordering": "bool",
+                "expiration_policy": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "ttl": "string"
+                    }
+                  ]
+                ],
+                "filter": "string",
+                "id": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "message_retention_duration": "string",
+                "name": "string",
+                "project": "string",
+                "push_config": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "attributes": [
+                        "map",
+                        "string"
+                      ],
+                      "no_wrapper": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "write_metadata": "bool"
+                          }
+                        ]
+                      ],
+                      "oidc_token": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "audience": "string",
+                            "service_account_email": "string"
+                          }
+                        ]
+                      ],
+                      "push_endpoint": "string"
+                    }
+                  ]
+                ],
+                "retain_acked_messages": "bool",
+                "retry_policy": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "maximum_backoff": "string",
+                      "minimum_backoff": "string"
+                    }
+                  ]
+                ],
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "topic": "string"
+              }
+            ],
+            "pubsub_topic_details": [
+              "object",
+              {
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ingestion_data_source_settings": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "aws_kinesis": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "aws_role_arn": "string",
+                            "consumer_arn": "string",
+                            "gcp_service_account": "string",
+                            "stream_arn": "string"
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                "kms_key_name": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "message_retention_duration": "string",
+                "message_storage_policy": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "allowed_persistence_regions": [
+                        "list",
+                        "string"
+                      ]
+                    }
+                  ]
+                ],
+                "name": "string",
+                "project": "string",
+                "schema_settings": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "encoding": "string",
+                      "schema": "string"
+                    }
+                  ]
+                ],
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-sentinal-psub-01": {
+        "pubsub_subsciption_details": {
+          "ack_deadline_seconds": 10,
+          "bigquery_config": [],
+          "cloud_storage_config": [],
+          "dead_letter_policy": [],
+          "effective_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "enable_exactly_once_delivery": false,
+          "enable_message_ordering": false,
+          "expiration_policy": [
+            {
+              "ttl": ""
+            }
+          ],
+          "filter": "",
+          "id": "projects/gcp-prj-inf-logging-prd-1/subscriptions/gcp-yyz-prd-sentinal-psub-01-sentinal-sub-01",
+          "labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "message_retention_duration": "604800s",
+          "name": "gcp-yyz-prd-sentinal-psub-01-sentinal-sub-01",
+          "project": "gcp-prj-inf-logging-prd-1",
+          "push_config": [],
+          "retain_acked_messages": false,
+          "retry_policy": [],
+          "terraform_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "timeouts": null,
+          "topic": "projects/gcp-prj-inf-logging-prd-1/topics/gcp-yyz-prd-sentinal-psub-01"
+        },
+        "pubsub_topic_details": {
+          "effective_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "id": "projects/gcp-prj-inf-logging-prd-1/topics/gcp-yyz-prd-sentinal-psub-01",
+          "ingestion_data_source_settings": [],
+          "kms_key_name": "",
+          "labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "message_retention_duration": "1200s",
+          "message_storage_policy": [],
+          "name": "gcp-yyz-prd-sentinal-psub-01",
+          "project": "gcp-prj-inf-logging-prd-1",
+          "schema_settings": [],
+          "terraform_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "confidential",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "timeouts": null
+        }
+      }
+    }
+  },
+  "SA_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "svc-sentinel": [
+          "object",
+          {
+            "Service_Account_Details": [
+              "object",
+              {
+                "account_id": "string",
+                "create_ignore_already_exists": "bool",
+                "description": "string",
+                "disabled": "bool",
+                "display_name": "string",
+                "email": "string",
+                "id": "string",
+                "member": "string",
+                "name": "string",
+                "project": "string",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string"
+                  }
+                ],
+                "unique_id": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "svc-sentinel": {
+        "Service_Account_Details": {
+          "account_id": "svc-sentinel",
+          "create_ignore_already_exists": false,
+          "description": "Sentinel Service Account for Audit logs",
+          "disabled": false,
+          "display_name": "svc-sentinel",
+          "email": "svc-sentinel@gcp-prj-inf-logging-prd-1.iam.gserviceaccount.com",
+          "id": "projects/gcp-prj-inf-logging-prd-1/serviceAccounts/svc-sentinel@gcp-prj-inf-logging-prd-1.iam.gserviceaccount.com",
+          "member": "serviceAccount:svc-sentinel@gcp-prj-inf-logging-prd-1.iam.gserviceaccount.com",
+          "name": "projects/gcp-prj-inf-logging-prd-1/serviceAccounts/svc-sentinel@gcp-prj-inf-logging-prd-1.iam.gserviceaccount.com",
+          "project": "gcp-prj-inf-logging-prd-1",
+          "timeouts": null,
+          "unique_id": "110729212425983231721"
+        }
+      }
+    }
+  }
+}

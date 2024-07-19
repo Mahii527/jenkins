@@ -1,0 +1,395 @@
+{
+  "Billing_Budget_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-monitoring-prd-1-budget-01": [
+          "object",
+          {
+            "budget_amount": [
+              "list",
+              [
+                "object",
+                {
+                  "last_period_amount": "bool",
+                  "specified_amount": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "currency_code": "string",
+                        "nanos": "number",
+                        "units": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "budget_name": "string",
+            "budget_notification_email": "string",
+            "budget_notification_name": "string",
+            "budget_project": [
+              "set",
+              "string"
+            ],
+            "budget_threshold": [
+              "list",
+              [
+                "object",
+                {
+                  "spend_basis": "string",
+                  "threshold_percent": "number"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-monitoring-prd-1-budget-01": {
+        "budget_amount": [
+          {
+            "last_period_amount": null,
+            "specified_amount": [
+              {
+                "currency_code": "USD",
+                "nanos": null,
+                "units": "1000"
+              }
+            ]
+          }
+        ],
+        "budget_name": "gcp-prj-inf-monitoring-prd-1-budget-01",
+        "budget_notification_email": "jitendra.lodhi@rci.rogers.com",
+        "budget_notification_name": "gcp-prj-inf-monitoring-prd-1-budget-01-notification-01",
+        "budget_project": [
+          "projects/gcp-prj-inf-monitoring-prd-1"
+        ],
+        "budget_threshold": [
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.5
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.75
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 0.9
+          },
+          {
+            "spend_basis": "CURRENT_SPEND",
+            "threshold_percent": 1
+          }
+        ]
+      }
+    }
+  },
+  "Monitoring_Scope_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {}
+    ],
+    "value": {}
+  },
+  "Project_APIs_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-monitoring-prd-1": [
+          "object",
+          {
+            "google_apis-details": [
+              "object",
+              {
+                "bigquery.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "bigquerydatatransfer.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "compute.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "iam.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "logging.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ],
+                "monitoring.googleapis.com": [
+                  "object",
+                  {
+                    "disable_dependent_services": "bool",
+                    "disable_on_destroy": "bool",
+                    "id": "string",
+                    "project": "string",
+                    "service": "string",
+                    "timeouts": [
+                      "object",
+                      {
+                        "create": "string",
+                        "delete": "string",
+                        "read": "string",
+                        "update": "string"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-monitoring-prd-1": {
+        "google_apis-details": {
+          "bigquery.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-monitoring-prd-1/bigquery.googleapis.com",
+            "project": "gcp-prj-inf-monitoring-prd-1",
+            "service": "bigquery.googleapis.com",
+            "timeouts": null
+          },
+          "bigquerydatatransfer.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-monitoring-prd-1/bigquerydatatransfer.googleapis.com",
+            "project": "gcp-prj-inf-monitoring-prd-1",
+            "service": "bigquerydatatransfer.googleapis.com",
+            "timeouts": null
+          },
+          "compute.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-monitoring-prd-1/compute.googleapis.com",
+            "project": "gcp-prj-inf-monitoring-prd-1",
+            "service": "compute.googleapis.com",
+            "timeouts": null
+          },
+          "iam.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-monitoring-prd-1/iam.googleapis.com",
+            "project": "gcp-prj-inf-monitoring-prd-1",
+            "service": "iam.googleapis.com",
+            "timeouts": null
+          },
+          "logging.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-monitoring-prd-1/logging.googleapis.com",
+            "project": "gcp-prj-inf-monitoring-prd-1",
+            "service": "logging.googleapis.com",
+            "timeouts": null
+          },
+          "monitoring.googleapis.com": {
+            "disable_dependent_services": true,
+            "disable_on_destroy": true,
+            "id": "gcp-prj-inf-monitoring-prd-1/monitoring.googleapis.com",
+            "project": "gcp-prj-inf-monitoring-prd-1",
+            "service": "monitoring.googleapis.com",
+            "timeouts": null
+          }
+        }
+      }
+    }
+  },
+  "Project_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-prj-inf-monitoring-prd-1": [
+          "object",
+          {
+            "project_details": [
+              "object",
+              {
+                "auto_create_network": "bool",
+                "billing_account": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "folder_id": "string",
+                "id": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "number": "string",
+                "org_id": "string",
+                "project_id": "string",
+                "skip_delete": "bool",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "read": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-prj-inf-monitoring-prd-1": {
+        "project_details": {
+          "auto_create_network": false,
+          "billing_account": "0169BA-63D6C3-3F9651",
+          "effective_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "internal",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "folder_id": "19101316239",
+          "id": "projects/gcp-prj-inf-monitoring-prd-1",
+          "labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "internal",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "name": "Monitoring",
+          "number": "94258621996",
+          "org_id": "",
+          "project_id": "gcp-prj-inf-monitoring-prd-1",
+          "skip_delete": false,
+          "terraform_labels": {
+            "appclass": "important",
+            "appid": "notset",
+            "appname": "notset",
+            "appowner": "varinder_singh",
+            "businessunit": "inf",
+            "canumber": "23cb900457",
+            "compliance": "none",
+            "costcenter": "534-1101-7571",
+            "dataclass": "internal",
+            "env": "prd",
+            "pii": "true",
+            "sharedservices": "true",
+            "triageticket": "notset"
+          },
+          "timeouts": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1277 @@
+{
+  "Cloud_NAT_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-inf-cnat-01": [
+          "object",
+          {
+            "nat_details": [
+              "object",
+              {
+                "drain_nat_ips": [
+                  "set",
+                  "string"
+                ],
+                "enable_dynamic_port_allocation": "bool",
+                "enable_endpoint_independent_mapping": "bool",
+                "icmp_idle_timeout_sec": "number",
+                "id": "string",
+                "log_config": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "enable": "bool",
+                      "filter": "string"
+                    }
+                  ]
+                ],
+                "max_ports_per_vm": "number",
+                "min_ports_per_vm": "number",
+                "name": "string",
+                "nat_ip_allocate_option": "string",
+                "nat_ips": [
+                  "set",
+                  "string"
+                ],
+                "project": "string",
+                "region": "string",
+                "router": "string",
+                "rules": [
+                  "set",
+                  [
+                    "object",
+                    {
+                      "action": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "source_nat_active_ips": [
+                              "set",
+                              "string"
+                            ],
+                            "source_nat_drain_ips": [
+                              "set",
+                              "string"
+                            ]
+                          }
+                        ]
+                      ],
+                      "description": "string",
+                      "match": "string",
+                      "rule_number": "number"
+                    }
+                  ]
+                ],
+                "source_subnetwork_ip_ranges_to_nat": "string",
+                "subnetwork": [
+                  "set",
+                  [
+                    "object",
+                    {
+                      "name": "string",
+                      "secondary_ip_range_names": [
+                        "set",
+                        "string"
+                      ],
+                      "source_ip_ranges_to_nat": [
+                        "set",
+                        "string"
+                      ]
+                    }
+                  ]
+                ],
+                "tcp_established_idle_timeout_sec": "number",
+                "tcp_time_wait_timeout_sec": "number",
+                "tcp_transitory_idle_timeout_sec": "number",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "udp_idle_timeout_sec": "number"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-inf-cnat-01": {
+        "nat_details": {
+          "drain_nat_ips": [],
+          "enable_dynamic_port_allocation": false,
+          "enable_endpoint_independent_mapping": false,
+          "icmp_idle_timeout_sec": 30,
+          "id": "gcp-prj-inf-networkhub-prd-1/northamerica-northeast2/gcp-yyz-prd-inf-crtr-01/gcp-yyz-prd-inf-cnat-01",
+          "log_config": [],
+          "max_ports_per_vm": 0,
+          "min_ports_per_vm": 64,
+          "name": "gcp-yyz-prd-inf-cnat-01",
+          "nat_ip_allocate_option": "AUTO_ONLY",
+          "nat_ips": [],
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "region": "northamerica-northeast2",
+          "router": "gcp-yyz-prd-inf-crtr-01",
+          "rules": [],
+          "source_subnetwork_ip_ranges_to_nat": "LIST_OF_SUBNETWORKS",
+          "subnetwork": [
+            {
+              "name": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01",
+              "secondary_ip_range_names": [],
+              "source_ip_ranges_to_nat": [
+                "ALL_IP_RANGES"
+              ]
+            }
+          ],
+          "tcp_established_idle_timeout_sec": 1200,
+          "tcp_time_wait_timeout_sec": 120,
+          "tcp_transitory_idle_timeout_sec": 30,
+          "timeouts": null,
+          "udp_idle_timeout_sec": 30
+        }
+      }
+    }
+  },
+  "Cloud_Router_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-inf-crtr-01": [
+          "object",
+          {
+            "cloud_router_details": [
+              "object",
+              {
+                "bgp": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "advertise_mode": "string",
+                      "advertised_groups": [
+                        "list",
+                        "string"
+                      ],
+                      "advertised_ip_ranges": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "description": "string",
+                            "range": "string"
+                          }
+                        ]
+                      ],
+                      "asn": "number",
+                      "keepalive_interval": "number"
+                    }
+                  ]
+                ],
+                "creation_timestamp": "string",
+                "description": "string",
+                "encrypted_interconnect_router": "bool",
+                "id": "string",
+                "name": "string",
+                "network": "string",
+                "project": "string",
+                "region": "string",
+                "self_link": "string",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-inf-crtr-01": {
+        "cloud_router_details": {
+          "bgp": [
+            {
+              "advertise_mode": "DEFAULT",
+              "advertised_groups": [],
+              "advertised_ip_ranges": [],
+              "asn": 64514,
+              "keepalive_interval": 20
+            }
+          ],
+          "creation_timestamp": "2024-04-03T23:16:41.733-07:00",
+          "description": "",
+          "encrypted_interconnect_router": false,
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/routers/gcp-yyz-prd-inf-crtr-01",
+          "name": "gcp-yyz-prd-inf-crtr-01",
+          "network": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-out-fw-1",
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/routers/gcp-yyz-prd-inf-crtr-01",
+          "timeouts": null
+        }
+      }
+    }
+  },
+  "Disk_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "prdyzsecfgtvm01-log-disk01": [
+          "object",
+          {
+            "Disk_Name": "string",
+            "Disk_Self_Link": "string",
+            "Disk_Size": "number"
+          }
+        ],
+        "prdyzsecfgtvm02-log-disk01": [
+          "object",
+          {
+            "Disk_Name": "string",
+            "Disk_Self_Link": "string",
+            "Disk_Size": "number"
+          }
+        ]
+      }
+    ],
+    "value": {
+      "prdyzsecfgtvm01-log-disk01": {
+        "Disk_Name": "prdyzsecfgtvm01-log-disk01",
+        "Disk_Self_Link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-a/disks/prdyzsecfgtvm01-log-disk01",
+        "Disk_Size": 30
+      },
+      "prdyzsecfgtvm02-log-disk01": {
+        "Disk_Name": "prdyzsecfgtvm02-log-disk01",
+        "Disk_Self_Link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-b/disks/prdyzsecfgtvm02-log-disk01",
+        "Disk_Size": 30
+      }
+    }
+  },
+  "Health_Check_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-sec-fgt-ilb-01-hc-01": [
+          "object",
+          {
+            "HTTP_Health_Check_Name": [
+              "tuple",
+              []
+            ],
+            "Health_Check_ID": [
+              "tuple",
+              []
+            ],
+            "Health_Check_Self_Link": [
+              "tuple",
+              []
+            ],
+            "Region_Health_Check_ID": [
+              "tuple",
+              [
+                "string"
+              ]
+            ],
+            "Region_Health_Check_Name": [
+              "tuple",
+              [
+                "string"
+              ]
+            ],
+            "Region_Health_Check_Self_Link": [
+              "tuple",
+              [
+                "string"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-sec-fgt-ilb-01-hc-01": {
+        "HTTP_Health_Check_Name": [],
+        "Health_Check_ID": [],
+        "Health_Check_Self_Link": [],
+        "Region_Health_Check_ID": [
+          "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/healthChecks/gcp-yyz-prd-sec-fgt-ilb-01-hc-01"
+        ],
+        "Region_Health_Check_Name": [
+          "gcp-yyz-prd-sec-fgt-ilb-01-hc-01"
+        ],
+        "Region_Health_Check_Self_Link": [
+          "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/healthChecks/gcp-yyz-prd-sec-fgt-ilb-01-hc-01"
+        ]
+      }
+    }
+  },
+  "NLB_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-sec-fgt-ilb-01-frontend-01": [
+          "object",
+          {
+            "Backend_Service_ID": [
+              "tuple",
+              [
+                "string"
+              ]
+            ],
+            "Backend_Service_Name": [
+              "tuple",
+              [
+                "string"
+              ]
+            ],
+            "Backend_Service_Self_Link": [
+              "tuple",
+              [
+                "string"
+              ]
+            ],
+            "Forwarding_Rule_ID": "string",
+            "Forwarding_Rule_Name": "string",
+            "Forwarding_Rule_Self_Link": "string",
+            "Target_Pool_ID": [
+              "tuple",
+              []
+            ],
+            "Target_Pool_Name": [
+              "tuple",
+              []
+            ],
+            "Target_Pool_Self_Link": [
+              "tuple",
+              []
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-sec-fgt-ilb-01-frontend-01": {
+        "Backend_Service_ID": [
+          "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/backendServices/gcp-yyz-prd-sec-fgt-ilb-01"
+        ],
+        "Backend_Service_Name": [
+          "gcp-yyz-prd-sec-fgt-ilb-01"
+        ],
+        "Backend_Service_Self_Link": [
+          "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/backendServices/gcp-yyz-prd-sec-fgt-ilb-01"
+        ],
+        "Forwarding_Rule_ID": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/forwardingRules/gcp-yyz-prd-sec-fgt-ilb-01-frontend-01",
+        "Forwarding_Rule_Name": "gcp-yyz-prd-sec-fgt-ilb-01-frontend-01",
+        "Forwarding_Rule_Self_Link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/forwardingRules/gcp-yyz-prd-sec-fgt-ilb-01-frontend-01",
+        "Target_Pool_ID": [],
+        "Target_Pool_Name": [],
+        "Target_Pool_Self_Link": []
+      }
+    }
+  },
+  "Regional_Address_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-fgt-ha-priv-ip-01": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-fgt-ha-priv-ip-02": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-fgt-ilb-priv-ip-01": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-fgt-int-priv-ip-01": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-fgt-int-priv-ip-02": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-fgt-mgmt-priv-ip-01": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-fgt-mgmt-priv-ip-02": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-fgt-out-priv-ip-01": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-fgt-out-priv-ip-02": [
+          "object",
+          {
+            "regional_address_details": [
+              "object",
+              {
+                "address": "string",
+                "address_type": "string",
+                "creation_timestamp": "string",
+                "description": "string",
+                "effective_labels": [
+                  "map",
+                  "string"
+                ],
+                "id": "string",
+                "ip_version": "string",
+                "ipv6_endpoint_type": "string",
+                "label_fingerprint": "string",
+                "labels": [
+                  "map",
+                  "string"
+                ],
+                "name": "string",
+                "network": "string",
+                "network_tier": "string",
+                "prefix_length": "number",
+                "project": "string",
+                "purpose": "string",
+                "region": "string",
+                "self_link": "string",
+                "subnetwork": "string",
+                "terraform_labels": [
+                  "map",
+                  "string"
+                ],
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "users": [
+                  "list",
+                  "string"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-fgt-ha-priv-ip-01": {
+        "regional_address_details": {
+          "address": "100.64.224.34",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.123-07:00",
+          "description": "Static HA Internal IP Address for FGT Firewall for Node 1",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-ha-priv-ip-01",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-ha-priv-ip-01",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-ha-priv-ip-01",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-ha-fw-1-yyz-inf-prv-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      },
+      "gcp-yyz-fgt-ha-priv-ip-02": {
+        "regional_address_details": {
+          "address": "100.64.224.35",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.123-07:00",
+          "description": "Static HA Internal IP Address for FGT Firewall for Node 2",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-ha-priv-ip-02",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-ha-priv-ip-02",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-ha-priv-ip-02",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-ha-fw-1-yyz-inf-prv-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      },
+      "gcp-yyz-fgt-ilb-priv-ip-01": {
+        "regional_address_details": {
+          "address": "10.23.225.140",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.105-07:00",
+          "description": "Static Trust/Internal IP Address for FGT Firewall lb",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-ilb-priv-ip-01",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-ilb-priv-ip-01",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-ilb-priv-ip-01",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      },
+      "gcp-yyz-fgt-int-priv-ip-01": {
+        "regional_address_details": {
+          "address": "10.23.225.130",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.116-07:00",
+          "description": "Static Trust/Internal IP Address for FGT Firewall for Node 1",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-int-priv-ip-01",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-int-priv-ip-01",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-int-priv-ip-01",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      },
+      "gcp-yyz-fgt-int-priv-ip-02": {
+        "regional_address_details": {
+          "address": "10.23.225.131",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.115-07:00",
+          "description": "Static Trust/Internal IP Address for FGT Firewall for Node 2",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-int-priv-ip-02",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-int-priv-ip-02",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-int-priv-ip-02",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-hub-shr-1-yyz-inf-shr-cmn-prv-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      },
+      "gcp-yyz-fgt-mgmt-priv-ip-01": {
+        "regional_address_details": {
+          "address": "10.23.224.2",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.036-07:00",
+          "description": "Static External IP Address for MGMT",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-mgmt-priv-ip-01",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-mgmt-priv-ip-01",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-mgmt-priv-ip-01",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-mgmt-fw-1-yyz-inf-prv-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      },
+      "gcp-yyz-fgt-mgmt-priv-ip-02": {
+        "regional_address_details": {
+          "address": "10.23.224.3",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.039-07:00",
+          "description": "Static External IP Address for MGMT",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-mgmt-priv-ip-02",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-mgmt-priv-ip-02",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-mgmt-priv-ip-02",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-mgmt-fw-1-yyz-inf-prv-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      },
+      "gcp-yyz-fgt-out-priv-ip-01": {
+        "regional_address_details": {
+          "address": "100.64.224.2",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.122-07:00",
+          "description": "Static Untrust Internal IP Address for FGT Firewall for Node 1",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-out-priv-ip-01",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-out-priv-ip-01",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-out-priv-ip-01",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      },
+      "gcp-yyz-fgt-out-priv-ip-02": {
+        "regional_address_details": {
+          "address": "100.64.224.3",
+          "address_type": "INTERNAL",
+          "creation_timestamp": "2024-04-03T23:16:30.106-07:00",
+          "description": "Static Untrust Internal IP Address for FGT Firewall for Node 2",
+          "effective_labels": {},
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-out-priv-ip-02",
+          "ip_version": "",
+          "ipv6_endpoint_type": "",
+          "label_fingerprint": "42WmSpB8rSM=",
+          "labels": {},
+          "name": "gcp-yyz-fgt-out-priv-ip-02",
+          "network": "",
+          "network_tier": "PREMIUM",
+          "prefix_length": 0,
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "purpose": "GCE_ENDPOINT",
+          "region": "northamerica-northeast2",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/addresses/gcp-yyz-fgt-out-priv-ip-02",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/regions/northamerica-northeast2/subnetworks/gcp-vpc-prd-out-fw-1-yyz-inf-pub-tier-01",
+          "terraform_labels": {},
+          "timeouts": null,
+          "users": []
+        }
+      }
+    }
+  },
+  "Secret_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-sec-fgt-api-key-01": [
+          "object",
+          {
+            "id": "string"
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-sec-fgt-api-key-01": {
+        "id": "projects/gcp-prj-inf-networkhub-prd-1/secrets/gcp-yyz-prd-sec-fgt-api-key-01"
+      }
+    }
+  },
+  "UMIG_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "gcp-yyz-prd-sec-fgt-umig-01": [
+          "object",
+          {
+            "UMIG_Details": [
+              "object",
+              {
+                "description": "string",
+                "id": "string",
+                "instances": [
+                  "set",
+                  "string"
+                ],
+                "name": "string",
+                "named_port": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "name": "string",
+                      "port": "number"
+                    }
+                  ]
+                ],
+                "network": "string",
+                "project": "string",
+                "self_link": "string",
+                "size": "number",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "zone": "string"
+              }
+            ]
+          }
+        ],
+        "gcp-yyz-prd-sec-fgt-umig-02": [
+          "object",
+          {
+            "UMIG_Details": [
+              "object",
+              {
+                "description": "string",
+                "id": "string",
+                "instances": [
+                  "set",
+                  "string"
+                ],
+                "name": "string",
+                "named_port": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "name": "string",
+                      "port": "number"
+                    }
+                  ]
+                ],
+                "network": "string",
+                "project": "string",
+                "self_link": "string",
+                "size": "number",
+                "timeouts": [
+                  "object",
+                  {
+                    "create": "string",
+                    "delete": "string",
+                    "update": "string"
+                  }
+                ],
+                "zone": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "gcp-yyz-prd-sec-fgt-umig-01": {
+        "UMIG_Details": {
+          "description": "FGT UMIG 1",
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-a/instanceGroups/gcp-yyz-prd-sec-fgt-umig-01",
+          "instances": [
+            "projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-a/instances/prdyzsecfgtvm01"
+          ],
+          "name": "gcp-yyz-prd-sec-fgt-umig-01",
+          "named_port": [],
+          "network": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1",
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-a/instanceGroups/gcp-yyz-prd-sec-fgt-umig-01",
+          "size": 1,
+          "timeouts": null,
+          "zone": "northamerica-northeast2-a"
+        }
+      },
+      "gcp-yyz-prd-sec-fgt-umig-02": {
+        "UMIG_Details": {
+          "description": "FGT UMIG 2",
+          "id": "projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-b/instanceGroups/gcp-yyz-prd-sec-fgt-umig-02",
+          "instances": [
+            "projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-b/instances/prdyzsecfgtvm02"
+          ],
+          "name": "gcp-yyz-prd-sec-fgt-umig-02",
+          "named_port": [],
+          "network": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/global/networks/gcp-vpc-prd-hub-shr-1",
+          "project": "gcp-prj-inf-networkhub-prd-1",
+          "self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-b/instanceGroups/gcp-yyz-prd-sec-fgt-umig-02",
+          "size": 1,
+          "timeouts": null,
+          "zone": "northamerica-northeast2-b"
+        }
+      }
+    }
+  },
+  "VMs_Details": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "prdyzsecfgtvm01": [
+          "object",
+          {
+            "instance_machine_type": "string",
+            "instance_name": "string",
+            "instance_self_link": "string",
+            "instance_status": "string",
+            "project_id": "string"
+          }
+        ],
+        "prdyzsecfgtvm02": [
+          "object",
+          {
+            "instance_machine_type": "string",
+            "instance_name": "string",
+            "instance_self_link": "string",
+            "instance_status": "string",
+            "project_id": "string"
+          }
+        ]
+      }
+    ],
+    "value": {
+      "prdyzsecfgtvm01": {
+        "instance_machine_type": "t2d-standard-8",
+        "instance_name": "prdyzsecfgtvm01",
+        "instance_self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-a/instances/prdyzsecfgtvm01",
+        "instance_status": null,
+        "project_id": "gcp-prj-inf-networkhub-prd-1"
+      },
+      "prdyzsecfgtvm02": {
+        "instance_machine_type": "t2d-standard-8",
+        "instance_name": "prdyzsecfgtvm02",
+        "instance_self_link": "https://www.googleapis.com/compute/v1/projects/gcp-prj-inf-networkhub-prd-1/zones/northamerica-northeast2-b/instances/prdyzsecfgtvm02",
+        "instance_status": null,
+        "project_id": "gcp-prj-inf-networkhub-prd-1"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+2023-12-04T11:14:54.730Z [INFO]  Terraform version: 1.6.4
+2023-12-04T11:14:54.730Z [INFO]  Go runtime version: go1.21.3
+2023-12-04T11:14:54.730Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade"}
+2023-12-04T11:14:54.731Z [INFO]  CLI command args: []string{"init", "-upgrade"}
+2023-12-04T11:15:10.015Z [INFO]  Terraform version: 1.6.4
+2023-12-04T11:15:10.016Z [INFO]  Go runtime version: go1.21.3
+2023-12-04T11:15:10.019Z [INFO]  CLI args: []string{"terraform", "plan", "-var", "access_token=ya29.a0AfB_byBt0yB0T-_GfK5ey4dj8SCmUkXaFWCPrwPV_310qM1BVWqcMe6fuezzW9y9FxnxsynT3GuYSRqceVqgonsuLlviShmYmh_OpAMWJ9lCCvBWS0ASddECJGumxv4hTDvq1UrrlRXKJ-5zUt8U6n9FaAYsIqDZzh2kcvRublE6MEaj5S0HiU4wEi9lnxXjc1ALk5zjcwFXiY-Q6NXqIhbCI1Eb0Zh5o4Bl60b8jThyzvEgAGnWom14aLgY_nxxW0GHoKt6FZ70W0NQTe9fmx_A7qmE2k4OvqU-9wY_MKVJg2zu8pizu3ETW69Q5gl-SQXzBN21EvV1xkC88EHp7KfpziXlXZSRCSGU78RDOSl_tfJrxUcBOInBAiZWcs-gPu2ggfKlRUnKVXLQwxuAJkBcMcV0oXRaaCgYKAeQSARESFQHGX2MiCmtTYpx_2-xFyFUW2ZkZuw0423", "-var-file=../input-json-file/iam.tfvars.json", "-out=../plan-file/iam-tf-plan.json"}
+2023-12-04T11:15:10.020Z [INFO]  CLI command args: []string{"plan", "-var", "access_token=ya29.a0AfB_byBt0yB0T-_GfK5ey4dj8SCmUkXaFWCPrwPV_310qM1BVWqcMe6fuezzW9y9FxnxsynT3GuYSRqceVqgonsuLlviShmYmh_OpAMWJ9lCCvBWS0ASddECJGumxv4hTDvq1UrrlRXKJ-5zUt8U6n9FaAYsIqDZzh2kcvRublE6MEaj5S0HiU4wEi9lnxXjc1ALk5zjcwFXiY-Q6NXqIhbCI1Eb0Zh5o4Bl60b8jThyzvEgAGnWom14aLgY_nxxW0GHoKt6FZ70W0NQTe9fmx_A7qmE2k4OvqU-9wY_MKVJg2zu8pizu3ETW69Q5gl-SQXzBN21EvV1xkC88EHp7KfpziXlXZSRCSGU78RDOSl_tfJrxUcBOInBAiZWcs-gPu2ggfKlRUnKVXLQwxuAJkBcMcV0oXRaaCgYKAeQSARESFQHGX2MiCmtTYpx_2-xFyFUW2ZkZuw0423", "-var-file=../input-json-file/iam.tfvars.json", "-out=../plan-file/iam-tf-plan.json"}
+2023-12-04T11:15:10.706Z [INFO]  backend/local: starting Plan operation
+2023-12-04T11:15:26.592Z [WARN]  backend/local: Failed to request user input for variable "folder_iam": interrupted

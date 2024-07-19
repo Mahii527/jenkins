@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "gcp-slz-foundation-modules-srep-01",
+			"path": "."
+		},
+		{
+			"name": "gcp-slz-foundation-templates-srep-01",
+			"path": "../gcp-slz-foundation-templates-srep-01"
+		}
+	],
+	"settings": {}
+}

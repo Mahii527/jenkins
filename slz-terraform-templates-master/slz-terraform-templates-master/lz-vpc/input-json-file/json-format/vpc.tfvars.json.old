@@ -1,0 +1,12 @@
+{
+   "vpc": [
+        {
+            "network_name": "qa-host-shared-vpc",
+            "description": "Shared VPC",
+            "auto_create_subnetworks": false,
+            "routing_mode": "GLOBAL",
+            "project_id": "peak-comfort-413811",
+            "delete_routes": false
+        }
+    ]
+}

@@ -1,0 +1,404 @@
+2024-03-30T06:51:22.137Z [INFO]  Terraform version: 1.7.5
+2024-03-30T06:51:22.137Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T06:51:22.137Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=monitoring/state-file"}
+2024-03-30T06:51:22.138Z [INFO]  CLI command args: []string{"init", "-upgrade", "-backend-config=bucket=gcp-yyz-prd-inf-cloudautomation-sbuc-01", "-backend-config=prefix=monitoring/state-file"}
+2024-03-30T06:51:33.762Z [INFO]  Terraform version: 1.7.5
+2024-03-30T06:51:33.763Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T06:51:33.763Z [INFO]  CLI args: []string{"terraform", "plan", "-var=access_token=ya29.c.c0AY_VpZjOlfLrUi1F8-T7uyHnjrOZkZ4J8jo6jlSotaYqVgUQE5AgHHveYyqpJ_WOuGSCHk7ZOrnmPI2mYun3oCXRnBYHZiWO-mpjgMMPYt7pxsTVGNDCtPaPFUPO7cPQjh_i7AJ98q8D5htvVGoW2b30_S3NAL0agdQM8CRkpqdLSX2I5wOtmxktwXdAURWgs4MFyuDcpIUR2wikKCPHIwdUxgmtBK_Bpqv_X-0UJyUO3aw_WrlIYQVwIeNCjDPVbP12BjDZJ53p3c67DKLH7S6-HzOlIa6HIJw6aMot62oEii-gYpgz0yqVKMukeObWCoZWnB7FouTMET1ZQdbkb5hZ_gY-bS8H0FRgD4Oql6tcLgKMFLElMhwUhkG6Ps8BVVhhNv_MdMUODOrOVbAOb22z2hVnNhAVlLbiOMBe1mHFtZ-pyNbRj-2dAhyx-0t_4hf7uMAL7QGQTjecE5E-BJn5dFVwxIXTyYT6KAMhm9ohq7JPbdJopPifWCGBs-P3-AHxo8WLAbwQr07RbsPzQJr-WKD-4sgGk8GutIwHXr0utM9g06cvO5kgHTJako_N5Mdu8Lv30gu6qScsgLR7fkAvqfTgefR506N_yTlp6wpyCAaVshLDRJY78O4M_I2psvsQhLTr1PcLbZuRBjN7Ndr6UGoYk8fens8FQ6qi9wE691K_nFiQzj8bbXFZMJYSjm7UIwaXwwx4pJvbyFlinshu03ufpU06d7uU2phix1qb03mj2S8Z3-_IlWcFYZFj8Sbgt5ty0WyZ9-bRQRjw3k9mgsUW0s8gb3MUIaznd2kOQVbU2o8OcV8k6rmVdgwnBw6gY4x12uomFS7uw4iQS4hq9ujf7pM3c9btk6ZIVMpln95xf50Ws8I97RmSbQ5iYiWajXm5YQZ7WlbQ7oOautz48OvM0sX219Bm84mY6t6fka6iZydyhpbOewWe9fkuRZhOhQ8QkV563t1Um1j3z5wj4po6gZUJzXwZg68IpVkvwXZrds8zpgl", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/scope.tfvars", "-out=../plan-file/monitoring-tf-plan.json"}
+2024-03-30T06:51:33.764Z [INFO]  CLI command args: []string{"plan", "-var=access_token=ya29.c.c0AY_VpZjOlfLrUi1F8-T7uyHnjrOZkZ4J8jo6jlSotaYqVgUQE5AgHHveYyqpJ_WOuGSCHk7ZOrnmPI2mYun3oCXRnBYHZiWO-mpjgMMPYt7pxsTVGNDCtPaPFUPO7cPQjh_i7AJ98q8D5htvVGoW2b30_S3NAL0agdQM8CRkpqdLSX2I5wOtmxktwXdAURWgs4MFyuDcpIUR2wikKCPHIwdUxgmtBK_Bpqv_X-0UJyUO3aw_WrlIYQVwIeNCjDPVbP12BjDZJ53p3c67DKLH7S6-HzOlIa6HIJw6aMot62oEii-gYpgz0yqVKMukeObWCoZWnB7FouTMET1ZQdbkb5hZ_gY-bS8H0FRgD4Oql6tcLgKMFLElMhwUhkG6Ps8BVVhhNv_MdMUODOrOVbAOb22z2hVnNhAVlLbiOMBe1mHFtZ-pyNbRj-2dAhyx-0t_4hf7uMAL7QGQTjecE5E-BJn5dFVwxIXTyYT6KAMhm9ohq7JPbdJopPifWCGBs-P3-AHxo8WLAbwQr07RbsPzQJr-WKD-4sgGk8GutIwHXr0utM9g06cvO5kgHTJako_N5Mdu8Lv30gu6qScsgLR7fkAvqfTgefR506N_yTlp6wpyCAaVshLDRJY78O4M_I2psvsQhLTr1PcLbZuRBjN7Ndr6UGoYk8fens8FQ6qi9wE691K_nFiQzj8bbXFZMJYSjm7UIwaXwwx4pJvbyFlinshu03ufpU06d7uU2phix1qb03mj2S8Z3-_IlWcFYZFj8Sbgt5ty0WyZ9-bRQRjw3k9mgsUW0s8gb3MUIaznd2kOQVbU2o8OcV8k6rmVdgwnBw6gY4x12uomFS7uw4iQS4hq9ujf7pM3c9btk6ZIVMpln95xf50Ws8I97RmSbQ5iYiWajXm5YQZ7WlbQ7oOautz48OvM0sX219Bm84mY6t6fka6iZydyhpbOewWe9fkuRZhOhQ8QkV563t1Um1j3z5wj4po6gZUJzXwZg68IpVkvwXZrds8zpgl", "-var=project_id=gcp-prj-inf-automation-prd-01", "-var-file=../input-file/project.tfvars", "-var-file=../input-file/budget.tfvars", "-var-file=../input-file/api.tfvars", "-var-file=../input-file/scope.tfvars", "-out=../plan-file/monitoring-tf-plan.json"}
+2024-03-30T06:51:34.537Z [INFO]  backend/local: starting Plan operation
+2024-03-30T06:51:37.334Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T06:51:37.409Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T06:51:37.409Z
+2024-03-30T06:51:37.758Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T06:51:37.829Z [INFO]  provider.terraform-provider-google-beta_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T06:51:37.829Z
+2024-03-30T06:51:38.254Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T06:51:38.335Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T06:51:38.335Z
+2024-03-30T06:51:38.467Z [INFO]  backend/local: plan calling Plan
+2024-03-30T06:51:38.478Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T06:51:38.558Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T06:51:38.558Z
+2024-03-30T06:51:38.671Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_mux_provider="*proto5server.Server" tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=b7a66340-305e-83f7-ba33-d0f34a24a7d2 @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1721 @module=google timestamp=2024-03-30T06:51:38.671Z
+2024-03-30T06:51:38.671Z [INFO]  provider.terraform-provider-google_v5.22.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google @module=google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1722 tf_req_id=b7a66340-305e-83f7-ba33-d0f34a24a7d2 timestamp=2024-03-30T06:51:38.671Z
+2024-03-30T06:51:38.671Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Authenticating using configured Google JSON 'access_token'...: tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1721 @module=google tf_mux_provider="*proto5server.Server" tf_req_id=b7a66340-305e-83f7-ba33-d0f34a24a7d2 tf_rpc=ConfigureProvider timestamp=2024-03-30T06:51:38.671Z
+2024-03-30T06:51:38.671Z [INFO]  provider.terraform-provider-google_v5.22.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1722 tf_req_id=b7a66340-305e-83f7-ba33-d0f34a24a7d2 timestamp=2024-03-30T06:51:38.671Z
+2024-03-30T06:51:38.743Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1641 tf_mux_provider="*proto5server.Server" tf_req_id=b7a66340-305e-83f7-ba33-d0f34a24a7d2 tf_rpc=ConfigureProvider @module=google tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-30T06:51:38.742Z
+2024-03-30T06:51:41.556Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-monitoring-prd-01-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_delete: planned value cty.False for a non-computed attribute
+      - .enabled: planned value cty.True for a non-computed attribute
+2024-03-30T06:51:41.589Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-monitoring-prd-01-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .all_updates_rule[0].monitoring_notification_channels: planned value cty.UnknownVal(cty.List(cty.String)) does not match config value cty.ListVal([]cty.Value{cty.UnknownVal(cty.String)})
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+2024-03-30T06:51:41.620Z [INFO]  backend/local: plan operation completed
+2024-03-30T06:51:41.620Z [INFO]  backend/local: writing plan output to: ../plan-file/monitoring-tf-plan.json
+2024-03-30T06:51:46.673Z [INFO]  Terraform version: 1.7.5
+2024-03-30T06:51:46.673Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T06:51:46.673Z [INFO]  CLI args: []string{"terraform", "apply", "../plan-file/monitoring-tf-plan.json"}
+2024-03-30T06:51:46.674Z [INFO]  CLI command args: []string{"apply", "../plan-file/monitoring-tf-plan.json"}
+2024-03-30T06:51:47.426Z [INFO]  backend/local: starting Apply operation
+2024-03-30T06:51:50.209Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T06:51:50.295Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T06:51:50.295Z
+2024-03-30T06:51:50.683Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T06:51:50.763Z [INFO]  provider.terraform-provider-google-beta_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T06:51:50.763Z
+2024-03-30T06:51:51.266Z [INFO]  backend/local: apply calling Apply
+2024-03-30T06:51:51.282Z [INFO]  provider: configuring client automatic mTLS
+2024-03-30T06:51:51.363Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: configuring server automatic mTLS: timestamp=2024-03-30T06:51:51.362Z
+2024-03-30T06:51:51.490Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1721 tf_req_id=fa0f4ee4-bd8d-e555-fb48-e8197068a16c tf_rpc=ConfigureProvider @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-30T06:51:51.490Z
+2024-03-30T06:51:51.491Z [INFO]  provider.terraform-provider-google_v5.22.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1722 @module=google tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=fa0f4ee4-bd8d-e555-fb48-e8197068a16c tf_rpc=ConfigureProvider timestamp=2024-03-30T06:51:51.490Z
+2024-03-30T06:51:51.492Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Authenticating using configured Google JSON 'access_token'...: @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1721 tf_mux_provider="*proto5server.Server" tf_req_id=fa0f4ee4-bd8d-e555-fb48-e8197068a16c tf_rpc=ConfigureProvider @module=google tf_provider_addr=registry.terraform.io/hashicorp/google timestamp=2024-03-30T06:51:51.491Z
+2024-03-30T06:51:51.492Z [INFO]  provider.terraform-provider-google_v5.22.0_x5:   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: tf_req_id=fa0f4ee4-bd8d-e555-fb48-e8197068a16c @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1722 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_rpc=ConfigureProvider @module=google timestamp=2024-03-30T06:51:51.491Z
+2024-03-30T06:51:51.544Z [INFO]  provider.terraform-provider-google_v5.22.0_x5: Terraform is using this identity: svc-cloudautomation@gcp-prj-inf-automation-prd-01.iam.gserviceaccount.com: @module=google @caller=github.com/hashicorp/terraform-provider-google/google/fwtransport/framework_config.go:1641 tf_mux_provider="*proto5server.Server" tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=fa0f4ee4-bd8d-e555-fb48-e8197068a16c tf_rpc=ConfigureProvider timestamp=2024-03-30T06:51:51.544Z
+2024-03-30T06:51:51.591Z [INFO]  Starting apply for module.project["gcp-prj-inf-monitoring-prd-1"].google_project.project
+2024-03-30T06:55:32.629Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.project["gcp-prj-inf-monitoring-prd-1"].google_project.project, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .org_id: was null, but now cty.StringVal("")
+2024-03-30T06:55:32.646Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-monitoring-prd-01-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enabled: planned value cty.True for a non-computed attribute
+      - .force_delete: planned value cty.False for a non-computed attribute
+2024-03-30T06:55:32.648Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-monitoring-prd-01-budget-01"].google_monitoring_notification_channel.budget_notify
+2024-03-30T06:55:32.650Z [INFO]  Starting apply for module.apis["gcp-prj-inf-monitoring-prd-01"].google_project_service.gcp_apis["bigquerydatatransfer.googleapis.com"]
+2024-03-30T06:55:32.652Z [INFO]  Starting apply for module.apis["gcp-prj-inf-monitoring-prd-01"].google_project_service.gcp_apis["monitoring.googleapis.com"]
+2024-03-30T06:55:32.657Z [INFO]  Starting apply for module.apis["gcp-prj-inf-monitoring-prd-01"].google_project_service.gcp_apis["compute.googleapis.com"]
+2024-03-30T06:55:32.660Z [INFO]  Starting apply for module.apis["gcp-prj-inf-monitoring-prd-01"].google_project_service.gcp_apis["iam.googleapis.com"]
+2024-03-30T06:55:32.661Z [INFO]  Starting apply for module.apis["gcp-prj-inf-monitoring-prd-01"].google_project_service.gcp_apis["logging.googleapis.com"]
+2024-03-30T06:55:32.664Z [INFO]  Starting apply for module.apis["gcp-prj-inf-monitoring-prd-01"].google_project_service.gcp_apis["bigquery.googleapis.com"]
+2024-03-30T06:55:33.724Z [WARN]  Provider "provider[\"registry.terraform.io/hashicorp/google\"]" produced an unexpected new value for module.billing_budget["gcp-prj-inf-monitoring-prd-01-budget-01"].google_monitoring_notification_channel.budget_notify, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: was null, but now cty.StringVal("")
+2024-03-30T06:55:33.736Z [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for module.billing_budget["gcp-prj-inf-monitoring-prd-01-budget-01"].google_billing_budget.budget, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .all_updates_rule[0].schema_version: planned value cty.StringVal("1.0") for a non-computed attribute
+      - .threshold_rules[0].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[1].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[2].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+      - .threshold_rules[3].spend_basis: planned value cty.StringVal("CURRENT_SPEND") for a non-computed attribute
+2024-03-30T06:55:33.736Z [INFO]  Starting apply for module.billing_budget["gcp-prj-inf-monitoring-prd-01-budget-01"].google_billing_budget.budget
+2024-03-30T06:55:35.063Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic: tf_rpc=ApplyResourceChange tf_resource_type=google_billing_budget @module=sdk.proto diagnostic_severity=ERROR tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail="" tf_req_id=9e835a22-7464-b33b-e693-4d6516d29dd9 diagnostic_summary="Error creating Budget: googleapi: Error 400: Request contains an invalid argument." tf_proto_version=5.4 timestamp=2024-03-30T06:55:35.063Z
+2024-03-30T06:55:35.064Z [ERROR] vertex "module.billing_budget[\"gcp-prj-inf-monitoring-prd-01-budget-01\"].google_billing_budget.budget" error: Error creating Budget: googleapi: Error 400: Request contains an invalid argument.
+2024-03-30T06:55:37.333Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic: @module=sdk.proto
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+  | Help Token: ARqICRM4OdGb1ehndA0OuIGJ0M2KMTlAPATRZyBiSqrJWJKlqS2cmANAvjqY65agBI5HuCf1vJSugvkaeJg3Lqj1IUTdCDnQTqJkmJOpln6Wg54k
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "permission": "serviceusage.services.list",
+  |       "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+  |       "service": "cloudresourcemanager.googleapis.com"
+  |     },
+  |     "reason": "AUTH_PERMISSION_DENIED"
+  |   }
+  | ]
+  | , forbidden
+   tf_proto_version=5.4 tf_resource_type=google_project_service tf_req_id=9d96b2e7-ec6b-40bb-f32c-a6d7e56affdf diagnostic_severity=ERROR tf_provider_addr=registry.terraform.io/hashicorp/google @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail="" tf_rpc=ApplyResourceChange timestamp=2024-03-30T06:55:37.332Z
+2024-03-30T06:55:37.333Z [ERROR] vertex "module.apis[\"gcp-prj-inf-monitoring-prd-01\"].google_project_service.gcp_apis[\"monitoring.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+Help Token: ARqICRM4OdGb1ehndA0OuIGJ0M2KMTlAPATRZyBiSqrJWJKlqS2cmANAvjqY65agBI5HuCf1vJSugvkaeJg3Lqj1IUTdCDnQTqJkmJOpln6Wg54k
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "permission": "serviceusage.services.list",
+      "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+      "service": "cloudresourcemanager.googleapis.com"
+    },
+    "reason": "AUTH_PERMISSION_DENIED"
+  }
+]
+, forbidden
+2024-03-30T06:55:38.726Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic: @module=sdk.proto diagnostic_severity=ERROR diagnostic_detail=""
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+  | Help Token: ARqICRPTOyXLLAMjdLXpLAPFOYsmJ-oFUXOFRj2GDFBQshvUvVqZyJ18H8sq2wHaIDN4peeYWKvoKOlUIWEWCUDKbtQIUPQ1zecZ0NOHDQxT9y9C
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "permission": "serviceusage.services.list",
+  |       "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+  |       "service": "cloudresourcemanager.googleapis.com"
+  |     },
+  |     "reason": "AUTH_PERMISSION_DENIED"
+  |   }
+  | ]
+  | , forbidden
+   tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/hashicorp/google tf_resource_type=google_project_service tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_req_id=4c483f78-37aa-675e-ae3d-f47f59c0b977 timestamp=2024-03-30T06:55:38.726Z
+2024-03-30T06:55:38.727Z [ERROR] vertex "module.apis[\"gcp-prj-inf-monitoring-prd-01\"].google_project_service.gcp_apis[\"bigquerydatatransfer.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+Help Token: ARqICRPTOyXLLAMjdLXpLAPFOYsmJ-oFUXOFRj2GDFBQshvUvVqZyJ18H8sq2wHaIDN4peeYWKvoKOlUIWEWCUDKbtQIUPQ1zecZ0NOHDQxT9y9C
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "permission": "serviceusage.services.list",
+      "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+      "service": "cloudresourcemanager.googleapis.com"
+    },
+    "reason": "AUTH_PERMISSION_DENIED"
+  }
+]
+, forbidden
+2024-03-30T06:55:39.127Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic: tf_provider_addr=registry.terraform.io/hashicorp/google tf_resource_type=google_project_service @module=sdk.proto tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 diagnostic_detail="" diagnostic_severity=ERROR
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+  | Help Token: ARqICRO1veIxUOW4EdXsmir7uYKeC8uZ14-vZAaf0k1dbFwbmuvnpILApHxWg4931apcRO0ICUtTHNDSgqNtlI7vzraSWwqJWEthP0dTzuLdneFc
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "permission": "serviceusage.services.list",
+  |       "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+  |       "service": "cloudresourcemanager.googleapis.com"
+  |     },
+  |     "reason": "AUTH_PERMISSION_DENIED"
+  |   }
+  | ]
+  | , forbidden
+   tf_proto_version=5.4 tf_req_id=fdbcfc69-f956-1c7c-06e1-38e4932e5cf6 timestamp=2024-03-30T06:55:39.126Z
+2024-03-30T06:55:39.127Z [ERROR] vertex "module.apis[\"gcp-prj-inf-monitoring-prd-01\"].google_project_service.gcp_apis[\"logging.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+Help Token: ARqICRO1veIxUOW4EdXsmir7uYKeC8uZ14-vZAaf0k1dbFwbmuvnpILApHxWg4931apcRO0ICUtTHNDSgqNtlI7vzraSWwqJWEthP0dTzuLdneFc
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "permission": "serviceusage.services.list",
+      "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+      "service": "cloudresourcemanager.googleapis.com"
+    },
+    "reason": "AUTH_PERMISSION_DENIED"
+  }
+]
+, forbidden
+2024-03-30T06:55:40.132Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic: diagnostic_severity=ERROR diagnostic_detail="" tf_provider_addr=registry.terraform.io/hashicorp/google tf_resource_type=google_project_service tf_proto_version=5.4 tf_req_id=c3cd3e75-d6ad-64c8-9b00-07b5711645c0 @module=sdk.proto
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+  | Help Token: ARqICRNxkq2sJeZ3oQ9--I6SGfDdXAcQII2iPjxu0Z4zQSc0rD-5zL251GjAGHMappjk1nSDF55FhlKz-o_gvTJJt59xrJv6cSQ9yiQkhJE7HyR_
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "permission": "serviceusage.services.list",
+  |       "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+  |       "service": "cloudresourcemanager.googleapis.com"
+  |     },
+  |     "reason": "AUTH_PERMISSION_DENIED"
+  |   }
+  | ]
+  | , forbidden
+   tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 timestamp=2024-03-30T06:55:40.132Z
+2024-03-30T06:55:40.133Z [ERROR] vertex "module.apis[\"gcp-prj-inf-monitoring-prd-01\"].google_project_service.gcp_apis[\"compute.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+Help Token: ARqICRNxkq2sJeZ3oQ9--I6SGfDdXAcQII2iPjxu0Z4zQSc0rD-5zL251GjAGHMappjk1nSDF55FhlKz-o_gvTJJt59xrJv6cSQ9yiQkhJE7HyR_
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "permission": "serviceusage.services.list",
+      "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+      "service": "cloudresourcemanager.googleapis.com"
+    },
+    "reason": "AUTH_PERMISSION_DENIED"
+  }
+]
+, forbidden
+2024-03-30T06:55:40.531Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic: tf_provider_addr=registry.terraform.io/hashicorp/google tf_req_id=e8ba1898-4e48-be30-64e2-d329c74b62d3 tf_rpc=ApplyResourceChange diagnostic_detail="" diagnostic_severity=ERROR @module=sdk.proto
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+  | Help Token: ARqICROBWzdhQJSK_1jFW-uF1Lhan-TaKKNCHUoipQg2WHzVy8Q_uE0PA_5m0_452oNCs0Qng1J2tpdvjie5qLWF6vM-r-e9FKXDCOAAqA5IMC9d
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "permission": "serviceusage.services.list",
+  |       "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+  |       "service": "cloudresourcemanager.googleapis.com"
+  |     },
+  |     "reason": "AUTH_PERMISSION_DENIED"
+  |   }
+  | ]
+  | , forbidden
+   tf_proto_version=5.4 tf_resource_type=google_project_service @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 timestamp=2024-03-30T06:55:40.530Z
+2024-03-30T06:55:40.531Z [ERROR] vertex "module.apis[\"gcp-prj-inf-monitoring-prd-01\"].google_project_service.gcp_apis[\"bigquery.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+Help Token: ARqICROBWzdhQJSK_1jFW-uF1Lhan-TaKKNCHUoipQg2WHzVy8Q_uE0PA_5m0_452oNCs0Qng1J2tpdvjie5qLWF6vM-r-e9FKXDCOAAqA5IMC9d
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "permission": "serviceusage.services.list",
+      "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+      "service": "cloudresourcemanager.googleapis.com"
+    },
+    "reason": "AUTH_PERMISSION_DENIED"
+  }
+]
+, forbidden
+2024-03-30T06:55:41.930Z [ERROR] provider.terraform-provider-google_v5.22.0_x5: Response contains error diagnostic:
+  diagnostic_summary=
+  | Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+  | Help Token: ARqICRP7L1Xrrvfgpaff8bUbj7zTHDPn_kODR2e-PeblDnSd-64jJs5_2N1H9sBYeCA4KvD_ViDbPitkmq0W_xgVSPbqfm21fGHzczjA9c67bCbJ
+  | Details:
+  | [
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+  |     "violations": [
+  |       {
+  |         "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+  |         "type": "googleapis.com"
+  |       }
+  |     ]
+  |   },
+  |   {
+  |     "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+  |     "domain": "serviceusage.googleapis.com",
+  |     "metadata": {
+  |       "permission": "serviceusage.services.list",
+  |       "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+  |       "service": "cloudresourcemanager.googleapis.com"
+  |     },
+  |     "reason": "AUTH_PERMISSION_DENIED"
+  |   }
+  | ]
+  | , forbidden
+   tf_resource_type=google_project_service @module=sdk.proto diagnostic_detail="" tf_req_id=f047931e-f1ba-feac-eb3f-5b7df3463d00 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:62 tf_provider_addr=registry.terraform.io/hashicorp/google diagnostic_severity=ERROR tf_proto_version=5.4 tf_rpc=ApplyResourceChange timestamp=2024-03-30T06:55:41.930Z
+2024-03-30T06:55:41.931Z [ERROR] vertex "module.apis[\"gcp-prj-inf-monitoring-prd-01\"].google_project_service.gcp_apis[\"iam.googleapis.com\"]" error: Error when reading or editing Project Service : Request `List Project Services gcp-prj-inf-monitoring-prd-01` returned error: Batch request and retried single request "List Project Services gcp-prj-inf-monitoring-prd-01" both failed. Final error: Failed to list enabled services for project gcp-prj-inf-monitoring-prd-01: googleapi: Error 403: Permission denied to list services for consumer container [projects/58959729515]
+Help Token: ARqICRP7L1Xrrvfgpaff8bUbj7zTHDPn_kODR2e-PeblDnSd-64jJs5_2N1H9sBYeCA4KvD_ViDbPitkmq0W_xgVSPbqfm21fGHzczjA9c67bCbJ
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+    "violations": [
+      {
+        "subject": "?error_code=110002\u0026service=cloudresourcemanager.googleapis.com\u0026permission=serviceusage.services.list\u0026resource=projects/gcp-prj-inf-monitoring-prd-01",
+        "type": "googleapis.com"
+      }
+    ]
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "serviceusage.googleapis.com",
+    "metadata": {
+      "permission": "serviceusage.services.list",
+      "resource": "projects/gcp-prj-inf-monitoring-prd-01",
+      "service": "cloudresourcemanager.googleapis.com"
+    },
+    "reason": "AUTH_PERMISSION_DENIED"
+  }
+]
+, forbidden
+2024-03-30T06:55:43.383Z [INFO]  Terraform version: 1.7.5
+2024-03-30T06:55:43.383Z [INFO]  Go runtime version: go1.21.8
+2024-03-30T06:55:43.383Z [INFO]  CLI args: []string{"terraform", "output", "-json"}
+2024-03-30T06:55:43.384Z [INFO]  CLI command args: []string{"output", "-json"}
